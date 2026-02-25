@@ -1,0 +1,74 @@
+{
+  "Navbar": {
+    "computerScience": "ISayensi Yekhompyutha",
+    "facultyOfScience": "IFakhalthi Yesayensi",
+    "programmes": "Iinkqubo",
+    "research": "Uphando",
+    "contactUs": "Qhagamshelana Nathi",
+    "aboutUs": "Malunga Nathi",
+    "openTerminal": "Vula itheminali",
+    "terminal": "Itheminali",
+    "switchLanguage": "Tshintsha ulwimi",
+    "language": "Ulwimi",
+    "openMenu": "Vula imenyu",
+    "closeMenu": "Vala imenyu"
+  },
+  "Hero": {
+    "title": "Sakha Ikamva",
+    "description": "Ukusukela ngo-1972, iSebe leSayensi Yekhompyutha laseStellebosch liye labumba okuzayo — uphando oluphambili, ukufundisa okwenhlaba-jikelele, kunye nabaphumeleleyo abakhokela kwishishini nakwezolwazi.",
+    "exploreProgrammes": "Hlola Iinkqubo",
+    "learnMore": "Funda Okungakumbi"
+  },
+  "Stats": {
+    "yearsValue": "50+",
+    "yearsLabel": "Iminyaka Yobugqweshe",
+    "alumniValue": "1,200+",
+    "alumniLabel": "Abaphumeleleyo Emhlabeni",
+    "facultyValue": "30+",
+    "facultyLabel": "Amalungu Efakhalthi",
+    "researchValue": "15+",
+    "researchLabel": "Amaqela Ophando"
+  },
+  "Features": {
+    "title": "Kutheni ISayensi Yekhompyutha YaseStellebosch?",
+    "subtitle": "Fumana okwenza isebe lethu inkokheli kumfundo wesayensi yekhompyutha kunye nophando.",
+    "worldClassTitle": "Iinkqubo Zenhlaba-jikelele",
+    "worldClassDescription": "Izidanga zangaphambili nezangasemva eziyilwe ukuvelisa abaphumeleleyo abalungele ishishini.",
+    "researchTitle": "Uphando Oluphambili",
+    "researchDescription": "Amaqela ophando asebenzayo kwi-AI, ukufunda koomatshini, isayensi yedatha kunye nokhuseleko lwesayibha.",
+    "communityTitle": "Uluntu Oluphilayo",
+    "communityDescription": "Indawo yokusebenzisana edibana nabafundi, izifundiswa kunye nabalingane beshishini.",
+    "globalTitle": "Impembelelo Yehlabathi",
+    "globalDescription": "Abaphumeleleyo bethu basebenza kwinkampani eziphambili zobuchwepheshe namaziko ophando emhlabeni wonke.",
+    "facultyTitle": "IFakhalthi Engamagqwesha",
+    "facultyDescription": "Funda kubaphandi abaziwayo kwihlabathi liphela nakubafundisi abamava.",
+    "handsOnTitle": "Ukufunda Ngezandla",
+    "handsOnDescription": "Ikharikhyulam ezisekelwe kwiprojekthi ezikudibanisayo nemingeni yokwenene yobuchwepheshe besoftwe."
+  },
+  "Programmes": {
+    "title": "Iinkqubo Zethu",
+    "subtitle": "Ukusuka kwiziseko zangaphambili ukuya kuphando lwasemva, fumana indlela efanelekileyo yomsebenzi wakho.",
+    "bscTitle": "BSc ISayensi Yekhompyutha",
+    "bscDescription": "Isidanga seminyaka emithathu esibonelela ngesiseko esiqinileyo kwi-algorithms, izixhobo kunye nobuchwepheshe besoftwe.",
+    "honsTitle": "BScHons ISayensi Yekhompyutha",
+    "honsDescription": "Unyaka oqukuqelayo wee-onazi onesifundo esiphambili kunye neprojekthi yophando kwindawo ekhethekileyo.",
+    "mscTitle": "MSc / PhD Uphando",
+    "mscDescription": "Iinkqubo zophando zasemva kweedigri ezikhokelwa zizifundiswa eziphambili kwimiba yokuqwalasela emininzi.",
+    "learnMore": "Funda okungakumbi"
+  },
+  "Contact": {
+    "title": "Qhagamshelana Nathi",
+    "description": "Unemibuzo malunga neenkqubo zethu, uphando okanye nantoni na enye? Singavuya ukuva kuwe.",
+    "emailUs": "Sithumele I-imeyile",
+    "visitCampus": "Ndwendwela Ikhampasi"
+  },
+  "Footer": {
+    "computerScience": "ISayensi Yekhompyutha",
+    "stellenboschUniversity": "IYunivesithi YaseStellebosch",
+    "copyright": "© {year} IYunivesithi YaseStellebosch. Onke amalungelo agciniwe."
+  },
+  "Metadata": {
+    "title": "ISayensi Yekhompyutha - IYunivesithi YaseStellebosch",
+    "description": "Iwebhusayithi yeSebe leSayensi Yekhompyutha kwiYunivesithi yaseStellebosch. Hlola iinkqubo zethu, uphando kunye noluntu."
+  }
+}

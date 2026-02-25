@@ -1,0 +1,74 @@
+{
+  "Navbar": {
+    "computerScience": "Rekenaarwetenskap",
+    "facultyOfScience": "Fakulteit Natuurwetenskappe",
+    "programmes": "Programme",
+    "research": "Navorsing",
+    "contactUs": "Kontak Ons",
+    "aboutUs": "Oor Ons",
+    "openTerminal": "Maak terminaal oop",
+    "terminal": "Terminaal",
+    "switchLanguage": "Wissel taal",
+    "language": "Taal",
+    "openMenu": "Maak kieslys oop",
+    "closeMenu": "Maak kieslys toe"
+  },
+  "Hero": {
+    "title": "Ons Bou die Toekoms",
+    "description": "Sedert 1972 het Stellenbosch se Rekenaarwetenskapdepartement die toekoms gevorm — baanbrekende navorsing, wêreldklas-onderrig en gegradueerdes wat lei in die bedryf en akademie.",
+    "exploreProgrammes": "Verken Programme",
+    "learnMore": "Leer Meer"
+  },
+  "Stats": {
+    "yearsValue": "50+",
+    "yearsLabel": "Jare van Uitnemendheid",
+    "alumniValue": "1 200+",
+    "alumniLabel": "Alumni Wêreldwyd",
+    "facultyValue": "30+",
+    "facultyLabel": "Fakulteitslede",
+    "researchValue": "15+",
+    "researchLabel": "Navorsingsgroepe"
+  },
+  "Features": {
+    "title": "Hoekom Stellenbosch RW?",
+    "subtitle": "Ontdek wat ons departement 'n leier in rekenaarwetenskap-onderwys en -navorsing maak.",
+    "worldClassTitle": "Wêreldklas-programme",
+    "worldClassDescription": "Voorgraadse en nagraadse grade wat ontwerp is om bedryfsgereed gegradueerdes te lewer.",
+    "researchTitle": "Voorpuntnavorsing",
+    "researchDescription": "Aktiewe navorsingsgroepe in KI, masjienleer, datawetenskap en kuberveiligheid.",
+    "communityTitle": "Lewendige Gemeenskap",
+    "communityDescription": "'n Samewerkende omgewing wat studente, akademici en bedryfsvennote verbind.",
+    "globalTitle": "Wêreldwye Impak",
+    "globalDescription": "Ons alumni werk by toonaangewende tegnologiemaatskappye en navorsingsinstellings wêreldwyd.",
+    "facultyTitle": "Kundige Fakulteit",
+    "facultyDescription": "Leer by internasionaal erkende navorsers en ervare opvoeders.",
+    "handsOnTitle": "Praktiese Leer",
+    "handsOnDescription": "Projekgebaseerde leerplanne wat jou voorberei vir werklike sagteware-ingenieursuitdagings."
+  },
+  "Programmes": {
+    "title": "Ons Programme",
+    "subtitle": "Van voorgraadse grondslae tot nagraadse navorsing, vind die regte pad vir jou loopbaan.",
+    "bscTitle": "BSc Rekenaarwetenskap",
+    "bscDescription": "'n Driejarige voorgraadse graad wat 'n sterk grondslag bied in algoritmes, stelsels en sagteware-ingenieurswese.",
+    "honsTitle": "BScHons Rekenaarwetenskap",
+    "honsDescription": "'n Intensiewe honneursjar met gevorderde kursuswerk en 'n navorsingsprojek in 'n spesialisgebied.",
+    "mscTitle": "MSc / PhD Navorsing",
+    "mscDescription": "Nagraadse navorsingsprogramme onder leiding van vooraanstaande akademici oor veelvuldige fokusgebiede.",
+    "learnMore": "Leer meer"
+  },
+  "Contact": {
+    "title": "Kontak Ons",
+    "description": "Het jy vrae oor ons programme, navorsing of enigiets anders? Ons hoor graag van jou.",
+    "emailUs": "E-pos Ons",
+    "visitCampus": "Besoek Kampus"
+  },
+  "Footer": {
+    "computerScience": "Rekenaarwetenskap",
+    "stellenboschUniversity": "Universiteit Stellenbosch",
+    "copyright": "© {year} Universiteit Stellenbosch. Alle regte voorbehou."
+  },
+  "Metadata": {
+    "title": "Rekenaarwetenskap - Universiteit Stellenbosch",
+    "description": "Webwerf vir die Rekenaarwetenskapdepartement by die Universiteit Stellenbosch. Verken ons programme, navorsing en gemeenskap."
+  }
+}

@@ -1,0 +1,74 @@
+{
+  "Navbar": {
+    "computerScience": "Computer Science",
+    "facultyOfScience": "Faculty of Science",
+    "programmes": "Programmes",
+    "research": "Research",
+    "contactUs": "Contact Us",
+    "aboutUs": "About Us",
+    "openTerminal": "Open terminal",
+    "terminal": "Terminal",
+    "switchLanguage": "Switch language",
+    "language": "Language",
+    "openMenu": "Open menu",
+    "closeMenu": "Close menu"
+  },
+  "Hero": {
+    "title": "We Build the Future",
+    "description": "Since 1972, Stellenbosch's Computer Science Department has shaped what's next — pioneering research, world-class teaching, and graduates who lead in industry and academia.",
+    "exploreProgrammes": "Explore Programmes",
+    "learnMore": "Learn More"
+  },
+  "Stats": {
+    "yearsValue": "50+",
+    "yearsLabel": "Years of Excellence",
+    "alumniValue": "1,200+",
+    "alumniLabel": "Alumni Worldwide",
+    "facultyValue": "30+",
+    "facultyLabel": "Faculty Members",
+    "researchValue": "15+",
+    "researchLabel": "Research Groups"
+  },
+  "Features": {
+    "title": "Why Stellenbosch CS?",
+    "subtitle": "Discover what makes our department a leader in computer science education and research.",
+    "worldClassTitle": "World-Class Programmes",
+    "worldClassDescription": "Undergraduate and postgraduate degrees designed to produce industry-ready graduates.",
+    "researchTitle": "Cutting-Edge Research",
+    "researchDescription": "Active research groups in AI, machine learning, data science, and cybersecurity.",
+    "communityTitle": "Vibrant Community",
+    "communityDescription": "A collaborative environment connecting students, academics, and industry partners.",
+    "globalTitle": "Global Impact",
+    "globalDescription": "Our alumni work at leading tech companies and research institutions worldwide.",
+    "facultyTitle": "Expert Faculty",
+    "facultyDescription": "Learn from internationally recognised researchers and experienced educators.",
+    "handsOnTitle": "Hands-On Learning",
+    "handsOnDescription": "Project-based curricula that prepare you for real-world software engineering challenges."
+  },
+  "Programmes": {
+    "title": "Our Programmes",
+    "subtitle": "From undergraduate foundations to postgraduate research, find the right path for your career.",
+    "bscTitle": "BSc Computer Science",
+    "bscDescription": "A three-year undergraduate degree offering a strong foundation in algorithms, systems, and software engineering.",
+    "honsTitle": "BScHons Computer Science",
+    "honsDescription": "An intensive honours year with advanced coursework and a research project in a specialist area.",
+    "mscTitle": "MSc / PhD Research",
+    "mscDescription": "Postgraduate research programmes supervised by leading academics across multiple focus areas.",
+    "learnMore": "Learn more"
+  },
+  "Contact": {
+    "title": "Get in Touch",
+    "description": "Have questions about our programmes, research, or anything else? We'd love to hear from you.",
+    "emailUs": "Email Us",
+    "visitCampus": "Visit Campus"
+  },
+  "Footer": {
+    "computerScience": "Computer Science",
+    "stellenboschUniversity": "Stellenbosch University",
+    "copyright": "© {year} Stellenbosch University. All rights reserved."
+  },
+  "Metadata": {
+    "title": "Computer Science - Stellenbosch University",
+    "description": "Website for the Computer Science Department at Stellenbosch University. Explore our programmes, research, and community."
+  }
+}
