@@ -1,0 +1,206 @@
+Postgraduate Modules
+Programmes
+18139-797	Honours in Computer Science		
+Stream Computer Science. This stream consists of 6 modules of 16 credits each, as well as a compulsory programming project of 32 credits. At most two modules may be taken from related departments with the permission of the Computer Science. Not all modules are necessarily offered each year.
+
+18139-878	Masters in Computer Science		
+Independent research on an approved topic as determined by the supervisor(s) and leading to a thesis is required.
+
+18139-978	PhD in Computer Science		
+A dissertation containing the results of your independent research is required.
+
+Year Modules
+63444-771	Honours Project in Computer Science		(1st and 2nd Semester)
+A large software construction or research problem on which the student works independantly, under the supervision of a staff member.
+
+First Semester Modules
+64947-712	Advanced Algorithms	(Willem Bester)	(1st Semester)
+This module continues from Computer Science 214 and covers advanced topics in the design and analysis of algorithms and associated data structure. Topics include a selection from algorithm design techniques, linear programming, approximation algorithms, randomised algorithms, probabilistic algorithms, parallel algorithms, number-theoretic algorithms, cryptanalysis, computational geometry, computational biology, network algorithms, and complexity theory.
+
+64971-716	Adv. Topics I - Vulnerability Discovery and Exploitation	(Fabian Yamaguchi)	(1st Semester)
+This module provides an introduction to the discovery and exploitation of vulnerabilities in software systems. We learn to uncover vulnerabilities and demonstrate their exploitability and then proceed to focus on methods for automating parts of the discovery procoess, both via static and dynamic program analysis.
+
+65048-746	Adv. Topics II - Ontology Engineering	(Maria Keet)	(1st Semester)
+The principal aim of this module is to provide the participant with an overview of ontology engineering—including knowledge representation languages, automated reasoning, and methods and techniques for ontology development—and main application fields. Ontologies are used in a wide range of applications and back-end computing tasks, such as data integration, information retrieval, and natural language processing. While some of these application areas pass the revue, the main focus of the course is on principles of ontology development an its software ecosystem. The topics covered include the following: Logic foundations for ontologies: Languages and Automated reasoning. Ontology development: Ontology engineering top-down & bottom-up; Methodologies for ontology development and maintenance, methods to enhance ontology quality; a selection of current research topics.
+
+14533-771	Computing and Society	(William (Bill) Tucker)	(1st Semester)
+Theory, domains and critique of topics related to Computing and Society, such as human-centred computing; social development theories, critical analysis of case studies; methods and ethics; and challenges of sustainable community engagement.
+
+14232-791	Artificial Intelligence	(Andries Engelbrecht)	(1st Semester)
+Introduction to a selection of topics in artificial intelligence and optimisation. Meta-heuristics. Swarm intelligence, including particle swarm optimisation and the ant colony meta-heuristic. Evolutionary computation, including genetic algorithms, genetic programming, evolutionary programming, evolutionary strategies, differential evolution, cultural algorithms, and coevolution. Hyper-heuristics. Fitness landscape analysis. Optimisation problems, including unconstrained, constrained, multi-objective, manyobjective, dynamic, multi-modal and large-scale optimisation problems.
+
+13944-795	Functional Programming	(Brink van der Merwe)	(1st Semester)
+This module gives an introduction to the functional programming paradigm
+
+14195-742	Machine Learning A (315*)	(Steve Kroon)	(1st Semester)
+Prominent machine-learning concepts and tasks. Selected feature extraction or dimensionality reduction techniques. Introduction to probabilistic modelling and latent variable models. Fundamental paradigms in parameter estimation.
+
+14530-711	Computer Networks (313*)	(William (Bill) Tucker)	(1st Semester)
+Unless you have completed Computer Science 313 or an equivalent, the following Computer Science module is compulsory. Introduction to networks in general and the internet in particular. Architecture and protocols. Allocation of resources and congestion control. Network security. Applications.
+
+64963-714	Concurrent Programming I (314*)	(Cornelia Inggs)	(1st Semester)
+Unless you have completed Computer Science 314 or an equivalent, the following Computer Science module is compulsory. This module covers an overview of the field of concurrency, its theoretical. principles, the design, implementation and verification of concurrent systems, and practical aspects of distributed and parallel programming. It is focused around selected important topics.
+
+Second Semester Modules
+11788-741	Machine Learning	(Andries Engelbrecht)	(2nd Semester)
+This module is an introduction to selected topics in machine learning.
+
+65021-745	Software Construction - Compilers	(Bernd Fischer)	(2nd Semester)
+
+14531-771	Principles of Data Science	(Marcel Dunaiski)	(2nd Semester)
+"This course covers the typical pipeline of data science projects: information retrieval, data wrangling and exploratory data analysis, hypothesis testing and regression analysis, as well as visualisations and data ethics."
+
+14066-791	Space Science Algorithms	(Trienko Grobler)	(2nd Semester)
+Algorithms and techniques in Space Science, with applications.
+
+14888743	Machine Learning and Artificial Intelligence I - Cognitive Robotics	(Gavin Rens)	(2nd Semester)
+Most topics in this course fall under the branch of artificial intelligence called Cognitive Robotics. Topics covered are logic and knowledge representation, the Prolog language, deterministic automated planning (based on the planning domain definition language), dynamic Bayesian networks and dynamic decision networks, Boolean and arithmetic circuits, the ProbLog language, probabilistic planning (based on Markov decision processes), and an introduction to reinforcement learning.
+
+14065-796	Software Testing and Analysis	(Cornelia Inggs, Bernd Fischer, Willem Visser)	(2nd Semester)
+Introduction to various techniques for software quality management.
+
+63452-711	Automata Theory & Applications (345*)	(Brink van der Merwe)	(2nd Semester)
+This course is a first introduction to theoretical computer science, and covers the Chomsky hierarchy of languages in relation to computability. Note that you may not take this course if you had already completed CS345.
+
+
+
+
+
+
+
+
+Postgraduate Studies in Computer Science
+What are the entry requirements?
+How do I apply?
+What about part-time/foreign students?
+What about the costs and financial support?
+What are the prerequisites for individual Postgraduate modules?
+One-year structured MSc in ML and AI
+Where can I find more information?
+What are the entry requirements?
+Admission to our programme is based on selection criteria, which includes your academic performance as well as how well your background aligns with the background required for the programme. Capacity is limited and admission is very competitive, so the minimum requirements listed below does not guarantee admission:
+
+To be admitted for Honours in Computer Science, you
+need a degree that covers our Computer Science curriculum
+must have obtained an average of at least 65% for your Computer Science modules in your final year. The yearbook lists the minimum average required to apply as 60%, but due to the number of applications we receive for the BSc Honours in CS programme, you typically require at least 65%.
+must have a strong mathematical foundation, covering both Algebra and Calculus
+must have at least 32 credits at second-year or third-year level in quantitative modules, which include any module under the following subjects: Mathematics, Applied Mathematics, Physics, Mathematical Statistics, Bioinformatics, and Operations Research and the modules: GIT242 Digital Photogrammetry and GIT341 Spatial Modeling (note their prerequisites)
+must have practical programming experience; our Honours degree has a strong focus on programming and it is imperative that you can program to successfully complete the Honours degree
+Note, that meeting the minimum requirements means that you will be considered for selection, but does not guarantee admission.
+
+To register for any individual postgraduate module you need either a degree in Computer Science or must have already fulfilled all the requirements to obtain one and to receive it at the next scheduled graduation ceremony. Furthermore, the same mathematics, programming, and Computer Science background as needed for an Honours in Computer Science is required.
+The entry requirements for a Masters in Computer Science is a degree in Computer Science and an Honours degree
+The entry requirements for a Doctoral in Computer Science is a thesis-based Masters degree and a degree that covers the required Computer Science background.
+How do I apply?
+The important steps are:
+
+This step is only for prospective Masters and Doctoral students. You need the agreement of a staff member that will supervise your Masters/Doctoral thesis. Browse through our Research pages and read more about the kind of work we do. You can also look at our staff’s publications to get an idea of the kind of topics they are interested in. If you have found an area of our research that interests you, contact the responsible staff member to discuss potential topics. It is not essential to agree on a specific topic at this stage, but it is very important to obtain the staff member’s agreement to be your supervisor. If at all possible, make an appointment for a face-to-face meeting.
+
+This step is for all prospective Honours, Masters, and Doctoral students. Apply by completing the application forms and uploading all the required documentation. The links are available via several pages
+
+the Stellenbosch University website; under the Students menu, choose Prospective Postgraduate Students. The links are available under the Application to SU menu.
+the Science Faculty website; under the What can I study? drop-down menu, click on Postgraduate Programmes. The links are available on this page as well as under the Application to SU drop-down menu.
+the Postgraduate Studies website; the links are available on this page as well as under the Application to SU drop-down menu.
+The closing dates are: * for Honours applications: the end of October, but please check the Science Faculty site for the specific date. * for Masters and Doctoral applications: the end of September, but please check the Science Faculty site for the specific date.
+
+What about part-time/foreign students?
+The university allows students to enter as part-time students. The degree then extends over more years; the honours degree can be extended to a maximum of two years, which must be consecutive. A part-time Masters degree extends over three to four years. Generally speaking, this is a much harder alternative and requires self-discipline and dedication.
+
+Honours students should take note of the following: * The project has to be completed within either the first or the second year * You have to complete 6 semester-modules in total, but you can choose which ones to complete in which year * All of our modules are presented during working hours, and there is no option at the moment to attend lectures after-hours. If you have a full-time job, you will have to arrange with your employer to attend lectures.
+
+We also welcome applications from foreign students. In addition to the application steps mentioned above, you should also contact the university’s Postgraduate Office for administrative details about studying at Stellenbosch. Stellenbosch University has many partnership agreements with foreign universities, making it easy to arrange student exchanges. Our 16 credit modules are equivalent to 8 ECTS credits, and all of the modules are presented in English.
+
+What about the costs and financial support?
+Computer Science does not offer any direct support for students, but the university as a whole does, and of course there are many external bursaries available. The university’s portal for prospective students is a good source of information about such bursaries and up-to-date details about tuition fees. (International students should also have a look at the “Student fees and funding » Funding” section of the Postgraduate Office website.)
+
+Most of our undergraduate modules require teaching assistants and we expect students who have completed them to get involved with at least one such module. While it will not provide enough income to support your studies, these positions can provide some supplemental income. But more than this: becoming a teaching assistant is not only a wonderful way to help the next generation of Computer Science students with their studies, but also a great opportunity to consolidate your own knowledge!
+
+Some supervisors also have research funds available to support Masters or Doctoral students, but once again it may not necessarily provide enough income to cover all your expenses. Note that you cannot rely on this and must talk directly to the supervisor about this option.
+
+What are the prerequisites for individual Postgraduate modules?
+All honours modules presented by Computer Science require: * the four core third-year Computer Science modules, * Mathematics and Probability Theory & Statistics (Applied Mathematics) up to first year, and * preferably at least one of Mathematics or Applied Mathematics up to second year.
+
+Digital Image Processing requires: * a working knowledge of Fourier Analysis; this is covered in Applied Maths 364.
+
+Computer vision requires: * linear algebra; this is covered in Applied Mathematics 214 and Mathematics 214.
+
+One-year structured MSc in ML and AI
+For information about and the application procedure for the structured MSc in Machine Learning and Artificial Intelligence, see mlai.sun.ac.za.
+
+Where can I find more information?
+If you have specific questions, please feel free to contact our post-graduate coordinator by sending an email to postgrad@cs.sun.ac.za.
+
+
+
+
+
+
+
+
+
+
+Honours in Computer Science
+Collage of student faces
+The Honours degree is a one-year full-time postgraduate programme that usually follows after the three-year BSc or BCom degree. Over the last forty-five years more than 600 talented students have passed through our programme. It is excellent preparation for pursuing either an MSc degree or a career in industry. This is due in part to the composition of the programme: a mix of core Computer Science theory courses and up-to-date application courses.
+
+The Honours degree is challenging and hard work and students are required to manage their own time and work more independently than during their undergraduate studies, especially on their year-project. However, we pride ourselves on the fact that our graduates are highly sought after. The degree can have a significant impact on your salary and many companies insist on a four-year degree. Further information, such as application procedures and a FAQ, is available on our page for Prospective postgraduate students.
+
+Curriculum
+The Honours curriculum has been designed for full-time postgraduate students. Students who would like to study part-time can enroll for a maximum of two years, but note that class attendance is compulsory, because classes often include discussions on known solutions, cutting edge research, or open problems in the field studied. Students should complete an honours project and six elective modules.
+
+The honours project is worth 32 credits. The honours project is a critical part of the honours degree and is a large software construction or research problem on which the student works independently, under the supervision of a staff member. The project does not follow undergraduate semesters; it starts once the project has been allocated and ends with the final demo and presentation sessions at the end of the year. There are a few deadlines throughout the year, but ultimately students need to manage their own time.
+
+The elective modules are each worth 16 credits and you must register for six modules. The modules are presented, either as blocks, or over a period of 15 weeks, with an additional examination week at the end. The list of all postgraduate modules presented in a specific year is finalised at the start of each year. Students may take at most two postgraduate modules from Mathematics or Applied Mathematics with permission. However, the following two modules from Applied Mathematics do not require approval: Digital Image Processing and Computer Vision. All other external modules are subject to approval by the divisions involved.
+
+You can choose a combination of courses that focusses more on topics in a specific field such as Machine Learning, Data Science, or Software Engineering, or that covers a broader range of topics, to prepare for a variety of careers as software developer. At the start of your postgraduate studies you will be able to talk to staff members about the different options, so that you can make an informed decision.
+
+Class of 2026
+FAQ
+Modules available for 2026: The modules that are planned to be presented in 2026 are listed on the PG modules page. We recommend that you wait for orientation to choose your modules, but if you must register before orientation for some reason (e.g., to obtain access to campus facilities), choose a preliminary list of three modules per semester and then go through the change module process after orientation.
+Projects available for 2026: The list of projects available for 2026 will be finalised on 2 February 2026.
+Final Accept pending: If you have been provisionally accepted, but not yet finally accepted, please send an email to gfortuin@sun.ac.za to confirm that you have graduated (the degree certificate is enough for internal students, a transcript is required for external students).
+Demi: The available demi positions will be advertised at orientation on 2 Feb, so if you do not have a demi position yet, then we’ll sort it out after orientation.
+Important Dates
+2 Feb at 10:00: Hons Orientation (Room K303, Knowledge Cenre, Engineering)
+6 Feb: Deadline: Project choices
+9 Feb: First semester lectures start
+Class schedules and general info
+Semester class timetable for 2026: venues TBC
+Semester class timetable for 2026: venues TBC
+
+Honours 797 overview
+Honours projects for 2026
+
+Library: Computer Science catalogue
+Plagiarism declaration forms
+Plagiarism form for written work
+Plagiarism form for code submissions
+Course frameworks
+Honours 797 programme framework
+
+
+
+
+
+
+
+
+Masters in Computer Science
+Our Masters degree is a two-year programme based on thesis work. The goal is to teach students how to evaluate and conduct world-class research, and become a master in their field! While the work is not required to be original cutting-edge research, it often is. The reading, writing, and critical thinking skills acquired during the Masters degree are also much sought-after in industry, and most of our Masters graduates who do not carry on with a Doctoral degree, go on to have successful careers in the local industry and also abroad.
+
+You need the agreement of a staff member that will supervise your Masters thesis. Browse through our Research pages and read more about the kind of work we do. You can also look at our staff’s publications to get an idea of the kind of topics they are interested in. If you have found an area of our research that interests you, contact the responsible staff member to discuss potential topics. It is not essential to agree on a specific topic before you apply, but it is very important to obtain the staff member’s agreement to be your supervisor. If at all possible, make an appointment for a face-to-face meeting.
+
+The admission requirements for a Masters in Computer Science is an Honours degree in Computer Science or an approved equivalent qualification. Additional background or supplementary studies may be required, as determined by your supervisor(s) on a case-by-case basis. Further information, including application procedures and a FAQ, is available on our page for Prospective postgrauate students
+
+
+
+
+
+
+
+Doctorate in Computer Science
+Our PhD in Computer Science is a three-year degree based solely on dissertation work. The goal is to conduct original, cutting-edge research in a particular, specialised field of Computer Science. The student must demonstrate his/her ability to propose, plan, conduct, and publish a research project.
+
+You need the agreement of a staff member that will supervise your PhD thesis. Browse through our Research pages and read more about the kind of work we do. You can also look at our staff’s publications to get an idea of the kind of topics they are interested in. If you have found an area of our research that interests you, contact the responsible staff member to discuss potential topics. It is not essential to agree on a specific topic before you apply, but it is very important to obtain the staff member’s agreement to be your supervisor. If at all possible, make an appointment for a face-to-face meeting.
+
+The admission requirements for a PhD in Computer Science is a Masters degree in Computer Science or an approved equivalent qualification. Additional background or supplementary studies may be required, as determined by your supervisor(s) on a case-by-case basis. Further information, including application procedures and a FAQ, is available on our page for Prospective postgrauate students

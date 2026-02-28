@@ -15,7 +15,6 @@ export function Logo({
   return (
     <Image
       className={cn(className)}
-      style={{ width, height }}
       alt={"Stellenbosch University Logo"}
       width={width}
       height={height}

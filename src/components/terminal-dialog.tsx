@@ -140,20 +140,87 @@ const cafes = [
   "Pro tip: Deluxe has the fastest WiFi 🚀",
 ];
 
-const neofetch = [
-  "       ████████████           student@stellenbosch",
-  "     ██░░░░░░░░░░░░██         ─────────────────────",
-  "   ██░░░░░░░░░░░░░░░░██       OS: macOS Sequoia 15.3",
-  "  ██░░░░░░░░░░░░░░░░░░██      Host: MacBook Pro (M4)",
-  " ██░░░░░░████░░░░░░░░░░██     Kernel: Darwin 24.3.0",
-  " ██░░░░██    ██░░░░░░░░██     Shell: zsh 5.9",
-  " ██░░░░██    ██░░░░░░░░██     Terminal: SU-CS-Term",
-  " ██░░░░░░████░░░░░░░░░░██     IDE: VS Code",
-  "  ██░░░░░░░░░░░░░░░░░░██      Languages: Python, C++, JS",
-  "   ██░░░░░░░░░░░░░░░░██       University: Stellenbosch 🎓",
-  "     ██░░░░░░░░░░░░██         Dept: Computer Science",
-  "       ████████████           GPA: █████████░ 90%",
-];
+function buildNeofetch(): string[] {
+  const ua = navigator.userAgent;
+
+  // OS detection
+  let os = "Unknown OS";
+  if (/Mac OS X/.test(ua)) {
+    const match = ua.match(/Mac OS X (\d[\d_]+)/);
+    const version = match ? match[1].replace(/_/g, ".") : "";
+    const major = parseInt(version.split(".")[0]);
+    const names: Record<number, string> = {
+      15: "Sequoia",
+      14: "Sonoma",
+      13: "Ventura",
+      12: "Monterey",
+      11: "Big Sur",
+    };
+    os = `macOS ${names[major] ?? ""} ${version}`.trim();
+  } else if (/Windows NT/.test(ua)) {
+    const match = ua.match(/Windows NT ([\d.]+)/);
+    const ntMap: Record<string, string> = {
+      "10.0": "Windows 10/11",
+      "6.3": "Windows 8.1",
+      "6.2": "Windows 8",
+      "6.1": "Windows 7",
+    };
+    os = ntMap[match?.[1] ?? ""] ?? `Windows NT ${match?.[1] ?? ""}`;
+  } else if (/Android/.test(ua)) {
+    const match = ua.match(/Android ([\d.]+)/);
+    os = `Android ${match?.[1] ?? ""}`;
+  } else if (/iPhone|iPad/.test(ua)) {
+    const match = ua.match(/OS ([\d_]+)/);
+    os = `iOS ${match?.[1]?.replace(/_/g, ".") ?? ""}`;
+  } else if (/Linux/.test(ua)) {
+    os = "Linux";
+  }
+
+  // Browser detection
+  let browser = "Unknown";
+  if (/Firefox\/([\d.]+)/.test(ua)) {
+    browser = `Firefox ${ua.match(/Firefox\/([\d.]+)/)?.[1] ?? ""}`;
+  } else if (/Edg\/([\d.]+)/.test(ua)) {
+    browser = `Edge ${ua.match(/Edg\/([\d.]+)/)?.[1]?.split(".")[0] ?? ""}`;
+  } else if (/OPR\/([\d.]+)/.test(ua)) {
+    browser = `Opera ${ua.match(/OPR\/([\d.]+)/)?.[1]?.split(".")[0] ?? ""}`;
+  } else if (/Chrome\/([\d.]+)/.test(ua)) {
+    browser = `Chrome ${ua.match(/Chrome\/([\d.]+)/)?.[1]?.split(".")[0] ?? ""}`;
+  } else if (/Safari\/([\d.]+)/.test(ua)) {
+    browser = `Safari ${ua.match(/Version\/([\d.]+)/)?.[1]?.split(".")[0] ?? ""}`;
+  }
+
+  // Resolution & display
+  const res = `${window.screen.width}x${window.screen.height}`;
+  const dpr = window.devicePixelRatio ? `@${window.devicePixelRatio}x` : "";
+
+  // Hardware
+  const cores = navigator.hardwareConcurrency
+    ? `${navigator.hardwareConcurrency} logical cores`
+    : "Unknown";
+  const mem = (navigator as Navigator & { deviceMemory?: number }).deviceMemory
+    ? `${(navigator as Navigator & { deviceMemory?: number }).deviceMemory} GB`
+    : "Unknown";
+
+  // Locale
+  const tz = Intl.DateTimeFormat().resolvedOptions().timeZone;
+  const lang = navigator.language;
+
+  return [
+    "       ████████████           student@stellenbosch",
+    "     ██░░░░░░░░░░░░██         ─────────────────────",
+    `   ██░░░░░░░░░░░░░░░░██       OS: ${os}`,
+    `  ██░░░░░░░░░░░░░░░░░░██      Browser: ${browser}`,
+    ` ██░░░░░░████░░░░░░░░░░██     Resolution: ${res} ${dpr}`.trimEnd(),
+    ` ██░░░░██    ██░░░░░░░░██     CPU Cores: ${cores}`,
+    ` ██░░░░██    ██░░░░░░░░██     Memory: ${mem}`,
+    ` ██░░░░░░████░░░░░░░░░░██     Timezone: ${tz}`,
+    `  ██░░░░░░░░░░░░░░░░░░██      Language: ${lang}`,
+    `   ██░░░░░░░░░░░░░░░░██       Terminal: SU-CS-Term`,
+    `     ██░░░░░░░░░░░░██         University: Stellenbosch 🎓`,
+    `       ████████████           Dept: Computer Science`,
+  ];
+}
 
 /**
  * Animated macOS-style terminal dialog with simulated CS student commands.
@@ -327,7 +394,7 @@ export function TerminalDialog({ open, onOpenChange }: TerminalDialogProps) {
           break;
 
         case "neofetch":
-          await typeOutput(neofetch, "info");
+          await typeOutput(buildNeofetch(), "info");
           break;
 
         case "links":

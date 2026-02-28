@@ -1,0 +1,290 @@
+Undergraduate programme and modules
+BSc Computer Science (CS) Programme
+18139	Focus General Computer Science		
+The General Computer Science focal area combines a Computer Science major with a choice of Science modules. Please consult Section 4.4.1 of the Science calendar for a list of the compulsory and elective modules for this focal area.
+
+18139	Focus Computer Systems		
+The Computer Systems focal area combines a Computer Science major with a selection of Electric and Electronic Engineering modules. Please consult Section 4.4.2 of the Science calendar for a list of the compulsory and elective modules for this focal area.
+
+18139	Focus Data Science		
+The Data Science focal area combines a Computer Science major with Statistics and Data Science modules. Please consult Section 4.4.3 of the Science calendar for a list of the compulsory and elective modules for this focal area.
+
+18139	Focus Computer Science with Genetics as second major		
+This focal area combines Computer Science with Genetics as second major. Please consult Section 4.4.4 of the Science calendar for a list of the compulsory and elective modules for this focal area.
+
+18139	Focus BSc Computer Science with Geographical Information Technology as second major		
+Computer Science with Geographical Information Technology as second major. Please consult Section 4.4.5 of the Science calendar for a list of the compulsory and elective modules for this focal area.
+
+BDatSci Programme
+18139	Focus Computer Science (CS)		
+BDatSci with focal area Computer Science combines Computer Science with Statistics and Data Science modules. BDatSci is a four-year degree, which consists of a set of core compulsory modules on all year levels. Please consult Section 4.6.1 of the Science calendar for a list of the modules for this focal area.
+
+First year CS modules
+18139-113	Computer Science for Actuarial Studies	(CS113)	(1st Semester)
+Introduction to computer programming from a financial perspective. Basic financial problems are rephrased in terms of analytical problem solving. Standard imperative programming constructs including types of variables, assignments, if-then-else and loops, and recursive approaches are covered as needed in financial programming. Static data structures (in particular arrays) and declarative programming models such as spreadsheets are also covered.
+
+18139-114	Introductory Computer Science 1	(CS114)	(1st Semester)
+Introduction to basic computer programming; formulation and solution of problems by means of computer programming; data representation and variable types (including character strings, integers, floating point numbers and Boolean variables); assignment statements; conditional execution and iteration; static data structures (arrays and records); input and output (including graphics and sound); modular programming; recursion; testing and debugging; introduction to object-oriented programming (including abstraction, encapsulation and use of existing object implementations).
+
+18139-144	Introductory Computer Science 2	(CS144)	(2nd Semester)
+Further formulation and solution of problems by means of computer programming; introductory data structures and algorithms in an object-oriented set-up; key concepts in object orientation: inheritance and polymorphism; design patterns as abstractions for the creation of reusable object-oriented designs; searching and sorting algorithms; complexity theory for the analysis of algorithms; fundamental methods in the design of algorithms; dynamic data structures; regular expressions and finite automata.
+
+Second year CS modules
+59536-214	Object-Oriented Programming	(CSE214)	(1st Semester)
+Formulation and solution of problems by means of computer programming in an object-oriented set-up; principles of testing and debugging; key concepts in object orientation: abstraction, encapsulation, inheritance and polymorphism; design patterns as abstractions for the creation of reusable object oriented designs; searching and sorting algorithms; complexity theory for the analysis of algorithms; fundamental methods in the design of algorithms; dynamic data structures.
+
+18139-214	Data Structures and Algorithms	(CS214)	(1st Semester)
+The classical data structures and algorithms in an object-oriented set-up. Advanced techniques for the analysis of algorithms.
+
+18139-244	Computer Architecture	(CS244)	(2nd Semester)
+Basic computer architecture. Programming in machine language and assembly language. Assemblers, binders and loaders. Basic concepts of operating systems; memory management, process management and file systems.
+
+12263-272	Scientific Computing	(SC272)	(1st and 2nd Semester)
+Introduction to Linux; Linux commands; Linux file systems; editors; process control. Introduction to programming in Python: variables, types, control structures, loop structures, functions, files and directories, strings, unit testing, basic data processing. Introduction to numerical computing using Numpy; plotting and curve fitting.
+
+Third year CS modules
+18139-313	Computer Networks	(CS313)	(1st Semester)
+Introduction to networks in general and the internet in particular. Architecture and protocols. Allocation of resources and congestion control. Network security. Applications.
+
+18139-314	Concurrency	(CS314)	(1st Semester)
+Introduction to programming techniques and principles of concurrent systems, from operating systems to application programs. This includes communication, synchronisation, scheduling and load balancing. Several parallel and distributed architectures will be covered.
+
+18139-315	Machine Learning	(CS315)	(1st Semester)
+Unless you have completed Computer Science 315 or an equivalent, the following Computer Science module is also compulsory. Dimension reduction techniques; machine-learning techniques based on maximum-likelihood, maximum-posterior and expectation-maximization estimates; modelling using logistic regression, Gaussian mixtures and hidden Markov models.
+
+18139-343	Databases and Web Centric Programming	(CS343)	(2nd Semester)
+Introduction to relational databases. Mapping relational model onto object model. Implementing a database application in the context of the web. Web services. Server-side scalability. Virtualisation. Cloud Computing.
+
+18139-344	Program Design	(CS344)	(2nd Semester)
+Program specifications as guidelines for program design; reusable frameworks for program design; testability of program designs; development of a medium-sized system to illustrate the practical application of the principles of program design.
+
+18139-345	Computability and Automata Theory	(CS345)	(2nd Semester)
+Introduction to automata theory and formal languages, computability and complexity. Regular languages, context-free languages and grammars. Turing machines. P vs NP problem and NP completeness.
+
+12263-372	Scientific Computing	(SC372)	(1st and 2nd Semester)
+Scientific-document construction and presentations in LaTeX. Regular expressions. Important algorithms including sorting, searching and random-number generation. Advanced computing in Python with Numpy and Scipy; applications including pattern searching, processing of large empirical data sets and constructing data-processing pipelines. Other scientific tools in Linux.
+
+Fourth year CS modules for BDatSci
+18139-411	Computer Networks (313*)	(CS411)	(1st Semester)
+Introduction to networks in general and the internet in particular. Architecture and protocols. Allocation of resources and congestion control. Network security. Network applications. Network research technique.
+
+59536-414	Machine Learning	(E414)	(1st Semester)
+Dimension reduction techniques; machine-learning techniques based on maximum-likelihood, maximum-posterior and expectation-maximization estimates; modelling using logistic regression, Gaussian mixtures and hidden Markov models.
+
+18139-412	Advanced Algorithms (712*)	(CS412)	(1st Semester)
+This module continues from Computer Science 214 and covers advanced topics in the design and analysis of algorithms and associated data structure. Topics include a selection from algorithm design techniques, linear programming, approximation algorithms, randomised algorithms, probabilistic algorithms, parallel algorithms, number-theoretic algorithms, cryptanalysis, computational geometry, computational biology, network algorithms, and complexity theory.
+
+18139-441	Machine Learning (741*)	(CS441)	(2nd Semester)
+This module is an introduction to selected topics in machine learning.
+
+18139-471	Data Science Research Assignment	(CS471)	(2nd Semester)
+The research assignment provides students with a comprehensive learning experience that integrates knowledge from previous courses. The student will integrate knowledge and experiences gained from all previous modules and apply this to a data-rich research topic. Students will have the opportunity to synthesise what they have learned and apply that knowledge to new, complex situations. Students should engage in the entire process of solving a real-world data science problem, from collecting and processing actual data, to applying suitable and appropriate analytic methods to the problem, and communicating the results in a clear and comprehensive way.
+
+18139-491	Space Science Algorithms (791*)	(CS491)	(2nd Semester)
+Algorithms and techniques in Space Science, with applications.
+
+18139-495	Functional Programming (795*)	(CS495)	(Not presented Semester)
+This module gives an introduction to the functional programming paradigm
+
+
+
+
+
+
+
+Computer Science Programmes
+BSc Computer Science is the primary option for students who want to pursue a career in software development. This degree is an international qualification that enables you to find work at national and international companies. With the appropriate electives it can also lead to an honours programme in Computer Science (see our information for prospective PG students for more information on the appropriate electives) or to an honours programme in another subject, such as Applied Mathematics, Economics, General Linguistics, Mathematical Statistics, Mathematics, Operations Research, and Statistics.
+
+Many disciplines now require some knowledge of how to write computer code and in many programmes students learn to use particular software, such as MS Excel, Matlab, or R for data analysis.
+
+In Computer Science the focus is on software development. This page lists programmes at Stellenbosch that include a full Computer Science curriculum, as well as most programmes that include some Computer Science modules. The information is given for general guidance, but may be out of date; it is important to confirm details in the University calendar (yearbook). If you consider applying then also read our information for prospective students.
+
+Quick aside:
+When you come to university, you must choose a degree e.g., BSc
+a degree variant, called a programme e.g., BSc Computer Science
+and a programme variant, called a focal area. e.g., BSc Computer Science: General Computer Science
+ 
+
+Programmes that include a full Computer Science curriculum
+The following programmes include the option to take the full core curriculum through to the third year:
+
+Programme	Focal areas with a full CS curriculum
+BSc Computer Science1:	General Computer Science
+Computer Systems
+Data Science
+BDatSci:2:	Computer Science
+BSc Mathematical Sciences:	Applied Mathematics
+Mathematics
+Abstract Mathematics
+Operations Research
+BCom Mathematical Sciences:
+Data Science
+BCom Economic Sciences	
+BSc GeoInformatics	
+All the BSc Computer Science focal areas contain the full Computer Science core curriculum and with at least 32 credits of quantitative modules at second- or third-year level can lead to an honours programme in Computer Science (see our information for prospective PG students for a list of quantitative subjects and/or modules). The General Computer Science focal area further allows students to register for additional Computer Science electives on third-year level.
+
+BDatSci is an interfaculty four-year programme and students register for BDatSci in the faculty that offers their chosen focal area. The Computer Science focal area contains the full Computer Science curriculum; the other focal areas contain some Computer Science modules, but not all.
+
+Programmes that include some, but not all Computer Science modules
+The following programmes and focal areas include some, but not all Computer Science modules.
+
+Programme	Focal areas with some CS modules
+BDatSci	Applied Mathematics
+Statistical Physics
+Analytics and Optimisation
+Behavioural Economics
+Statistical Learning
+BSc:	Biomedical Mathematical Sciences
+Biomathematics
+Bioinformatics and Computational Biology
+BSc Physics:	Laser Physics (Physical)
+Nuclear Physics
+Radiation and Health Physics
+Theoretical Physics
+BEng Electrical and Electronic:	Data Engineering
+Informatics
+Robotics
+BSc Chemistry:	Chemistry and Polymer Science
+Materials Technology
+Note that, just because a programme allows you to enrol for first-year Computer Science modules, does not mean that you can necessarily also enrol for second- and third-year Computer Science modules. The focal area may not include all the modules through to third-year or there may be timetable clashes. It is important to read the university documentation very carefully.
+
+Computer Science Curriculum
+The Computer Science core curriculum includes Computer Science: 114, 144, 214, 244, 343, 344, and at least two of 314/313/315.
+
+First Semester	Second Semester
+First year
+114 Introductory Computer Science 1
+
+144 Introductory Computer Science 2
+Second year
+214 Data structures and Algorithms
+
+244 Computer Architecture
+Third year
+314 Concurrency
+313 Computer Networks
+315 Machine Learning
+
+344 Program Design (Software Engineering)
+343 Databases and Web Programming
+345 Computability and Automata
+
+
+
+
+
+
+
+
+
+
+
+
+
+Come study Computer Science at Stellenbosch!
+What is Computer Science
+Why Computer Science?
+Why Stellenbosch?
+What is the course all about?
+What are the admission requirements for Computer Science?
+What can I do with Computer Science after university?
+How do I choose a degree / programme that suits me?
+How do I apply?
+Is Computer Science the same as Computer Literacy, or Information Science or Scientific Computing?
+Should I study Computer Science or Electronic Engineering?
+Where can I find more information?
+What is Computer Science
+As explained in our information videos, available on the University’s open-day pages,
+Computer science is the theory and practice of algorithms. It is a wonderful combination of art (invention and design), science (analysis and experimentation), and engineering to solve problems with computers. Our students learn to program, develop, and manage large software systems in a team, but – most importantly – to frame problems in terms of computational processes.
+
+Why Computer Science?
+The Association of Computing Machinery is an international organization for computer scientists. The ACM has developed the following list of top ten reasons to study computer science which we quote from their web site.
+
+Computing is part of everything we do!
+Expertise in computing enables you to solve complex, challenging problems.
+Computing enables you to make a positive difference in the world.
+Computing offers many types of lucrative careers.
+Computing jobs are here to stay, regardless of where you are located.
+Expertise in computing helps even if your primary career is something else.
+Computing offers great opportunities for true creativity and innovativeness.
+Computing has space for both collaborative work and individual effort.
+Computing is an essential part of well-rounded academic preparation.
+Future opportunities in computing are without boundaries.
+We admit that we are biased, but we can only add one more “fact”: Computer Science is FUN!
+
+Why Stellenbosch?
+Two reasons.
+
+Academic excellence: Stellenbosch University is amongst South Africa’s leading tertiary institutions based on research output, student pass rates and rated scientists, and is recognised internationally as an academic institution of excellence.
+
+Community: Studying in Stellenbosch is more than just an education; it’s a lifestyle. The campus is fully integrated in the beautiful and historic town. Great food and wine, weekend markets, stunning nature, a vibrant music and culture scene, and a host of adventure activities all contribute to a well-balanced student experience as a Matie.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<>
+What is the course all about?
+Computer Science deals with computer systems, both the hardware and the software. But this doesn’t mean we sit around writing programs and building PC’s all day! We take a scientific approach to the subject, emphasizing the principles of computer systems, instead of the nitty-gritty.
+
+In the first year, the focus is on learning to program. At the moment we are using the Java language to teach programming, but this is not critical: we expect our students to know many languages by the time they leave university. Having said this, Java is a very important language. It is simple enough to master adequately in one year and it provides an excellent introduction to other languages like C++ and C (which we use in later courses).
+
+The second year looks at data structures and algorithms. A good knowledge of this important topic is what sets the expert apart from the beginner. In the second half of the year the focus is on computer architecture and low-level programming.
+
+The third year contains four core modules: concurrent programming, databases and web-centric computing, computer networks, and software engineering. There are also extra elective modules in Machine Learning (how do we get computer systems to learn from real-world data?), Automata theory, and Computer Vision (which also covers graphics). At the end of the year, students are able to answer questions like:
+
+How does Windows/Linux/Mac OSX work inside?
+How do we use multiple computers/processors to perform large computations efficiently?
+How do we design large databases for use over the internet?
+How do computers communicate over WiFi or the Internet?
+How do we design and build BIG pieces of software reliably?
+Along with all the theory, our students work hard on their practical skills. For instance, in previous versions of some of these modules the students constructed an Internet chatroom system, a traffic simulator, and a shopping app for smartphones.
+
+Some universities offer courses certified by foreign organizations to adhere to certain standards. At Stellenbosch we have long prided ourselves on our teaching. We follow the international ACM curriculum recommendations as closely as possible, but we do not believe at this point that accreditation by these organizations is a sensible way to spend our students’ tuition fees. Our third year and postgraduate courses are moderated annually by experts from other universities and some of these courses undergo additional moderation by ECSA.
+
+We use both English and Afrikaans in our lectures. However, we have a pragmatic attitude in this matter. We love Afrikaans, but we also try to accommodate all of our students, including our English-speaking and foreign undergraduates. In our experience, language has never been an issue in our teaching, and we do not believe that it should ever stand in the way of education. Many of our students speak only English and cope very well in our courses.
+
+What are the admission requirements for Computer Science?
+The minimum admission requirements for degree programmes at Stellenbosch University are listed in the calendar (yearbook) for the home faculty of each degree programme, e.g., the minimum admission requirements for BSc Computer Science are listed in the Science calendar (yearbook).
+
+Note that Computer Science is popular and meeting the minimum requirements does not guarantee admission; we receive a very high number of applications and space is limited. For more information on the application, selection, and admission of undergraduate programmes in the Faculty of Science, please refer to the calendar (yearbook).
+
+A list of Computer Science programmes as well as a few other programs that include some Computer Science modules, is available on the following page: Computer Science programmes
+
+What can I do with Computer Science after university?
+We are flooded with requests for qualified students every week. (You can see some of them on our jobs page.) Around 2000 there was a dip in the job market, but since then it has recovered to unprecedented levels and now international experts predict a serious shortage of computer scientists in the future. This is good news for anybody with the right qualification, looking for a job: there is a lot of choice.
+
+Some of our students start out as programmers, but most end up as software designers and engineers. Apart from the many local companies that employ our students, there are also many opportunities overseas. South African computer scientists are generally in demand, because they are known as highly qualified and as hard workers.
+
+Usually there is a high turnover in the software industry. People move frequently from one company to another. In other words, they are exposed to many different kinds of environments.
+
+How do I choose a degree / programme that suits me?
+Different programmes that include Computer Science modules are listed on the programmes page.
+
+How do I apply?
+You can apply online and find tons of relevant information on www.maties.com.
+
+Is Computer Science the same as Computer Literacy, or Information Science or Scientific Computing?
+No, not at all. Computer Literacy is a compulsory module in some programmes and
+teach students how to use basic tools (such as word processors, spreadsheets, presentation tools) as well as more advanced scientific tools (such as mathematical modellers and statistical analysis packages).
+
+Scientific computing is a compulsory module for all Science students who do not have Computer Science and teach students how to use tools such as LaTeX (a typesetting system) for the production of technical and scientific documentation and Python (a programming language) for basic scientific and numerical computing.
+
+The Information Science department’s academic offering and research concern the dynamic interplay between Information Technology and the organisational or societal contexts in which it is applied. More information is available on their website.
+
+Should I study Computer Science or Electronic Engineering?
+This is a frequently asked question. Both Computer Science and Electronic Engineering graduates are in high demand and both degrees are excellent choices. The key difference is that the focus of Electronic Engineering is on both hardware (i.e. the design of computers and other electronic devices) and software for specific engineering applications and is a good choice if your main interest is Engineering, but you also like programming. Computer Science has a more specialised and deeper focus on software (algorithms and software development) and is a good choice if your main interest is the development of sofware solutions. Students in Electronic Engineering take some but not all of the modules in Computer Science. Both degrees have a strong mathematical component. If you are struggling to choose, we encourage you to make appointments with staff at both the departments of Computer Science and Electronic Engineering to discuss this important decision.
+
+Where can I find more information?
+A good place to start is to look around this website. For answers to specific questions, please feel free to send an email to head@cs.sun.ac.za.
