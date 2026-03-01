@@ -1,24 +1,16 @@
-"use client";
-
 import { ContentContainer } from "@/components/content-container";
-import { Footer } from "@/components/footer";
 import { GlassPanel } from "@/components/glass-panel";
 import { BreadcrumbNav } from "@/components/programmes/breadcrumb-nav";
 import { ImagePlaceholder } from "@/components/programmes/image-placeholder";
 import { PageHero } from "@/components/programmes/page-hero";
 import { Link } from "@/i18n/navigation";
-import {
-  ArrowRight,
-  CheckCircle2,
-  GraduationCap,
-  MapPin,
-  Sparkles,
-} from "lucide-react";
-import { useTranslations } from "next-intl";
+import { ArrowRight, CheckCircle2, GraduationCap, MapPin } from "lucide-react";
+import { getTranslations } from "next-intl/server";
+import Image from "next/image";
 
-export function UgProspectivePage() {
-  const t = useTranslations("UgProspective");
-  const bt = useTranslations("Breadcrumb");
+export async function UgProspectivePage() {
+  const t = await getTranslations("UgProspective");
+  const bt = await getTranslations("Breadcrumb");
 
   const reasons: string[] = t.raw("whyCSReasons");
 
@@ -50,14 +42,20 @@ export function UgProspectivePage() {
               {t("whatIsCSText")}
             </p>
           </div>
-          <ImagePlaceholder alt={t("imageAlt")} aspectRatio="video" />
+          <ImagePlaceholder aspectRatio="video">
+            <Image
+              src={"/assets/images/scenes/students.jpg"}
+              className="object-cover"
+              fill
+              alt={t("imageAlt")}
+            />
+          </ImagePlaceholder>
         </div>
 
         {/* Why CS */}
         <section className="mb-16">
           <h2 className="text-2xl font-bold text-white mb-6">
             <span className="inline-flex items-center gap-2">
-              <Sparkles className="h-5 w-5 text-white/50" />
               {t("whyCSTitle")}
             </span>
           </h2>
@@ -115,11 +113,14 @@ export function UgProspectivePage() {
         </section>
 
         {/* Image break */}
-        <ImagePlaceholder
-          alt={t("imageAlt")}
-          className="mb-16"
-          aspectRatio="wide"
-        />
+        <ImagePlaceholder className="mb-16" aspectRatio="wide">
+          <Image
+            src={"/assets/images/scenes/stadium.webp"}
+            className="object-cover"
+            fill
+            alt={t("imageAlt")}
+          />
+        </ImagePlaceholder>
 
         {/* Admissions */}
         <section className="mb-16">
@@ -130,7 +131,7 @@ export function UgProspectivePage() {
             {t("admissionsText")}
           </p>
           <a
-            href="https://www.sun.ac.za/english/Pages/default.aspx"
+            href={"https://www.su.ac.za/apply/undergrad"}
             target="_blank"
             rel="noopener noreferrer"
             className="inline-flex items-center gap-2 rounded-full bg-white/10 px-5 py-2.5 text-sm font-semibold text-white transition-colors hover:bg-white/20"
@@ -162,8 +163,6 @@ export function UgProspectivePage() {
           </GlassPanel>
         </section>
       </ContentContainer>
-
-      <Footer />
     </>
   );
 }

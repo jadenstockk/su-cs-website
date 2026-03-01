@@ -36,7 +36,12 @@ export function FeaturesSection({ className }: { className?: string }) {
   const t = useTranslations("Features");
 
   return (
-    <section id="about" className={cn("py-24 sm:py-32", className)}>
+    <section
+      className={cn(
+        "relative z-10 py-16 -mt-5 bg-background rounded-t-4xl",
+        className,
+      )}
+    >
       <ContentContainer>
         <SectionHeading
           title={t("title")}

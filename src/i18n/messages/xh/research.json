@@ -1,0 +1,55 @@
+{
+  "Research": {
+    "title": "Uphando",
+    "subtitle": "Jonga amaqela ophando kunye nemimandla ephambili kwiSebe le-Computer Science eYunivesithi yaseStellenbosch.",
+    "intro": "Isebe lethu likhaya lamaqela amaninzi ophando asebenzayo asusela kwi-computer science yetiyori, uyilo lwe-software, ukufunda koomatshini, kunye nonxibelelwano. Amalungu efakhalthi kunye nabafundi basebenzisana kwiingxaki eziphucula zombini ithiyori kunye nokuziqhelanisa nokubala.",
+    "currentMembers": "Amalungu angoku",
+    "automataTitle": "Ithiyori kunye noSetyenziso lwe-Automata kunye neeGrama",
+    "automataDesc1": "Sinomdla kwithiyori ye-nondeterministic finite automata (NFA), kwaye ngakumbi ubunzima bokuchaza be-symmetric difference NFA. Ngokubanzi, sikwajonga ukusetyenziswa kwe-automata kunye neegrama kwiingxaki ezahlukeneyo, ezifana nokuphuculwa kokubekwa kwemizobo nge-cellular automata, ukusetyenzwa kwemifanekiso nge-cellular automata, ukuveliswa komculo ngendlela yomqambi othile usebenzisa i-probabilistic automata, kunye nokusebenzisa i-probabilistic automata kwi-parse trees yesiNgesi ukulungisa ngokuzenzekelayo i-grammar yesiNgesi.",
+    "automataDesc2": "I-Automata kunye neegrama zineyona thiyori ityebileyo nephuhliswe kakuhle enokusetyenziswa, kodwa rhoqo ukuziqhelanisa kufuna ukuba ithiyori yandiswe ngeendlela ezintsha. Kumzekelo wokuphuculwa kokubekwa kwemizobo, i-cellular automata ene-cell clustering, oko kukuthi, i-cellular automata enotshintsho kwi-topology yommelwane ngokuhamba kwexesha, zachazwa kwaye zaboniswa ukuba zinegalelo elihle kwizicelo ezisebenzayo.",
+    "automataMembers": [
+      "Willem Bester",
+      "Walter Schulze",
+      "Brink van der Merwe",
+      "Steyn van Litsenborgh",
+      "Lynette van Zijl"
+    ],
+    "automataLink1": "Ithiyori kunye noSetyenziso lwe-Automata kunye neeGrama",
+    "automataLink2": "Iprojekthi yoHlaziyo lwe-Regular Expression Static",
+    "sevTitle": "Uyilo lweSoftware kunye nokuQinisekiswa",
+    "sevDesc": "Iqela loYilo lweSoftware kunye nokuQinisekiswa eYunivesithi yaseStellenbosch belibandakanyeka kuphuhliso lweekernel zenkqubo yokusebenza, iiprotokholi, kunye nezixhobo zokuqinisekisa ukusukela ngo-1990. Siphanda uphuhliso lwenkqubo yesoftware ethembekileyo kakhulu sisebenzisa indibaniselwano yokuqinisekiswa kweenkqubo ngoncedo lweekhompyutha, uvavanyo olucwangcisiweyo, kunye neendlela zokubhala ezikhuselayo.",
+    "sevMembers": [
+      "Andrew Collett",
+      "Bernd Fischer",
+      "Jaco Geldenhuys",
+      "Cornelia Inggs",
+      "Zhunaid Mohamed",
+      "Jan Taljaard",
+      "Phillip van Heerden",
+      "Willem Visser"
+    ],
+    "sevLink1": "COASTAL",
+    "sevLink2": "ESBMC",
+    "sevLink3": "CSeq",
+    "mlaiTitle": "Ufundolwazi loMatshini kunye nobuNgqondi bokwenziwa",
+    "mlaiDesc": "Eli qela lijonga phantse naliphi na icandelo lengxaki yokwenza izigqibo ngokubanzi, kubandakanywa ukwenza izigqibo ngokulandelelana phantsi kokungaqinisekanga. Iingxaki eziphambili esizijongayo ziquka ucwangciso, ukufunda koomatshini, kunye ne-algorithms zokukhangela. Indlela yethu isekwe kwithiyori yamathuba kunye nethiyori yomdlalo yolawulo lokungaqinisekanga kunye neenkqubo ezininzi. Sikwaphanda indibaniselwano yokufunda koomatshini kunye nedatha enkulu, ngakumbi idatha evela kwiisensors zokujonga umhlaba kunye ne-radio interferometers.",
+    "mlaiMembers": [
+      "Burger Becker",
+      "Marc Christoph",
+      "Dirko Coetsee",
+      "Trienko Grobler",
+      "Steve Kroon",
+      "Jordan Masakuna",
+      "Arnu Pretorius",
+      "Charl Steyl",
+      "Elan van Biljon"
+    ],
+    "telkomTitle": "Iziko leTelkom-Siemens leNgqokelela yeNgqokelela",
+    "telkomDesc": "IYunivesithi yaseStellenbosch yeSebe leTelkom-Siemens Centre of Excellence kwi-ATM kunye neBroadband Networks kunye noSetyenziso lwazo ijolise ekukhuthazeni uphando kunye nophuhliso kwitekhnoloji ye-broadband kunye noSetyenziso lwayo kunye nokuqeqesha abafundi be-postgraduate kunye neengcali kubuchule obufunekayo kweli candelo lonxibelelwano.",
+    "telkomMembers": [
+      "Jaco Geldenhuys",
+      "Anthony E Krzesinski",
+      "Willem Visser"
+    ]
+  }
+}

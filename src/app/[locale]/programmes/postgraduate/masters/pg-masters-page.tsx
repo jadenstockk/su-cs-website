@@ -1,18 +1,16 @@
-"use client";
-
 import { ContentContainer } from "@/components/content-container";
-import { Footer } from "@/components/footer";
 import { GlassPanel } from "@/components/glass-panel";
 import { BreadcrumbNav } from "@/components/programmes/breadcrumb-nav";
 import { ImagePlaceholder } from "@/components/programmes/image-placeholder";
 import { PageHero } from "@/components/programmes/page-hero";
 import { Link } from "@/i18n/navigation";
 import { ArrowRight, Briefcase, FileText, Search } from "lucide-react";
-import { useTranslations } from "next-intl";
+import { getTranslations } from "next-intl/server";
+import Image from "next/image";
 
-export function PgMastersPage() {
-  const t = useTranslations("PgMasters");
-  const bt = useTranslations("Breadcrumb");
+export async function PgMastersPage() {
+  const t = await getTranslations("PgMasters");
+  const bt = await getTranslations("Breadcrumb");
 
   const steps: string[] = t.raw("howToStartSteps");
 
@@ -44,7 +42,14 @@ export function PgMastersPage() {
               {t("overviewText")}
             </p>
           </div>
-          <ImagePlaceholder alt={t("imageAlt")} aspectRatio="video" />
+          <ImagePlaceholder aspectRatio="video">
+            <Image
+              src={"/assets/images/scenes/students.jpg"}
+              className="object-cover"
+              fill
+              alt={t("imageAlt")}
+            />
+          </ImagePlaceholder>
         </div>
 
         {/* Structure */}
@@ -91,11 +96,14 @@ export function PgMastersPage() {
         </section>
 
         {/* Image break */}
-        <ImagePlaceholder
-          alt={t("imageAlt")}
-          className="mb-16"
-          aspectRatio="wide"
-        />
+        <ImagePlaceholder className="mb-16" aspectRatio="wide">
+          <Image
+            src={"/assets/images/scenes/stadium.webp"}
+            className="object-cover"
+            fill
+            alt={t("imageAlt")}
+          />
+        </ImagePlaceholder>
 
         {/* Career */}
         <section className="mb-16">
@@ -142,8 +150,6 @@ export function PgMastersPage() {
           ))}
         </div>
       </ContentContainer>
-
-      <Footer />
     </>
   );
 }

@@ -2,7 +2,6 @@ import { cn } from "@/lib/utils";
 import type { ReactNode } from "react";
 
 interface ImagePlaceholderProps {
-  alt: string;
   className?: string;
   children?: ReactNode;
   aspectRatio?: "video" | "square" | "wide";
@@ -19,7 +18,6 @@ const aspectMap = {
  * Replace the inner content with an actual <Image /> when assets are available.
  */
 export function ImagePlaceholder({
-  alt,
   className,
   children,
   aspectRatio = "video",
@@ -34,7 +32,9 @@ export function ImagePlaceholder({
     >
       {children ?? (
         <div className="absolute inset-0 flex items-center justify-center">
-          <span className="text-xs text-white/20 font-medium">{alt}</span>
+          <span className="text-xs text-white/20 font-medium">
+            Image placeholder
+          </span>
         </div>
       )}
     </div>

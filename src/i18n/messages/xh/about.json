@@ -1,0 +1,61 @@
+{
+  "About": {
+    "department": "ISebe Lethu",
+    "departmentDesc": "Imbali, injongo, nombono we-SU Computer Science.",
+    "staff": "Abasebenzi & IFakalthi",
+    "staffDesc": "Hlangana nabaphandi bethu abaziwa kwihlabathi.",
+    "students": "Abafundi be-Postgraduate",
+    "studentsDesc": "Abafundi bophando beedoktoreyithi neemasters bangoku.",
+    "alumni": "I-Alumni",
+    "alumniDesc": "Abaphumeleleyo abaye bayila isebe lethu kunye nomhlaba."
+  },
+
+  "DepartmentPage": {
+    "title": "ISebe Lethu",
+    "subtitle": "Ngaphezulu kweminyaka engama-50 yobugcisa kwimfundo ye-Computer Science kunye nophando kwiYunivesithi yaseStellenbosch.",
+    "historyTitle": "Imbali",
+    "historyText1": "ISebe le-Computer Science kwiYunivesithi yaseStellenbosch linembali etyebileyo eqhubeka iminyaka engaphezulu kwamashumi amahlanu.",
+    "historyText2": "Ngokuhamba kweminyaka, isebe liye lakhula kunye notshintsho olukhawulezayo lwetekhnoloji.",
+    "missionTitle": "Injongo",
+    "missionText": "Ukuba liziko eliphambili lemfundo ye-Computer Science kunye nophando e-Afrika.",
+    "researchTitle": "Ubugcisa bophando",
+    "researchText": "Amalungu ethu afakalthi asebenza kwiindawo ezahlukeneyo zophando eziquka i-AI, ukufunda koomatshini, ubunjineli besoftware, kunye nokunye.",
+    "locationTitle": "Indawo",
+    "locationText": "Isebe likumgangatho wesihlanu wesakhiwo se-General Engineering kwikhampasi enkulu yeYunivesithi yaseStellenbosch."
+  },
+  "StaffPage": {
+    "title": "Abasebenzi & IFakalthi",
+    "subtitle": "Hlangana nabasebenzi bezifundo kunye nabalawuli besebe le-Computer Science kwiYunivesithi yaseStellenbosch.",
+    "academicStaff": "Abasebenzi bezifundo",
+    "administrativeStaff": "Abasebenzi bolawulo",
+    "office": "I-Ofisi",
+    "telephone": "Umnxeba",
+    "researchInterests": "Izinto zophando",
+    "website": "Iwebhusayithi"
+  },
+  "StudentsPage": {
+    "title": "Abafundi be-Postgraduate",
+    "subtitle": "Abafundi bophando beedoktoreyithi neemasters bangoku kwisebe le-Computer Science.",
+    "doctoralStudents": "Abafundi beedoktoreyithi",
+    "mastersStudents": "Abafundi beemasters",
+    "supervisor": "Umphathi",
+    "researchTopic": "Umxholo wophando"
+  },
+  "AlumniPage": {
+    "title": "I-Alumni",
+    "subtitle": "Ukubhiyozela abaphumeleleyo nabasebenzi bamandulo abaye bayila isebe lethu.",
+    "alumniFaculty": "I-Alumni Faculty",
+    "doctoralGraduates": "Abaphumeleleyo beedoktoreyithi",
+    "mastersGraduates": "Abaphumeleleyo beemasters"
+  },
+  "Metadata": {
+    "aboutDepartmentTitle": "ISebe Lethu",
+    "aboutDepartmentDescription": "Funda ngembali, injongo, nombono wesebe le-Computer Science kwiYunivesithi yaseStellenbosch.",
+    "aboutStaffTitle": "Abasebenzi & IFakalthi",
+    "aboutStaffDescription": "Hlangana nabasebenzi bezifundo kunye nabalawuli besebe le-Computer Science kwiYunivesithi yaseStellenbosch.",
+    "aboutStudentsTitle": "Abafundi be-Postgraduate",
+    "aboutStudentsDescription": "Abafundi bophando beedoktoreyithi neemasters bangoku kwisebe le-Computer Science kwiYunivesithi yaseStellenbosch.",
+    "aboutAlumniTitle": "I-Alumni",
+    "aboutAlumniDescription": "Abaphumeleleyo nabasebenzi bamandulo kwisebe le-Computer Science kwiYunivesithi yaseStellenbosch."
+  }
+}

@@ -1,7 +1,4 @@
-"use client";
-
 import { ContentContainer } from "@/components/content-container";
-import { Footer } from "@/components/footer";
 import { GlassPanel } from "@/components/glass-panel";
 import { BreadcrumbNav } from "@/components/programmes/breadcrumb-nav";
 import { ImagePlaceholder } from "@/components/programmes/image-placeholder";
@@ -15,11 +12,12 @@ import {
   DollarSign,
   Globe,
 } from "lucide-react";
-import { useTranslations } from "next-intl";
+import { getTranslations } from "next-intl/server";
+import Image from "next/image";
 
-export function PgProspectivePage() {
-  const t = useTranslations("PgProspective");
-  const bt = useTranslations("Breadcrumb");
+export async function PgProspectivePage() {
+  const t = await getTranslations("PgProspective");
+  const bt = await getTranslations("Breadcrumb");
 
   const honoursReqs: string[] = t.raw("honoursReqs");
   const applySteps: string[] = t.raw("howToApplySteps");
@@ -76,10 +74,17 @@ export function PgProspectivePage() {
 
         {/* Image break */}
         <ImagePlaceholder
-          alt={t("imageAlt")}
           className="mb-16"
           aspectRatio="wide"
-        />
+        >
+          <Image
+            src={"/assets/images/scenes/students.jpg"}
+            className="object-cover"
+            fill
+            alt={t("imageAlt")}
+          />
+         </ImagePlaceholder>
+        </ImagePlaceholder>
 
         {/* How to apply */}
         <section className="mb-16">
@@ -107,7 +112,7 @@ export function PgProspectivePage() {
           </div>
           <div className="mt-6">
             <a
-              href="https://www.sun.ac.za/english/Pages/default.aspx"
+              href="https://www.su.ac.za/en/apply/pg-studies"
               target="_blank"
               rel="noopener noreferrer"
               className="inline-flex items-center gap-2 rounded-full bg-white/10 px-5 py-2.5 text-sm font-semibold text-white transition-colors hover:bg-white/20"
@@ -161,8 +166,6 @@ export function PgProspectivePage() {
           </div>
         </GlassPanel>
       </ContentContainer>
-
-      <Footer />
     </>
   );
 }

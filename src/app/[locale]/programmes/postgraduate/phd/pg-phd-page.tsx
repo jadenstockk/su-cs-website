@@ -1,7 +1,4 @@
-"use client";
-
 import { ContentContainer } from "@/components/content-container";
-import { Footer } from "@/components/footer";
 import { GlassPanel } from "@/components/glass-panel";
 import { BreadcrumbNav } from "@/components/programmes/breadcrumb-nav";
 import { ImagePlaceholder } from "@/components/programmes/image-placeholder";
@@ -9,11 +6,12 @@ import { InfoCard } from "@/components/programmes/info-card";
 import { PageHero } from "@/components/programmes/page-hero";
 import { Link } from "@/i18n/navigation";
 import { ArrowRight, Beaker, FileText, Users } from "lucide-react";
-import { useTranslations } from "next-intl";
+import { getTranslations } from "next-intl/server";
+import Image from "next/image";
 
-export function PgPhdPage() {
-  const t = useTranslations("PgPhd");
-  const bt = useTranslations("Breadcrumb");
+export async function PgPhdPage() {
+  const t = await getTranslations("PgPhd");
+  const bt = await getTranslations("Breadcrumb");
 
   return (
     <>
@@ -43,7 +41,14 @@ export function PgPhdPage() {
               {t("overviewText")}
             </p>
           </div>
-          <ImagePlaceholder alt={t("imageAlt")} aspectRatio="video" />
+          <ImagePlaceholder aspectRatio="video">
+            <Image
+              src={"/assets/images/scenes/students.jpg"}
+              className="object-cover"
+              fill
+              alt={t("imageAlt")}
+            />
+          </ImagePlaceholder>
         </div>
 
         {/* Cards grid */}
@@ -69,11 +74,14 @@ export function PgPhdPage() {
         </div>
 
         {/* Image break */}
-        <ImagePlaceholder
-          alt={t("imageAlt")}
-          className="mb-16"
-          aspectRatio="wide"
-        />
+        <ImagePlaceholder className="mb-16" aspectRatio="wide">
+          <Image
+            src={"/assets/images/scenes/students.jpg"}
+            className="object-cover"
+            fill
+            alt={t("imageAlt")}
+          />
+        </ImagePlaceholder>
 
         {/* Quick links */}
         <GlassPanel
@@ -115,8 +123,6 @@ export function PgPhdPage() {
           </div>
         </GlassPanel>
       </ContentContainer>
-
-      <Footer />
     </>
   );
 }

@@ -29,6 +29,7 @@ interface NavSubItem {
   label: string;
   href: string;
   description: string;
+  external?: boolean;
 }
 
 interface NavItemSimple {
@@ -75,7 +76,7 @@ export function Navbar({ className }: NavbarProps) {
     {
       kind: "mega",
       label: t("programmes"),
-      href: "#programmes",
+      href: "/programmes",
       groups: [
         {
           heading: t("undergraduate"),
@@ -135,36 +136,57 @@ export function Navbar({ className }: NavbarProps) {
       href: "/research",
     },
     {
-      kind: "simple",
+      kind: "mega",
       label: t("aboutUs"),
-      href: "#about",
-      children: [
+      href: "/about/department",
+      groups: [
         {
-          label: "Our Department",
-          href: "#about",
-          description: "The history and vision of SU Computer Science.",
+          heading: t("aboutOverview"),
+          items: [
+            {
+              label: t("aboutDepartment"),
+              href: "/about/department",
+              description: t("aboutDepartmentDesc"),
+            },
+            {
+              label: t("aboutStaff"),
+              href: "/about/staff",
+              description: t("aboutStaffDesc"),
+            },
+          ],
         },
         {
-          label: "Staff & Faculty",
-          href: "#about",
-          description: "Meet our internationally recognised researchers.",
+          heading: t("aboutCommunity"),
+          items: [
+            {
+              label: t("aboutStudents"),
+              href: "/about/students",
+              description: t("aboutStudentsDesc"),
+            },
+            {
+              label: t("aboutAlumni"),
+              href: "/about/alumni",
+              description: t("aboutAlumniDesc"),
+            },
+          ],
         },
       ],
     },
     {
       kind: "simple",
       label: t("contactUs"),
-      href: "#contact",
+      href: "/contact",
       children: [
         {
-          label: "Get in Touch",
-          href: "#contact",
-          description: "Email us or fill in our online contact form.",
+          label: t("contactDepartment"),
+          href: "/contact",
+          description: t("contactDepartmentDesc"),
         },
         {
-          label: "Visit Campus",
-          href: "#contact",
-          description: "Find us on the Stellenbosch University campus.",
+          label: t("contactUniversity"),
+          href: "https://www.su.ac.za/contact-us",
+          description: t("contactUniversityDesc"),
+          external: true,
         },
       ],
     },
@@ -304,28 +326,47 @@ export function Navbar({ className }: NavbarProps) {
                                 )}
                               >
                                 <ul className="flex flex-col gap-0.5">
-                                  {item.children.map((child) => (
-                                    <li key={child.href + child.label}>
-                                      <NavigationMenuLink asChild>
-                                        <Link
-                                          href={child.href}
-                                          className={cn(
-                                            "flex flex-col gap-0.5 rounded-lg px-3 py-2.5",
-                                            "transition-colors duration-150",
-                                            "hover:bg-white/8 focus:bg-white/8",
-                                            "group outline-none",
+                                  {item.children.map((child) => {
+                                    const linkClasses = cn(
+                                      "flex flex-col gap-0.5 rounded-lg px-3 py-2.5",
+                                      "transition-colors duration-150",
+                                      "hover:bg-white/8 focus:bg-white/8",
+                                      "group outline-none",
+                                    );
+                                    return (
+                                      <li key={child.href + child.label}>
+                                        <NavigationMenuLink asChild>
+                                          {child.external ? (
+                                            <a
+                                              href={child.href}
+                                              target="_blank"
+                                              rel="noopener noreferrer"
+                                              className={linkClasses}
+                                            >
+                                              <span className="text-[13px] font-medium text-white/90 group-hover:text-white transition-colors">
+                                                {child.label}
+                                              </span>
+                                              <span className="text-[12px] leading-snug text-white/45 group-hover:text-white/60 transition-colors">
+                                                {child.description}
+                                              </span>
+                                            </a>
+                                          ) : (
+                                            <Link
+                                              href={child.href}
+                                              className={linkClasses}
+                                            >
+                                              <span className="text-[13px] font-medium text-white/90 group-hover:text-white transition-colors">
+                                                {child.label}
+                                              </span>
+                                              <span className="text-[12px] leading-snug text-white/45 group-hover:text-white/60 transition-colors">
+                                                {child.description}
+                                              </span>
+                                            </Link>
                                           )}
-                                        >
-                                          <span className="text-[13px] font-medium text-white/90 group-hover:text-white transition-colors">
-                                            {child.label}
-                                          </span>
-                                          <span className="text-[12px] leading-snug text-white/45 group-hover:text-white/60 transition-colors">
-                                            {child.description}
-                                          </span>
-                                        </Link>
-                                      </NavigationMenuLink>
-                                    </li>
-                                  ))}
+                                        </NavigationMenuLink>
+                                      </li>
+                                    );
+                                  })}
                                 </ul>
                               </NavigationMenuContent>
                             )}
@@ -452,21 +493,39 @@ export function Navbar({ className }: NavbarProps) {
                             </div>
                           ) : (
                             <div className="ml-3 mt-0.5 mb-1 flex flex-col gap-0.5 border-l border-white/10 pl-3">
-                              {item.children.map((child) => (
-                                <a
-                                  key={child.href + child.label}
-                                  href={child.href}
-                                  onClick={() => setMobileOpen(false)}
-                                  className="group flex flex-col rounded-lg px-2 py-1.5 transition-colors duration-150 hover:bg-white/8"
-                                >
-                                  <span className="text-[13px] font-medium text-white/80 group-hover:text-white">
-                                    {child.label}
-                                  </span>
-                                  <span className="text-[12px] text-white/40 group-hover:text-white/60">
-                                    {child.description}
-                                  </span>
-                                </a>
-                              ))}
+                              {item.children.map((child) =>
+                                child.external ? (
+                                  <a
+                                    key={child.href + child.label}
+                                    href={child.href}
+                                    target="_blank"
+                                    rel="noopener noreferrer"
+                                    onClick={() => setMobileOpen(false)}
+                                    className="group flex flex-col rounded-lg px-2 py-1.5 transition-colors duration-150 hover:bg-white/8"
+                                  >
+                                    <span className="text-[13px] font-medium text-white/80 group-hover:text-white">
+                                      {child.label}
+                                    </span>
+                                    <span className="text-[12px] text-white/40 group-hover:text-white/60">
+                                      {child.description}
+                                    </span>
+                                  </a>
+                                ) : (
+                                  <Link
+                                    key={child.href + child.label}
+                                    href={child.href}
+                                    onClick={() => setMobileOpen(false)}
+                                    className="group flex flex-col rounded-lg px-2 py-1.5 transition-colors duration-150 hover:bg-white/8"
+                                  >
+                                    <span className="text-[13px] font-medium text-white/80 group-hover:text-white">
+                                      {child.label}
+                                    </span>
+                                    <span className="text-[12px] text-white/40 group-hover:text-white/60">
+                                      {child.description}
+                                    </span>
+                                  </Link>
+                                ),
+                              )}
                             </div>
                           )}
                         </div>

@@ -9,8 +9,24 @@ export default getRequestConfig(async ({ requestLocale }) => {
     locale = routing.defaultLocale;
   }
 
+  // Split translations across multiple files for maintainability.
+  // To add a new translation file, just import it here and spread it below.
+  const [common, ug, pg, research, about] = await Promise.all([
+    import(`./messages/${locale}/common.json`),
+    import(`./messages/${locale}/ug.json`),
+    import(`./messages/${locale}/pg.json`),
+    import(`./messages/${locale}/research.json`),
+    import(`./messages/${locale}/about.json`),
+  ]);
+
   return {
     locale,
-    messages: (await import(`./languages/${locale}.json`)).default,
+    messages: {
+      ...common.default,
+      ...ug.default,
+      ...pg.default,
+      ...research.default,
+      ...about.default,
+    },
   };
 });

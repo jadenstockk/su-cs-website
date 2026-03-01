@@ -5,6 +5,7 @@ import { HeroVideo } from "@/components/home/hero-video";
 import { Button } from "@/components/ui/button";
 import { cn } from "@/lib/utils";
 import { useTranslations } from "next-intl";
+import Link from "next/link";
 import { FlipWords } from "../ui/flip-words";
 
 export function HeroSection() {
@@ -14,7 +15,6 @@ export function HeroSection() {
     <section className={cn("relative")}>
       <HeroVideo
         src={"/assets/videos/cs-hero-video.mp4"}
-        // poster={videoPoster}
         overlayOpacity={50}
         className="h-[70vh] md:h-[90vh] min-h-160"
       >
@@ -32,12 +32,26 @@ export function HeroSection() {
               {t("description")}
             </p>
             <div className="flex flex-wrap gap-4 pt-2">
-              <Button variant="white" size="lg" asChild>
-                <a href="#programmes">{t("exploreProgrammes")}</a>
-              </Button>
-              <Button variant="glass" size="lg" asChild>
-                <a href="#about">{t("learnMore")}</a>
-              </Button>
+              <Link href="/programmes">
+                <Button
+                  className="cursor-pointer"
+                  variant="white"
+                  size="lg"
+                  slideReveal
+                >
+                  {t("exploreProgrammes")}
+                </Button>
+              </Link>
+              <Link href="/contact">
+                <Button
+                  className="cursor-pointer"
+                  variant="glass"
+                  size="lg"
+                  slideReveal
+                >
+                  {t("contactUs")}
+                </Button>
+              </Link>
             </div>
           </div>
         </ContentContainer>

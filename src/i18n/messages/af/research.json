@@ -1,0 +1,55 @@
+{
+  "Research": {
+    "title": "Research",
+    "subtitle": "Explore the research groups and focus areas within the Department of Computer Science at Stellenbosch University.",
+    "intro": "Our department is home to several active research groups spanning theoretical computer science, software engineering, machine learning, and telecommunications. Faculty and students collaborate on problems that advance both the theory and practice of computing.",
+    "currentMembers": "Current Members",
+    "automataTitle": "Theory and Applications of Automata and Grammars",
+    "automataDesc1": "We are interested in the theory of nondeterministic finite automata (NFA), and in particular the descriptional complexity of symmetric difference NFA. More generally, we also consider the application of automata and grammars to a wide selection of problems, such as pattern layout optimization with cellular automata, image processing with cellular automata, music generation in the style of a given composer using probabilistic automata, and using probabilistic automata on parse trees of English sentences for automatic grammar correction of English text.",
+    "automataDesc2": "Automata and grammars have a rich and well-developed body of theory that can be applied, but often practice dictates that the theory should be extended in novel ways. For the pattern layout optimisation problem, for example, cellular automata with cell clustering, i.e., cellular automata with changes in neighborhood topology over time, were defined and shown to be advantageous in practical applications.",
+    "automataMembers": [
+      "Willem Bester",
+      "Walter Schulze",
+      "Brink van der Merwe",
+      "Steyn van Litsenborgh",
+      "Lynette van Zijl"
+    ],
+    "automataLink1": "Theory and Applications of Automata and Grammars",
+    "automataLink2": "Regular Expression Static Analysis Project",
+    "sevTitle": "Software Engineering and Verification",
+    "sevDesc": "The Software Engineering and Verification group at the University of Stellenbosch has been involved in the development of operating system kernels, protocols, and verification tools since 1990. We investigate the development of highly reliable system software by using a combination of computer-aided verification of designs, systematic testing, and defensive programming techniques.",
+    "sevMembers": [
+      "Andrew Collett",
+      "Bernd Fischer",
+      "Jaco Geldenhuys",
+      "Cornelia Inggs",
+      "Zhunaid Mohamed",
+      "Jan Taljaard",
+      "Phillip van Heerden",
+      "Willem Visser"
+    ],
+    "sevLink1": "COASTAL",
+    "sevLink2": "ESBMC",
+    "sevLink3": "CSeq",
+    "mlaiTitle": "Machine Learning and Artificial Intelligence",
+    "mlaiDesc": "This group considers almost any aspect of the general decision-making problem, including sequential decision-making under uncertainty. Major sub-problems we consider are planning, machine learning, and search algorithms. Our approach is grounded in probability theory and game theory for managing uncertainty and multi-agent systems. We also investigate the combination of machine learning and big data, and specifically data from earth observation satellite sensors and radio interferometers.",
+    "mlaiMembers": [
+      "Burger Becker",
+      "Marc Christoph",
+      "Dirko Coetsee",
+      "Trienko Grobler",
+      "Steve Kroon",
+      "Jordan Masakuna",
+      "Arnu Pretorius",
+      "Charl Steyl",
+      "Elan van Biljon"
+    ],
+    "telkomTitle": "Telkom-Siemens Centre of Excellence",
+    "telkomDesc": "The University of Stellenbosch Unit of the Telkom-Siemens Centre of Excellence in ATM and Broadband Networks and their Applications aim to promote research and development in broadband technologies and their applications and to train postgraduate students and professionals in the expertise required in this field of telecommunications.",
+    "telkomMembers": [
+      "Jaco Geldenhuys",
+      "Anthony E Krzesinski",
+      "Willem Visser"
+    ]
+  }
+}

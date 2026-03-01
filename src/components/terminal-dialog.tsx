@@ -14,17 +14,13 @@ interface TerminalDialogProps {
   onOpenChange: (open: boolean) => void;
 }
 
-const PROMPT = "student@stellenbosch ~ %";
+const buildPrompt = (cwd: string) => `student@stellenbosch ${cwd} %`;
 
 /** File system simulation */
 const fileSystem: Record<string, string[]> = {
-  "~": ["Documents", "Downloads", "Projects", "courses.txt", ".zshrc"],
+  "~": ["Documents", "Downloads", "Projects", "modules.txt", ".zshrc"],
   "~/Documents": ["notes", "assignments", "thesis-draft.tex"],
-  "~/Documents/notes": [
-    "COS212-notes.md",
-    "COS226-notes.md",
-    "COS344-notes.md",
-  ],
+  "~/Documents/notes": ["CS214-notes.md", "CS314-notes.md", "CS344-notes.md"],
   "~/Documents/assignments": ["assignment1.py", "assignment2.cpp", "Makefile"],
   "~/Downloads": ["lecture-slides.pdf", "exam-timetable.pdf"],
   "~/Projects": ["web-app", "ml-project", "compiler-lab", "README.md"],
@@ -49,47 +45,59 @@ const commandHelp: Record<string, string[]> = {
     "  man <cmd>     — Manual pages",
     "  neofetch      — System info display",
     "  links         — Useful SU CS links",
-    "  timetable     — Show class schedule",
-    "  cafes         — Nearby coffee spots ☕",
+    "  modules       — List CS modules",
+    "  staff         — Academic staff list",
+    "  research      — Research groups",
+    "  contact       — Department contact info",
+    "  history       — Show command history",
+    "",
+    "Tips: Tab to autocomplete, ↑/↓ for history, Ctrl+L to clear",
   ],
 };
 
 const catFiles: Record<string, string[]> = {
-  "courses.txt": [
-    "📚 Stellenbosch CS Courses 2026",
+  "modules.txt": [
+    "📚 Stellenbosch CS Modules",
     "─────────────────────────────────",
-    "COS 132  — Imperative Programming",
-    "COS 212  — Data Structures & Algorithms",
-    "COS 214  — Software Modelling",
-    "COS 226  — Concurrent Systems",
-    "COS 284  — Computer Organisation",
-    "COS 314  — Machine Learning",
-    "COS 326  — Database Systems",
-    "COS 344  — Computer Graphics",
-    "COS 711  — Artificial Intelligence",
-    "COS 730  — Information Security",
+    "",
+    "First Year:",
+    "  CS 114  — Introductory Computer Science 1",
+    "  CS 144  — Introductory Computer Science 2",
+    "",
+    "Second Year:",
+    "  CS 214  — Data Structures and Algorithms",
+    "  CS 244  — Computer Architecture",
+    "",
+    "Third Year:",
+    "  CS 313  — Computer Networks",
+    "  CS 314  — Concurrency",
+    "  CS 315  — Machine Learning",
+    "  CS 343  — Databases and Web Centric Programming",
+    "  CS 344  — Program Design (Software Engineering)",
+    "  CS 345  — Computability and Automata Theory",
   ],
   ".zshrc": [
-    "# ~/.zshrc",
+    "# ~/.zshrc — Stellenbosch CS",
     'export PATH="$HOME/bin:$PATH"',
     'alias sucs="cd ~/Projects"',
     'alias build="make -j$(nproc)"',
     'alias submit="echo Submitting assignment..."',
+    'alias sunlearn="open https://learn.sun.ac.za"',
     'echo "Welcome back, Matie! 🎓"',
   ],
   "README.md": [
     "# My CS Projects",
     "",
     "A collection of projects from Stellenbosch University",
-    "Computer Science department.",
+    "Computer Science Division — Dept of Mathematical Sciences.",
     "",
     "## Structure",
-    "- web-app/     — Full-stack web application",
-    "- ml-project/  — Machine learning experiments",
-    "- compiler-lab/— Compiler construction labs",
+    "- web-app/      — Full-stack web application",
+    "- ml-project/   — Machine learning experiments",
+    "- compiler-lab/ — Compiler construction labs",
   ],
-  "COS212-notes.md": [
-    "# COS 212 — Data Structures & Algorithms",
+  "CS214-notes.md": [
+    "# CS 214 — Data Structures and Algorithms",
     "",
     "## Key Topics",
     "- Binary search trees",
@@ -98,46 +106,158 @@ const catFiles: Record<string, string[]> = {
     "- Graph algorithms (BFS, DFS, Dijkstra)",
     "- Dynamic programming",
     "",
-    "Exam: June 2026 📝",
+  ],
+  "CS314-notes.md": [
+    "# CS 314 — Concurrency",
+    "",
+    "## Key Topics",
+    "- Threads & processes",
+    "- Mutual exclusion & semaphores",
+    "- Deadlock detection & prevention",
+    "- Message passing & monitors",
+    "- Concurrent data structures",
+    "",
+    "Lecturer: Prof Cornelia Inggs",
+  ],
+  "CS344-notes.md": [
+    "# CS 344 — Program Design (Software Engineering)",
+    "",
+    "## Key Topics",
+    "- Design patterns (GoF)",
+    "- UML modelling",
+    "- Software architecture",
+    "- Testing & code quality",
+    "- Agile methodologies",
+    "",
+    "Semester 2 module",
   ],
 };
 
 const links = [
   "🔗 Useful Stellenbosch CS Links",
   "──────────────────────────────────",
-  "SUNLearn     → https://learn.sun.ac.za",
-  "CS Dept      → https://cs.sun.ac.za",
-  "Library      → https://library.sun.ac.za",
-  "My SU        → https://my.sun.ac.za",
-  "GitHub SU    → https://github.com/stellenbosch-university",
-  "Timetable    → https://timetable.sun.ac.za",
+  "CS Department  → https://cs.sun.ac.za",
+  "SUNLearn       → https://learn.sun.ac.za",
+  "SU Main Site   → https://www.su.ac.za",
+  "SU Library     → https://su.ac.za/library",
+  "Apply to SU    → https://www.su.ac.za/apply",
+  "Faculty of Sci → https://www.su.ac.za/en/faculties/science",
+  "MSc ML & AI    → https://mlai.sun.ac.za",
+  "Maties Portal  → https://www.maties.com",
 ];
 
-const timetable = [
-  "📅 Monday — Week Schedule",
-  "──────────────────────────",
-  "08:00  COS 212  — IT Building A308",
-  "10:00  COS 226  — Narga Auditorium",
-  "13:00  COS 284  — IT Building A204",
-  "15:00  Tutorial  — Lab 3, IT Building",
+const modules = [
+  "📚 CS Module Overview",
+  "══════════════════════════════════════════════════════",
   "",
-  "📅 Tuesday",
-  "──────────────────────────",
-  "09:00  COS 214  — IT Building A308",
-  "11:00  COS 344  — Engineering C203",
-  "14:00  Practical — Lab 1, IT Building",
+  " Year  Code     Module Name                    Sem",
+  "─────────────────────────────────────────────────────",
+  "  1    CS 114   Introductory Computer Science 1  S1",
+  "  1    CS 144   Introductory Computer Science 2  S2",
+  "  2    CS 214   Data Structures and Algorithms    S1",
+  "  2    CS 244   Computer Architecture             S2",
+  "  3    CS 313   Computer Networks                 S1",
+  "  3    CS 314   Concurrency                       S1",
+  "  3    CS 315   Machine Learning                  S1",
+  "  3    CS 343   Databases & Web Programming       S2",
+  "  3    CS 344   Program Design (Software Eng)     S2",
+  "  3    CS 345   Computability & Automata Theory   S2",
+  "",
+  "─── Postgraduate ────────────────────────────────────",
+  "  PG   CS 712   Advanced Algorithms               S1",
+  "  PG   CS 714   Concurrent Programming I          S1",
+  "  PG   CS 716   Vulnerability Discovery            S1",
+  "  PG   CS 742   Machine Learning A                S1",
+  "  PG   CS 791   Artificial Intelligence           S1",
+  "  PG   CS 795   Functional Programming            S1",
+  "  PG   CS 741   Machine Learning B                S2",
+  "  PG   CS 745   Software Construction — Compilers S2",
+  "  PG   CS 796   Software Testing and Analysis     S2",
 ];
 
-const cafes = [
-  "☕ Coffee spots near IT Building",
-  "──────────────────────────────────",
-  "🏠 Deluxe Coffeeworks — Andringa St",
-  "🏠 Häzz Café — Victoria St",
-  "🏠 De Akker — Dorp St (also meals)",
-  "🏠 Meraki — Bird St",
-  "🏠 Craft Coffee — Church St",
+const staffList = [
+  "👥 Academic Staff — CS Division",
+  "══════════════════════════════════════════════════════",
   "",
-  "Pro tip: Deluxe has the fastest WiFi 🚀",
+  " Prof Brink van der Merwe    Head of Division",
+  "   ↳ Tree automata, Learning grammars from data",
+  "",
+  " Prof Andries Engelbrecht",
+  "   ↳ Swarm intelligence, Neural networks, ML",
+  "",
+  " Prof Bernd Fischer",
+  "   ↳ Software eng, Formal methods, Program analysis",
+  "",
+  " Prof William (Bill) Tucker",
+  "   ↳ Computer networks, HCI, Social impact",
+  "",
+  " Prof Lynette van Zijl",
+  "   ↳ Automata implementation, Assistive technologies",
+  "",
+  " Assoc Prof Steve Kroon",
+  "   ↳ AI/ML, Statistical learning theory",
+  "",
+  " Sr Lecturer Marcel Dunaiski",
+  "   ↳ Data Science, Informetrics, Scientometrics",
+  "",
+  " Sr Lecturer Cornelia Inggs",
+  "   ↳ Formal methods, Model checking, Concurrency",
+  "",
+  " Lecturer Trienko Grobler",
+  "   ↳ ML, Remote sensing, Radio interferometry",
+  "",
+  " Lecturer Gavin Rens",
+  "   ↳ Cognitive Robotics, Probabilistic planning, RL",
+  "",
+  " Lecturer Mkhuseli Ngxande",
+  "   ↳ ML, Computer vision, Bioinformatics",
+  "",
+  " Jr Lecturer Willem Bester",
+  "   ↳ Software eng, Formal methods, Automata theory",
+];
+
+const researchGroups = [
+  "🔬 Research Groups",
+  "══════════════════════════════════════════════════════",
+  "",
+  " 1. Theory and Applications of Automata and Grammars",
+  "    NFA, cellular automata, music generation,",
+  "    grammar correction, pattern layout optimization",
+  "",
+  " 2. Software Engineering and Verification (SEV)",
+  "    OS kernels, protocols, computer-aided verification,",
+  "    systematic testing, defensive programming",
+  "",
+  " 3. Machine Learning and Artificial Intelligence",
+  "    Decision-making, planning, search algorithms,",
+  "    earth observation, radio interferometry",
+  "",
+  " 4. Telkom-Siemens Centre of Excellence",
+  "    ATM/broadband networks, broadband technologies",
+  "    and applications, telecommunications research",
+];
+
+const contactInfo = [
+  "📞 Department Contact Info",
+  "══════════════════════════════════════════════════════",
+  "",
+  " Head of Division:  Prof Brink van der Merwe",
+  " Telephone:         +27 21 808 4232",
+  " Fax:               +27 86 603 7130",
+  "",
+  " Admin:       secretary@cs.sun.ac.za",
+  " Undergrad:   undergrad@cs.sun.ac.za",
+  " Postgrad:    postgrad@cs.sun.ac.za",
+  " Head:        head@cs.sun.ac.za",
+  "",
+  " Physical:    Computer Science, Stellenbosch University",
+  "              Decanting Facility, Hammanshand Road",
+  "              7600 Stellenbosch, South Africa",
+  "",
+  " Postal:      Private Bag X1, 7602 Matieland",
+  "              South Africa",
+  "",
+  " Website:     https://cs.sun.ac.za",
 ];
 
 function buildNeofetch(): string[] {
@@ -216,9 +336,11 @@ function buildNeofetch(): string[] {
     ` ██░░░░██    ██░░░░░░░░██     Memory: ${mem}`,
     ` ██░░░░░░████░░░░░░░░░░██     Timezone: ${tz}`,
     `  ██░░░░░░░░░░░░░░░░░░██      Language: ${lang}`,
-    `   ██░░░░░░░░░░░░░░░░██       Terminal: SU-CS-Term`,
+    `   ██░░░░░░░░░░░░░░░░██       Terminal: SU-CS-Term v2.0`,
     `     ██░░░░░░░░░░░░██         University: Stellenbosch 🎓`,
-    `       ████████████           Dept: Computer Science`,
+    `       ████████████           Division: Computer Science`,
+    `                              Dept: Mathematical Sciences`,
+    `                              Est: Early 1970s (50+ years)`,
   ];
 }
 
@@ -294,9 +416,10 @@ export function TerminalDialog({ open, onOpenChange }: TerminalDialogProps) {
       setHistoryIdx(-1);
 
       // Echo command
+      const prompt = buildPrompt(cwd);
       setLines((prev) => [
         ...prev,
-        { type: "input", text: `${PROMPT} ${trimmed}` },
+        { type: "input", text: `${prompt} ${trimmed}` },
       ]);
 
       const parts = trimmed.split(/\s+/);
@@ -315,10 +438,6 @@ export function TerminalDialog({ open, onOpenChange }: TerminalDialogProps) {
         case "ls": {
           const dir = fileSystem[cwd];
           if (dir) {
-            const formatted = dir
-              .map((f) => (f.includes(".") ? f : `\x1b[34m${f}/\x1b[0m`))
-              .join("  ");
-            // We'll show them in a simplified view
             const dirItems = dir.map((f) => (f.includes(".") ? f : `📁 ${f}`));
             await typeOutput(dirItems);
           } else {
@@ -401,13 +520,20 @@ export function TerminalDialog({ open, onOpenChange }: TerminalDialogProps) {
           await typeOutput(links, "info");
           break;
 
-        case "timetable":
-          await typeOutput(timetable, "info");
+        case "modules":
+          await typeOutput(modules, "info");
           break;
 
-        case "cafes":
-        case "coffee":
-          await typeOutput(cafes, "info");
+        case "staff":
+          await typeOutput(staffList, "info");
+          break;
+
+        case "research":
+          await typeOutput(researchGroups, "info");
+          break;
+
+        case "contact":
+          await typeOutput(contactInfo, "info");
           break;
 
         case "man": {
@@ -436,12 +562,28 @@ export function TerminalDialog({ open, onOpenChange }: TerminalDialogProps) {
         case "python":
         case "python3":
         case "node":
+        case "java":
+        case "javac":
           await typeOutput(
             [
-              `Simulated ${cmd}: this terminal is for navigation only 😄`,
-              `But at SU CS, you'll use these daily in the IT Building labs!`,
+              `Simulated ${cmd}: this terminal is for exploration only 😄`,
+              `At SU CS, you'll use these daily in the labs!`,
             ],
             "info",
+          );
+          break;
+
+        case "sudo":
+          await typeOutput(
+            ["Nice try — you don't have root access here 🔒"],
+            "error",
+          );
+          break;
+
+        case "rm":
+          await typeOutput(
+            ["Protected: file deletion is disabled in this terminal."],
+            "error",
           );
           break;
 
@@ -456,6 +598,16 @@ export function TerminalDialog({ open, onOpenChange }: TerminalDialogProps) {
           );
           break;
 
+        case "history":
+          if (history.length === 0) {
+            await typeOutput(["No commands in history yet."], "info");
+          } else {
+            await typeOutput(
+              history.map((h, i) => `  ${String(i + 1).padStart(4)}  ${h}`),
+            );
+          }
+          break;
+
         case "exit":
           onOpenChange(false);
           break;
@@ -467,13 +619,69 @@ export function TerminalDialog({ open, onOpenChange }: TerminalDialogProps) {
           );
       }
     },
-    [cwd, typeOutput, onOpenChange],
+    [cwd, history, typeOutput, onOpenChange],
   );
+
+  /** All available command names for tab completion */
+  const allCommands = [
+    "help",
+    "ls",
+    "cd",
+    "pwd",
+    "cat",
+    "echo",
+    "clear",
+    "whoami",
+    "date",
+    "uname",
+    "neofetch",
+    "links",
+    "modules",
+    "staff",
+    "research",
+    "contact",
+    "man",
+    "make",
+    "exit",
+    "history",
+  ];
 
   const handleKeyDown = (e: React.KeyboardEvent<HTMLInputElement>) => {
     if (e.key === "Enter" && !isTyping) {
       handleCommand(input);
       setInput("");
+    } else if (e.key === "Tab") {
+      e.preventDefault();
+      if (!input.trim()) return;
+      const parts = input.split(/\s+/);
+      if (parts.length === 1) {
+        // Complete command name
+        const matches = allCommands.filter((c) => c.startsWith(parts[0]));
+        if (matches.length === 1) {
+          setInput(matches[0] + " ");
+        } else if (matches.length > 1) {
+          setLines((prev) => [
+            ...prev,
+            { type: "info", text: matches.join("  ") },
+          ]);
+        }
+      } else if (parts[0] === "cd" || parts[0] === "cat") {
+        // Complete file/directory names
+        const partial = parts[parts.length - 1];
+        const dir = fileSystem[cwd];
+        if (dir) {
+          const matches = dir.filter((f) => f.startsWith(partial));
+          if (matches.length === 1) {
+            parts[parts.length - 1] = matches[0];
+            setInput(parts.join(" "));
+          } else if (matches.length > 1) {
+            setLines((prev) => [
+              ...prev,
+              { type: "info", text: matches.join("  ") },
+            ]);
+          }
+        }
+      }
     } else if (e.key === "ArrowUp") {
       e.preventDefault();
       if (history.length > 0) {
@@ -546,7 +754,7 @@ export function TerminalDialog({ open, onOpenChange }: TerminalDialogProps) {
 
           {/* Input line */}
           <div className="flex items-center gap-2 text-green-400">
-            <span className="shrink-0 text-blue-400">{PROMPT}</span>
+            <span className="shrink-0 text-blue-400">{buildPrompt(cwd)}</span>
             <input
               ref={inputRef}
               type="text"

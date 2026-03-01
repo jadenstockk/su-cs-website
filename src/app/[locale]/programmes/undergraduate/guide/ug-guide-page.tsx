@@ -1,7 +1,4 @@
-"use client";
-
 import { ContentContainer } from "@/components/content-container";
-import { Footer } from "@/components/footer";
 import { GlassPanel } from "@/components/glass-panel";
 import { BreadcrumbNav } from "@/components/programmes/breadcrumb-nav";
 import { ImagePlaceholder } from "@/components/programmes/image-placeholder";
@@ -17,7 +14,8 @@ import {
   Globe,
   Monitor,
 } from "lucide-react";
-import { useTranslations } from "next-intl";
+import { getTranslations } from "next-intl/server";
+import Image from "next/image";
 
 const focalAreas = [
   { titleKey: "generalCS", descKey: "generalCSDesc", icon: Monitor },
@@ -33,9 +31,9 @@ const steps = [
   { titleKey: "chooseFocalArea", descKey: "chooseFocalAreaDesc" },
 ] as const;
 
-export function UgGuidePage() {
-  const t = useTranslations("UgGuide");
-  const bt = useTranslations("Breadcrumb");
+export async function UgGuidePage() {
+  const t = await getTranslations("UgGuide");
+  const bt = await getTranslations("Breadcrumb");
 
   return (
     <>
@@ -70,7 +68,14 @@ export function UgGuidePage() {
               another subject.
             </p>
           </div>
-          <ImagePlaceholder alt={t("imageAlt")} aspectRatio="video" />
+          <ImagePlaceholder aspectRatio="video">
+            <Image
+              src={"/assets/images/scenes/students.jpg"}
+              className="object-cover"
+              fill
+              alt={t("imageAlt")}
+            />
+          </ImagePlaceholder>
         </div>
 
         {/* Degree structure */}
@@ -151,8 +156,6 @@ export function UgGuidePage() {
           </GlassPanel>
         </section>
       </ContentContainer>
-
-      <Footer />
     </>
   );
 }

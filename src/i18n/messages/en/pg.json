@@ -1,0 +1,214 @@
+{
+  "PgModules": {
+    "title": "Postgraduate Modules",
+    "subtitle": "Modules offered across Honours, Masters, and PhD programmes in Computer Science.",
+    "semester1": "First Semester",
+    "semester2": "Second Semester",
+    "yearLong": "Year Modules",
+    "credits": "credits",
+    "honoursProject": "Honours Project",
+    "imageAlt": "Postgraduate students in discussion"
+  },
+  "PgProspective": {
+    "title": "Prospective Postgraduate Students",
+    "subtitle": "Entry requirements, application procedures, and everything you need to know about joining our postgraduate programme.",
+    "entryReqTitle": "Entry Requirements",
+    "honoursReqTitle": "Honours Requirements",
+    "honoursReqs": [
+      "A degree that covers the CS curriculum",
+      "Average of at least 65% in final-year CS modules",
+      "Strong mathematical foundation (Algebra and Calculus)",
+      "At least 32 credits in quantitative modules at 2nd/3rd year level",
+      "Practical programming experience"
+    ],
+    "mastersReqTitle": "Masters Requirements",
+    "mastersReqs": "Honours degree in Computer Science or approved equivalent. Additional background may be required on a case-by-case basis.",
+    "phdReqTitle": "PhD Requirements",
+    "phdReqs": "A thesis-based Masters degree and the required Computer Science background.",
+    "howToApplyTitle": "How to Apply",
+    "howToApplySteps": [
+      "For Masters/PhD: obtain agreement from a supervisor",
+      "Complete the application forms and upload required documentation",
+      "Honours deadline: end of October",
+      "Masters/PhD deadline: end of September"
+    ],
+    "partTimeTitle": "Part-Time & International Students",
+    "partTimeText": "Part-time study is available. Honours can extend to two years; Masters to three-four years. We welcome international students — our modules are presented in English and are equivalent to 8 ECTS credits each.",
+    "fundingTitle": "Costs & Financial Support",
+    "fundingText": "The university offers various bursaries and financial support. Teaching assistant positions can provide supplemental income. Some supervisors have research funds available for Masters/PhD students.",
+    "applyNow": "Apply Now",
+    "imageAlt": "Postgraduate research"
+  },
+  "PgHonours": {
+    "title": "Honours in Computer Science",
+    "subtitle": "A one-year full-time postgraduate programme that develops research skills and advanced CS knowledge.",
+    "overviewTitle": "Programme Overview",
+    "overviewText": "Over the last forty-five years, more than 600 talented students have passed through our programme. It is excellent preparation for pursuing either an MSc degree or a career in industry.",
+    "curriculumTitle": "Curriculum",
+    "projectTitle": "Honours Project",
+    "projectText": "The honours project is worth 32 credits — a large software construction or research problem worked on independently under staff supervision throughout the year.",
+    "electivesTitle": "Elective Modules",
+    "electivesText": "Six elective modules of 16 credits each. Choose combinations focusing on Machine Learning, Data Science, Software Engineering, or a broader range.",
+    "maxExternal": "At most two modules may be taken from related departments with permission.",
+    "highlightsTitle": "Programme Highlights",
+    "highlights": [
+      "Strong mix of theory and application courses",
+      "Independent research project with staff supervision",
+      "Graduates are highly sought after by industry",
+      "Can significantly impact your career trajectory"
+    ],
+    "imageAlt": "Honours students collaborating"
+  },
+  "PgMasters": {
+    "title": "Masters in Computer Science",
+    "subtitle": "A two-year thesis-based programme teaching world-class research skills.",
+    "overviewTitle": "Programme Overview",
+    "overviewText": "The goal is to teach students how to evaluate and conduct world-class research and become a master in their field. While the work is not required to be original cutting-edge research, it often is.",
+    "structureTitle": "Programme Structure",
+    "structureText": "The Masters degree is based on thesis work under the guidance of a supervisor. You need the agreement of a staff member who will supervise your thesis.",
+    "howToStartTitle": "Getting Started",
+    "howToStartSteps": [
+      "Browse our Research pages to find areas of interest",
+      "Contact a potential supervisor to discuss topics",
+      "Obtain agreement from a supervisor before applying",
+      "If possible, arrange a face-to-face meeting"
+    ],
+    "careerTitle": "Career Outcomes",
+    "careerText": "The reading, writing, and critical thinking skills acquired are highly sought after in industry. Most graduates who do not continue with a PhD go on to successful careers locally and abroad.",
+    "imageAlt": "Masters student presenting research"
+  },
+  "PgPhd": {
+    "title": "PhD in Computer Science",
+    "subtitle": "Doctoral research producing original contributions to the field of Computer Science.",
+    "overviewTitle": "Programme Overview",
+    "overviewText": "A dissertation containing the results of your independent research is required. Our PhD programme offers the opportunity to work alongside internationally recognised researchers on cutting-edge problems.",
+    "requirementsTitle": "Requirements",
+    "requirementsText": "A thesis-based Masters degree and the required Computer Science background. Additional requirements may be determined by your supervisor.",
+    "researchTitle": "Research Areas",
+    "researchText": "Our department has active research groups spanning artificial intelligence, machine learning, data science, cybersecurity, software engineering, and more.",
+    "supervisorTitle": "Finding a Supervisor",
+    "supervisorText": "Browse our Research pages and contact potential supervisors to discuss research topics. Obtaining a supervisor's agreement is essential before applying.",
+    "imageAlt": "PhD researcher at work"
+  },
+  "PgModulesData": {
+    "groups": [
+      {
+        "type": "year",
+        "modules": [
+          {
+            "code": "CS 771",
+            "name": "Honours Project in Computer Science",
+            "description": "A large software construction or research problem on which the student works independently, under the supervision of a staff member.",
+            "lecturer": "Assigned supervisor"
+          }
+        ]
+      },
+      {
+        "type": "semester_1",
+        "modules": [
+          {
+            "code": "CS 712",
+            "name": "Advanced Algorithms",
+            "description": "This module continues from Computer Science 214 and covers advanced topics in the design and analysis of algorithms and associated data structures. Topics include a selection from algorithm design techniques, linear programming, approximation algorithms, randomised algorithms, probabilistic algorithms, parallel algorithms, number-theoretic algorithms, cryptanalysis, computational geometry, computational biology, network algorithms, and complexity theory.",
+            "lecturer": "Willem Bester"
+          },
+          {
+            "code": "CS 716",
+            "name": "Adv. Topics I — Vulnerability Discovery and Exploitation",
+            "description": "This module provides an introduction to the discovery and exploitation of vulnerabilities in software systems. We learn to uncover vulnerabilities and demonstrate their exploitability and then proceed to focus on methods for automating parts of the discovery process, both via static and dynamic program analysis.",
+            "lecturer": "Fabian Yamaguchi"
+          },
+          {
+            "code": "CS 746",
+            "name": "Adv. Topics II — Ontology Engineering",
+            "description": "An overview of ontology engineering — including knowledge representation languages, automated reasoning, and methods and techniques for ontology development — and main application fields. Topics covered include logic foundations for ontologies, ontology development top-down and bottom-up, methodologies for ontology development and maintenance, methods to enhance ontology quality, and a selection of current research topics.",
+            "lecturer": "Maria Keet"
+          },
+          {
+            "code": "CS 771",
+            "name": "Computing and Society",
+            "description": "Theory, domains and critique of topics related to Computing and Society, such as human-centred computing; social development theories, critical analysis of case studies; methods and ethics; and challenges of sustainable community engagement.",
+            "lecturer": "William (Bill) Tucker"
+          },
+          {
+            "code": "CS 791",
+            "name": "Artificial Intelligence",
+            "description": "Introduction to a selection of topics in artificial intelligence and optimisation. Meta-heuristics. Swarm intelligence, including particle swarm optimisation and the ant colony meta-heuristic. Evolutionary computation, including genetic algorithms, genetic programming, evolutionary strategies, differential evolution, cultural algorithms, and coevolution. Hyper-heuristics. Fitness landscape analysis. Optimisation problems.",
+            "lecturer": "Andries Engelbrecht"
+          },
+          {
+            "code": "CS 795",
+            "name": "Functional Programming",
+            "description": "This module gives an introduction to the functional programming paradigm.",
+            "lecturer": "Brink van der Merwe"
+          },
+          {
+            "code": "CS 742",
+            "name": "Machine Learning A",
+            "description": "Prominent machine-learning concepts and tasks. Selected feature extraction or dimensionality reduction techniques. Introduction to probabilistic modelling and latent variable models. Fundamental paradigms in parameter estimation.",
+            "lecturer": "Steve Kroon"
+          },
+          {
+            "code": "CS 711",
+            "name": "Computer Networks",
+            "description": "Introduction to networks in general and the internet in particular. Architecture and protocols. Allocation of resources and congestion control. Network security. Applications.",
+            "lecturer": "William (Bill) Tucker"
+          },
+          {
+            "code": "CS 714",
+            "name": "Concurrent Programming I",
+            "description": "This module covers an overview of the field of concurrency, its theoretical principles, the design, implementation and verification of concurrent systems, and practical aspects of distributed and parallel programming. It is focused around selected important topics.",
+            "lecturer": "Cornelia Inggs"
+          }
+        ]
+      },
+      {
+        "type": "semester_2",
+        "modules": [
+          {
+            "code": "CS 741",
+            "name": "Machine Learning",
+            "description": "This module is an introduction to selected topics in machine learning.",
+            "lecturer": "Andries Engelbrecht"
+          },
+          {
+            "code": "CS 745",
+            "name": "Software Construction — Compilers",
+            "description": "An introduction to compiler design and construction, covering lexical analysis, parsing, semantic analysis, and code generation.",
+            "lecturer": "Bernd Fischer"
+          },
+          {
+            "code": "CS 771",
+            "name": "Principles of Data Science",
+            "description": "This course covers the typical pipeline of data science projects: information retrieval, data wrangling and exploratory data analysis, hypothesis testing and regression analysis, as well as visualisations and data ethics.",
+            "lecturer": "Marcel Dunaiski"
+          },
+          {
+            "code": "CS 791",
+            "name": "Space Science Algorithms",
+            "description": "Algorithms and techniques in Space Science, with applications.",
+            "lecturer": "Trienko Grobler"
+          },
+          {
+            "code": "CS 743",
+            "name": "ML and AI I — Cognitive Robotics",
+            "description": "Topics covered are logic and knowledge representation, the Prolog language, deterministic automated planning, dynamic Bayesian networks and dynamic decision networks, Boolean and arithmetic circuits, the ProbLog language, probabilistic planning (based on Markov decision processes), and an introduction to reinforcement learning.",
+            "lecturer": "Gavin Rens"
+          },
+          {
+            "code": "CS 796",
+            "name": "Software Testing and Analysis",
+            "description": "Introduction to various techniques for software quality management.",
+            "lecturer": "Cornelia Inggs, Bernd Fischer, Willem Visser"
+          },
+          {
+            "code": "CS 711",
+            "name": "Automata Theory & Applications",
+            "description": "A first introduction to theoretical computer science, covering the Chomsky hierarchy of languages in relation to computability.",
+            "lecturer": "Brink van der Merwe"
+          }
+        ]
+      }
+    ]
+  }
+}

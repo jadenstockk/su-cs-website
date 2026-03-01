@@ -1,18 +1,16 @@
-"use client";
-
 import { ContentContainer } from "@/components/content-container";
-import { Footer } from "@/components/footer";
 import { GlassPanel } from "@/components/glass-panel";
 import { BreadcrumbNav } from "@/components/programmes/breadcrumb-nav";
 import { ImagePlaceholder } from "@/components/programmes/image-placeholder";
 import { PageHero } from "@/components/programmes/page-hero";
 import { Link } from "@/i18n/navigation";
 import { ArrowRight, BookOpen, CheckCircle2, Code } from "lucide-react";
-import { useTranslations } from "next-intl";
+import { getTranslations } from "next-intl/server";
+import Image from "next/image";
 
-export function PgHonoursPage() {
-  const t = useTranslations("PgHonours");
-  const bt = useTranslations("Breadcrumb");
+export async function PgHonoursPage() {
+  const t = await getTranslations("PgHonours");
+  const bt = await getTranslations("Breadcrumb");
 
   const highlights: string[] = t.raw("highlights");
 
@@ -44,7 +42,14 @@ export function PgHonoursPage() {
               {t("overviewText")}
             </p>
           </div>
-          <ImagePlaceholder alt={t("imageAlt")} aspectRatio="video" />
+          <ImagePlaceholder aspectRatio="video">
+            <Image
+              src={"/assets/images/scenes/students.jpg"}
+              className="object-cover"
+              fill
+              alt={t("imageAlt")}
+            />
+          </ImagePlaceholder>
         </div>
 
         {/* Curriculum — project + electives */}
@@ -107,11 +112,14 @@ export function PgHonoursPage() {
         </section>
 
         {/* Image break */}
-        <ImagePlaceholder
-          alt={t("imageAlt")}
-          className="mb-16"
-          aspectRatio="wide"
-        />
+        <ImagePlaceholder className="mb-16" aspectRatio="wide">
+          <Image
+            src={"/assets/images/scenes/students.jpg"}
+            className="object-cover"
+            fill
+            alt={t("imageAlt")}
+          />
+        </ImagePlaceholder>
 
         {/* Quick links */}
         <GlassPanel
@@ -149,8 +157,6 @@ export function PgHonoursPage() {
           </div>
         </GlassPanel>
       </ContentContainer>
-
-      <Footer />
     </>
   );
 }

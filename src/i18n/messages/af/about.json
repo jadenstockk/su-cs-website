@@ -1,0 +1,61 @@
+{
+  "About": {
+    "department": "Ons Departement",
+    "departmentDesc": "Die geskiedenis, missie en visie van SU Rekenaarwetenskap.",
+    "staff": "Personeel & Fakulteit",
+    "staffDesc": "Ontmoet ons internasionaal erkende navorsers en akademici.",
+    "students": "Nagraadse Studente",
+    "studentsDesc": "Huidige doktorale en meestersnavorsingstudente.",
+    "alumni": "Alumni",
+    "alumniDesc": "Gegradueerdes wat ons departement en die veld gevorm het."
+  },
+
+  "DepartmentPage": {
+    "title": "Ons Departement",
+    "subtitle": "Meer as 50 jaar van uitnemendheid in Rekenaarwetenskap-onderwys en -navorsing by die Universiteit Stellenbosch.",
+    "historyTitle": "Geskiedenis",
+    "historyText1": "Die Departement Rekenaarwetenskap aan die Universiteit Stellenbosch het 'n ryk geskiedenis wat oor vyf dekades strek. Die departement is in die vroeë 1970's gestig en het gegroei van 'n klein groep baanbrekersakademici tot een van die voorste rekenaarwetenskapdepartemente in Suid-Afrika.",
+    "historyText2": "Oor die jare het die departement saam met vinnige tegnologiese verandering ontwikkel, konsekwent sy kurrikulum aangepas, sy navorsingsportefeulje uitgebrei en wêreldklasfakulteit van regoor die wêreld gelok.",
+    "missionTitle": "Missie",
+    "missionText": "Om 'n toonaangewende sentrum vir Rekenaarwetenskap-onderwys en -navorsing in Afrika te wees, wat gegradueerdes lewer wat innoverend, eties en wêreldwyd mededingend is — terwyl dit sinvol bydra tot die bevordering van wetenskap en tegnologie in Suid-Afrika en verder.",
+    "researchTitle": "Navorsingsuitnemendheid",
+    "researchText": "Ons fakulteitslede is aktief in 'n wye reeks navorsingsareas, insluitend kunsmatige intelligensie, masjienleer, sagteware-ingenieurswese, formele metodes, rekenaarvisie, natuurlike taalverwerking en berekeningswetenskap.",
+    "locationTitle": "Ligging",
+    "locationText": "Die departement is geleë op die vyfde verdieping van die Algemene Ingenieurswese-gebou op die Universiteit Stellenbosch se hoofkampus."
+  },
+  "StaffPage": {
+    "title": "Personeel & Fakulteit",
+    "subtitle": "Ontmoet die akademiese en administratiewe personeel van die Rekenaarwetenskapdepartement aan die Universiteit Stellenbosch.",
+    "academicStaff": "Akademiese Personeel",
+    "administrativeStaff": "Administratiewe Personeel",
+    "office": "Kantoor",
+    "telephone": "Tel",
+    "researchInterests": "Navorsingsbelange",
+    "website": "Webwerf"
+  },
+  "StudentsPage": {
+    "title": "Nagraadse Studente",
+    "subtitle": "Huidige doktorale en meestersnavorsingstudente in die Rekenaarwetenskapdepartement.",
+    "doctoralStudents": "Doktorale Studente",
+    "mastersStudents": "Meesterstudente",
+    "supervisor": "Studieleier",
+    "researchTopic": "Navorsingsonderwerp"
+  },
+  "AlumniPage": {
+    "title": "Alumni",
+    "subtitle": "Gegradueerdes en voormalige personeel wat ons departement gevorm het.",
+    "alumniFaculty": "Alumni Fakulteit",
+    "doctoralGraduates": "Doktorale Gegradueerdes",
+    "mastersGraduates": "Meestersgegradueerdes"
+  },
+  "Metadata": {
+    "aboutDepartmentTitle": "Ons Departement",
+    "aboutDepartmentDescription": "Leer meer oor die geskiedenis, missie en visie van die Rekenaarwetenskapdepartement aan die Universiteit Stellenbosch.",
+    "aboutStaffTitle": "Personeel & Fakulteit",
+    "aboutStaffDescription": "Ontmoet die akademiese en administratiewe personeel van die Rekenaarwetenskapdepartement aan die Universiteit Stellenbosch.",
+    "aboutStudentsTitle": "Nagraadse Studente",
+    "aboutStudentsDescription": "Huidige doktorale en meestersnavorsingstudente in die Rekenaarwetenskapdepartement aan die Universiteit Stellenbosch.",
+    "aboutAlumniTitle": "Alumni",
+    "aboutAlumniDescription": "Gegradueerdes en voormalige personeel van die Rekenaarwetenskapdepartement aan die Universiteit Stellenbosch."
+  }
+}

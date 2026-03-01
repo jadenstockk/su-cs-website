@@ -1,19 +1,9 @@
-"use client";
-
 import { ContentContainer } from "@/components/content-container";
-import { Footer } from "@/components/footer";
 import { GlassPanel } from "@/components/glass-panel";
 import { BreadcrumbNav } from "@/components/programmes/breadcrumb-nav";
 import { PageHero } from "@/components/programmes/page-hero";
-import {
-  ArrowUpRight,
-  Brain,
-  CircuitBoard,
-  Network,
-  ShieldCheck,
-  Users,
-} from "lucide-react";
-import { useTranslations } from "next-intl";
+import { Brain, CircuitBoard, Network, ShieldCheck, Users } from "lucide-react";
+import { getTranslations } from "next-intl/server";
 
 interface ResearchGroup {
   id: string;
@@ -21,12 +11,11 @@ interface ResearchGroup {
   titleKey: string;
   descriptionKeys: string[];
   membersKey: string;
-  links: { labelKey: string; href: string }[];
 }
 
-export function ResearchPage() {
-  const t = useTranslations("Research");
-  const bt = useTranslations("Breadcrumb");
+export async function ResearchPage() {
+  const t = await getTranslations("Research");
+  const bt = await getTranslations("Breadcrumb");
 
   const groups: ResearchGroup[] = [
     {
@@ -35,16 +24,6 @@ export function ResearchPage() {
       titleKey: "automataTitle",
       descriptionKeys: ["automataDesc1", "automataDesc2"],
       membersKey: "automataMembers",
-      links: [
-        {
-          labelKey: "automataLink1",
-          href: "https://www.cs.sun.ac.za/research/theory-of-computation/",
-        },
-        {
-          labelKey: "automataLink2",
-          href: "https://www.cs.sun.ac.za/research/regex/",
-        },
-      ],
     },
     {
       id: "sev",
@@ -52,11 +31,6 @@ export function ResearchPage() {
       titleKey: "sevTitle",
       descriptionKeys: ["sevDesc"],
       membersKey: "sevMembers",
-      links: [
-        { labelKey: "sevLink1", href: "https://coastal.cs.sun.ac.za/" },
-        { labelKey: "sevLink2", href: "https://esbmc.org/" },
-        { labelKey: "sevLink3", href: "https://github.com/omcri/cseq" },
-      ],
     },
     {
       id: "mlai",
@@ -64,7 +38,6 @@ export function ResearchPage() {
       titleKey: "mlaiTitle",
       descriptionKeys: ["mlaiDesc"],
       membersKey: "mlaiMembers",
-      links: [],
     },
     {
       id: "telkom",
@@ -72,7 +45,6 @@ export function ResearchPage() {
       titleKey: "telkomTitle",
       descriptionKeys: ["telkomDesc"],
       membersKey: "telkomMembers",
-      links: [],
     },
   ];
 
@@ -151,31 +123,11 @@ export function ResearchPage() {
                     ))}
                   </div>
                 </div>
-
-                {/* Links */}
-                {group.links.length > 0 && (
-                  <div className="flex flex-wrap gap-3 pt-4 border-t border-white/10">
-                    {group.links.map((link) => (
-                      <a
-                        key={link.href}
-                        href={link.href}
-                        target="_blank"
-                        rel="noopener noreferrer"
-                        className="inline-flex items-center gap-1.5 rounded-full border border-white/10 bg-white/5 px-4 py-1.5 text-sm text-white/70 transition-colors hover:bg-white/10 hover:text-white"
-                      >
-                        {t(link.labelKey)}
-                        <ArrowUpRight className="h-3 w-3" />
-                      </a>
-                    ))}
-                  </div>
-                )}
               </GlassPanel>
             );
           })}
         </div>
       </ContentContainer>
-
-      <Footer />
     </>
   );
 }

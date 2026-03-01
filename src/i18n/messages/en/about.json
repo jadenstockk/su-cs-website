@@ -1,0 +1,61 @@
+{
+  "About": {
+    "department": "Our Department",
+    "departmentDesc": "The history, mission, and vision of SU Computer Science.",
+    "staff": "Staff & Faculty",
+    "staffDesc": "Meet our internationally recognised researchers and academics.",
+    "students": "Postgraduate Students",
+    "studentsDesc": "Current doctoral and masters research students.",
+    "alumni": "Alumni",
+    "alumniDesc": "Graduates who have shaped our department and the field."
+  },
+
+  "DepartmentPage": {
+    "title": "Our Department",
+    "subtitle": "Over 50 years of excellence in Computer Science education and research at Stellenbosch University.",
+    "historyTitle": "History",
+    "historyText1": "The Department of Computer Science at Stellenbosch University has a rich history spanning over five decades. Established in the early 1970s, the department has grown from a small group of pioneering academics into one of the leading computer science departments in South Africa.",
+    "historyText2": "Over the years, the department has evolved alongside rapid technological change, consistently adapting its curriculum, expanding its research portfolio, and attracting world-class faculty from across the globe.",
+    "missionTitle": "Mission",
+    "missionText": "To be a leading centre for Computer Science education and research in Africa, producing graduates who are innovative, ethical, and globally competitive — while contributing meaningfully to the advancement of science and technology in South Africa and beyond.",
+    "researchTitle": "Research Excellence",
+    "researchText": "Our faculty members are active in a wide range of research areas including artificial intelligence, machine learning, software engineering, formal methods, computer vision, natural language processing, and computational science. The department houses several internationally recognised research groups and regularly publishes in top-tier conferences and journals.",
+    "locationTitle": "Location",
+    "locationText": "The department is located on the fifth floor of the General Engineering Building on Stellenbosch University's main campus, in the heart of the beautiful town of Stellenbosch, Western Cape, South Africa."
+  },
+  "StaffPage": {
+    "title": "Staff & Faculty",
+    "subtitle": "Meet the academic and administrative staff of the Computer Science Department at Stellenbosch University.",
+    "academicStaff": "Academic Staff",
+    "administrativeStaff": "Administrative Staff",
+    "office": "Office",
+    "telephone": "Tel",
+    "researchInterests": "Research Interests",
+    "website": "Website"
+  },
+  "StudentsPage": {
+    "title": "Postgraduate Students",
+    "subtitle": "Current doctoral and masters research students in the Computer Science Department.",
+    "doctoralStudents": "Doctoral Students",
+    "mastersStudents": "Masters Students",
+    "supervisor": "Supervisor",
+    "researchTopic": "Research Topic"
+  },
+  "AlumniPage": {
+    "title": "Alumni",
+    "subtitle": "Celebrating the graduates and former staff who have shaped our department and made their mark on the field.",
+    "alumniFaculty": "Alumni Faculty",
+    "doctoralGraduates": "Doctoral Graduates",
+    "mastersGraduates": "Masters Graduates"
+  },
+  "Metadata": {
+    "aboutDepartmentTitle": "Our Department",
+    "aboutDepartmentDescription": "Learn about the history, mission, and vision of the Computer Science Department at Stellenbosch University.",
+    "aboutStaffTitle": "Staff & Faculty",
+    "aboutStaffDescription": "Meet the academic and administrative staff of the Computer Science Department at Stellenbosch University.",
+    "aboutStudentsTitle": "Postgraduate Students",
+    "aboutStudentsDescription": "Current doctoral and masters research students in the Computer Science Department at Stellenbosch University.",
+    "aboutAlumniTitle": "Alumni",
+    "aboutAlumniDescription": "Celebrating graduates and former staff from the Computer Science Department at Stellenbosch University."
+  }
+}

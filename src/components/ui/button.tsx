@@ -1,4 +1,5 @@
 import { cva, type VariantProps } from "class-variance-authority";
+import { ArrowRight } from "lucide-react";
 import { Slot } from "radix-ui";
 import * as React from "react";
 
@@ -29,7 +30,7 @@ const buttonVariants = cva(
         default: "h-9 px-4 py-2 has-[>svg]:px-3",
         xs: "h-6 gap-1 rounded-md px-2 text-xs has-[>svg]:px-1.5 [&_svg:not([class*='size-'])]:size-3",
         sm: "h-8 rounded-md gap-1.5 px-3 has-[>svg]:px-2.5",
-        lg: "px-6 py-3 has-[>svg]:px-4",
+        lg: "px-6 sm:py-3 py-2.5 has-[>svg]:px-4",
         icon: "size-9",
         "icon-xs": "size-6 rounded-md [&_svg:not([class*='size-'])]:size-3",
         "icon-sm": "size-8",
@@ -43,17 +44,48 @@ const buttonVariants = cva(
   },
 );
 
+type ButtonProps = React.ComponentProps<"button"> &
+  VariantProps<typeof buttonVariants> & {
+    asChild?: boolean;
+    /** Enable the slide-reveal hover effect on any variant */
+    slideReveal?: boolean;
+    /** Custom icon shown during the slide-reveal effect (defaults to ArrowRight) */
+    slideIcon?: React.ReactNode;
+  };
+
 function Button({
   className,
   variant = "default",
   size = "default",
   asChild = false,
+  slideReveal = false,
+  slideIcon,
+  children,
   ...props
-}: React.ComponentProps<"button"> &
-  VariantProps<typeof buttonVariants> & {
-    asChild?: boolean;
-  }) {
+}: ButtonProps) {
   const Comp = asChild ? Slot.Root : "button";
+
+  if (slideReveal) {
+    return (
+      <Comp
+        data-slot="button"
+        data-variant={variant}
+        data-size={size}
+        className={cn(
+          buttonVariants({ variant, size, className }),
+          "group relative overflow-hidden",
+        )}
+        {...props}
+      >
+        <span className="transition-transform duration-400 ease-[cubic-bezier(0.16,1,0.3,1)] group-hover:-translate-x-2.5">
+          {children}
+        </span>
+        <span className="pointer-events-none absolute inset-y-0 right-4 flex items-center opacity-0 translate-x-3 transition-all duration-400 ease-[cubic-bezier(0.16,1,0.3,1)] group-hover:opacity-100 group-hover:translate-x-0">
+          {slideIcon ?? <ArrowRight className="size-4!" />}
+        </span>
+      </Comp>
+    );
+  }
 
   return (
     <Comp
@@ -62,7 +94,9 @@ function Button({
       data-size={size}
       className={cn(buttonVariants({ variant, size, className }))}
       {...props}
-    />
+    >
+      {children}
+    </Comp>
   );
 }
 

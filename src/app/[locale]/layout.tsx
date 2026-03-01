@@ -1,8 +1,9 @@
+import { Footer } from "@/components/footer";
 import { Navbar } from "@/components/navbar";
 import { routing } from "@/i18n/routing";
 import type { Metadata } from "next";
 import { NextIntlClientProvider } from "next-intl";
-import { getTranslations, setRequestLocale } from "next-intl/server";
+import { setRequestLocale } from "next-intl/server";
 import { notFound } from "next/navigation";
 import { suRaleway } from "../fonts";
 import "../globals.css";
@@ -22,11 +23,61 @@ export async function generateMetadata({
   params: Promise<{ locale: string }>;
 }): Promise<Metadata> {
   const { locale } = await params;
-  const t = await getTranslations({ locale, namespace: "Metadata" });
+
+  const mod = await import(`@/i18n/messages/${locale}/common.json`);
+  const m = mod.default.Metadata as Record<string, string>;
+
+  const title = m.title;
+  const description = m.description;
+  const siteUrl = "https://cs.sun.ac.za";
 
   return {
-    title: t("title"),
-    description: t("description"),
+    title: {
+      default: title,
+      template: `%s | CS - Stellenbosch University`,
+    },
+    description,
+    keywords: m.keywords,
+    authors: [
+      {
+        name: "Department of Computer Science, Stellenbosch University",
+        url: siteUrl,
+      },
+    ],
+    creator: "Stellenbosch University Computer Science Department",
+    metadataBase: new URL(siteUrl),
+    alternates: {
+      canonical: `/${locale}`,
+      languages: {
+        en: "/en",
+        af: "/af",
+        xh: "/xh",
+      },
+    },
+    openGraph: {
+      type: "website",
+      locale: locale === "af" ? "af_ZA" : locale === "xh" ? "xh_ZA" : "en_ZA",
+      url: `${siteUrl}/${locale}`,
+      siteName: title,
+      title,
+      description,
+    },
+    twitter: {
+      card: "summary_large_image",
+      title,
+      description,
+    },
+    robots: {
+      index: true,
+      follow: true,
+      googleBot: {
+        index: true,
+        follow: true,
+        "max-video-preview": -1,
+        "max-image-preview": "large",
+        "max-snippet": -1,
+      },
+    },
   };
 }
 
@@ -49,6 +100,7 @@ export default async function LocaleLayout({ children, params }: Props) {
         <NextIntlClientProvider>
           <Navbar />
           {children}
+          <Footer />
         </NextIntlClientProvider>
       </body>
     </html>
