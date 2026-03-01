@@ -1,5 +1,6 @@
-import { getPageMetadata } from "@/i18n/metadata";
 import type { Metadata } from "next";
+import { setRequestLocale } from "next-intl/server";
+import { getPageMetadata } from "@/i18n/metadata";
 import { UgGuidePage } from "./ug-guide-page";
 
 export async function generateMetadata({
@@ -11,6 +12,12 @@ export async function generateMetadata({
   return getPageMetadata(locale, "ugGuide", "/programmes/undergraduate/guide");
 }
 
-export default function Page() {
+export default async function Page({
+  params,
+}: {
+  params: Promise<{ locale: string }>;
+}) {
+  const { locale } = await params;
+  setRequestLocale(locale);
   return <UgGuidePage />;
 }

@@ -1,7 +1,14 @@
+import { setRequestLocale } from "next-intl/server";
 import { Suspense } from "react";
 import NotFoundContent from "./not-found-content";
 
-export default function NotFoundPage() {
+export default async function NotFoundPage({
+  params,
+}: {
+  params: Promise<{ locale: string }>;
+}) {
+  const { locale } = await params;
+  setRequestLocale(locale);
   return (
     <Suspense
       fallback={
