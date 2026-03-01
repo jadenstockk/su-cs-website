@@ -1,7 +1,8 @@
+import { getTranslations } from "next-intl/server";
 import { ContentContainer } from "@/components/content-container";
+import { FadeIn } from "@/components/fade-in";
 import { BreadcrumbNav } from "@/components/programmes/breadcrumb-nav";
 import { PageHero } from "@/components/programmes/page-hero";
-import { getTranslations } from "next-intl/server";
 import { StaffCard } from "./staff-card";
 import { academicStaff, administrativeStaff } from "./staff-data";
 
@@ -14,6 +15,8 @@ export async function StaffPage() {
     website: t("website"),
     researchInterests: t("researchInterests"),
   };
+
+  const staggerDelay = (i: number) => Math.min(i * 0.05, 0.3);
 
   return (
     <>
@@ -33,28 +36,36 @@ export async function StaffPage() {
 
       <ContentContainer className="pb-24">
         {/* Academic Staff */}
-        <section className="mb-16">
-          <h2 className="text-2xl font-bold text-white mb-8">
-            {t("academicStaff")}
-          </h2>
-          <div className="grid gap-4 sm:grid-cols-2 xl:grid-cols-3">
-            {academicStaff.map((member) => (
-              <StaffCard key={member.name} member={member} labels={labels} />
-            ))}
-          </div>
-        </section>
+        <FadeIn>
+          <section className="mb-16">
+            <h2 className="text-2xl font-bold text-white mb-8">
+              {t("academicStaff")}
+            </h2>
+            <div className="grid gap-4 sm:grid-cols-2 xl:grid-cols-3">
+              {academicStaff.map((member, i) => (
+                <FadeIn key={member.name} delay={staggerDelay(i)}>
+                  <StaffCard member={member} labels={labels} />
+                </FadeIn>
+              ))}
+            </div>
+          </section>
+        </FadeIn>
 
         {/* Administrative Staff */}
-        <section>
-          <h2 className="text-2xl font-bold text-white mb-8">
-            {t("administrativeStaff")}
-          </h2>
-          <div className="grid gap-4 sm:grid-cols-2 xl:grid-cols-3">
-            {administrativeStaff.map((member) => (
-              <StaffCard key={member.name} member={member} labels={labels} />
-            ))}
-          </div>
-        </section>
+        <FadeIn>
+          <section>
+            <h2 className="text-2xl font-bold text-white mb-8">
+              {t("administrativeStaff")}
+            </h2>
+            <div className="grid gap-4 sm:grid-cols-2 xl:grid-cols-3">
+              {administrativeStaff.map((member, i) => (
+                <FadeIn key={member.name} delay={staggerDelay(i)}>
+                  <StaffCard member={member} labels={labels} />
+                </FadeIn>
+              ))}
+            </div>
+          </section>
+        </FadeIn>
       </ContentContainer>
     </>
   );

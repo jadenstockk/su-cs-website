@@ -1,13 +1,14 @@
+import { getTranslations } from "next-intl/server";
 import { ContentContainer } from "@/components/content-container";
+import { FadeIn } from "@/components/fade-in";
 import { GlassPanel } from "@/components/glass-panel";
 import { BreadcrumbNav } from "@/components/programmes/breadcrumb-nav";
 import { PageHero } from "@/components/programmes/page-hero";
-import { getTranslations } from "next-intl/server";
 import {
+  type AlumniGraduate,
   alumniFaculty,
   doctoralGraduates,
   mastersGraduates,
-  type AlumniGraduate,
 } from "./alumni-data";
 
 function GraduateGroup({
@@ -77,48 +78,54 @@ export async function AlumniPage() {
 
       <ContentContainer className="pb-24">
         {/* Alumni Faculty */}
-        <section className="mb-16">
-          <h2 className="text-2xl font-bold text-white mb-8">
-            {t("alumniFaculty")}
-          </h2>
-          <div className="grid gap-3 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4">
-            {alumniFaculty.map((name) => (
-              <GlassPanel
-                key={name}
-                variant="default"
-                rounded="xl"
-                blur="lg"
-                className="px-4 py-3 transition-all duration-300 hover:bg-white/15"
-              >
-                <p className="text-sm font-medium text-white/80">{name}</p>
-              </GlassPanel>
-            ))}
-          </div>
-        </section>
+        <FadeIn>
+          <section className="mb-16">
+            <h2 className="text-2xl font-bold text-white mb-8">
+              {t("alumniFaculty")}
+            </h2>
+            <div className="grid gap-3 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4">
+              {alumniFaculty.map((name) => (
+                <GlassPanel
+                  key={name}
+                  variant="default"
+                  rounded="xl"
+                  blur="lg"
+                  className="px-4 py-3 transition-all duration-300 hover:bg-white/15"
+                >
+                  <p className="text-sm font-medium text-white/80">{name}</p>
+                </GlassPanel>
+              ))}
+            </div>
+          </section>
+        </FadeIn>
 
         {/* Doctoral Graduates */}
-        <section className="mb-16">
-          <h2 className="text-2xl font-bold text-white mb-8">
-            {t("doctoralGraduates")}
-          </h2>
-          <div className="space-y-8">
-            {doctoralByYear.map(({ year, graduates }) => (
-              <GraduateGroup key={year} year={year} graduates={graduates} />
-            ))}
-          </div>
-        </section>
+        <FadeIn delay={0.05}>
+          <section className="mb-16">
+            <h2 className="text-2xl font-bold text-white mb-8">
+              {t("doctoralGraduates")}
+            </h2>
+            <div className="space-y-8">
+              {doctoralByYear.map(({ year, graduates }) => (
+                <GraduateGroup key={year} year={year} graduates={graduates} />
+              ))}
+            </div>
+          </section>
+        </FadeIn>
 
         {/* Masters Graduates */}
-        <section>
-          <h2 className="text-2xl font-bold text-white mb-8">
-            {t("mastersGraduates")}
-          </h2>
-          <div className="space-y-8">
-            {mastersByYear.map(({ year, graduates }) => (
-              <GraduateGroup key={year} year={year} graduates={graduates} />
-            ))}
-          </div>
-        </section>
+        <FadeIn delay={0.05}>
+          <section>
+            <h2 className="text-2xl font-bold text-white mb-8">
+              {t("mastersGraduates")}
+            </h2>
+            <div className="space-y-8">
+              {mastersByYear.map(({ year, graduates }) => (
+                <GraduateGroup key={year} year={year} graduates={graduates} />
+              ))}
+            </div>
+          </section>
+        </FadeIn>
       </ContentContainer>
     </>
   );
