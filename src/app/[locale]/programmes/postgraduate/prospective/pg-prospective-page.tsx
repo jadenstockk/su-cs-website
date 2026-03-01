@@ -73,17 +73,13 @@ export async function PgProspectivePage() {
         </section>
 
         {/* Image break */}
-        <ImagePlaceholder
-          className="mb-16"
-          aspectRatio="wide"
-        >
+        <ImagePlaceholder className="mb-16" aspectRatio="wide">
           <Image
             src={"/assets/images/scenes/students.jpg"}
             className="object-cover"
             fill
             alt={t("imageAlt")}
           />
-         </ImagePlaceholder>
         </ImagePlaceholder>
 
         {/* How to apply */}
