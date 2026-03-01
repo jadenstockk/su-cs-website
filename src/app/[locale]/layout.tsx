@@ -35,7 +35,7 @@ export async function generateMetadata({
   return {
     title: {
       default: title,
-      template: `%s | CS - Stellenbosch University`,
+      template: `%s | ${title}`,
     },
     description,
     keywords: m.keywords,

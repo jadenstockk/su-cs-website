@@ -76,8 +76,10 @@ export async function getPageMetadata(
 ): Promise<Metadata> {
   const m = await getMetadataMessages(locale);
 
+  const pageTitle = m[titleKeys[page]];
+
   return {
-    title: m[titleKeys[page]],
+    title: page === "home" ? { absolute: m.title } : pageTitle,
     description: m[descKeys[page]],
     alternates: {
       canonical: `/${locale}${path}`,

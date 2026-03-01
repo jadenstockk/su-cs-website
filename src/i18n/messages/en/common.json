@@ -273,8 +273,8 @@
     "allPg": "All Postgraduate Pages"
   },
   "Metadata": {
-    "title": "Computer Science - Stellenbosch University",
-    "titleTemplate": "{title} | CS - Stellenbosch University",
+    "title": "Computer Science | Stellenbosch University",
+    "titleTemplate": "{title} | Computer Science | Stellenbosch University",
     "description": "Website for the Computer Science Department at Stellenbosch University. Explore our programmes, research, and community.",
     "keywords": "computer science, stellenbosch university, south africa, BSc, honours, masters, PhD, programming, algorithms, machine learning, AI",
     "homeTitle": "Home",
