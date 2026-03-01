@@ -1,6 +1,9 @@
+"use client";
+
+import { motion, useReducedMotion } from "motion/react";
+import type { ReactNode } from "react";
 import { ContentContainer } from "@/components/content-container";
 import { cn } from "@/lib/utils";
-import type { ReactNode } from "react";
 
 interface PageHeroProps {
   title: string;
@@ -18,6 +21,8 @@ export function PageHero({
   breadcrumb,
   className,
 }: PageHeroProps) {
+  const shouldReduceMotion = useReducedMotion();
+
   return (
     <div
       className={cn(
@@ -26,14 +31,33 @@ export function PageHero({
       )}
     >
       <ContentContainer>
-        {breadcrumb && <div className="mb-6">{breadcrumb}</div>}
-        <h1 className="text-3xl font-bold tracking-tight text-white sm:text-4xl lg:text-5xl">
+        {breadcrumb && (
+          <motion.div
+            className="mb-6"
+            initial={shouldReduceMotion ? false : { opacity: 0, y: 10 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.4, ease: "easeOut" }}
+          >
+            {breadcrumb}
+          </motion.div>
+        )}
+        <motion.h1
+          className="text-3xl font-bold tracking-tight text-white sm:text-4xl lg:text-5xl"
+          initial={shouldReduceMotion ? false : { opacity: 0, y: 16 }}
+          animate={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.45, ease: "easeOut", delay: 0.1 }}
+        >
           {title}
-        </h1>
+        </motion.h1>
         {subtitle && (
-          <p className="mt-4 max-w-2xl text-base leading-relaxed text-white/60 sm:text-lg">
+          <motion.p
+            className="mt-4 max-w-2xl text-base leading-relaxed text-white/60 sm:text-lg"
+            initial={shouldReduceMotion ? false : { opacity: 0, y: 16 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.45, ease: "easeOut", delay: 0.2 }}
+          >
             {subtitle}
-          </p>
+          </motion.p>
         )}
       </ContentContainer>
     </div>

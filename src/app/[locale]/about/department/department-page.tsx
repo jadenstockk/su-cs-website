@@ -1,9 +1,10 @@
+import { BookOpen, GraduationCap, MapPin, Target } from "lucide-react";
+import { getTranslations } from "next-intl/server";
 import { ContentContainer } from "@/components/content-container";
+import { FadeIn } from "@/components/fade-in";
 import { GlassPanel } from "@/components/glass-panel";
 import { BreadcrumbNav } from "@/components/programmes/breadcrumb-nav";
 import { PageHero } from "@/components/programmes/page-hero";
-import { BookOpen, GraduationCap, MapPin, Target } from "lucide-react";
-import { getTranslations } from "next-intl/server";
 
 export async function DepartmentPage() {
   const t = await getTranslations("DepartmentPage");
@@ -50,35 +51,36 @@ export async function DepartmentPage() {
 
       <ContentContainer className="pb-24">
         <div className="grid gap-8 lg:grid-cols-2">
-          {sections.map((section) => {
+          {sections.map((section, i) => {
             const Icon = section.icon;
             return (
-              <GlassPanel
-                key={section.title}
-                variant="default"
-                rounded="xl"
-                blur="lg"
-                className="p-8 transition-all duration-300 hover:bg-white/15"
-              >
-                <div className="flex items-center gap-3 mb-4">
-                  <div className="flex h-10 w-10 items-center justify-center rounded-lg bg-white/10">
-                    <Icon className="h-5 w-5 text-white/70" />
+              <FadeIn key={section.title} delay={i * 0.08}>
+                <GlassPanel
+                  variant="default"
+                  rounded="xl"
+                  blur="lg"
+                  className="p-8 transition-all duration-300 hover:bg-white/15"
+                >
+                  <div className="flex items-center gap-3 mb-4">
+                    <div className="flex h-10 w-10 items-center justify-center rounded-lg bg-white/10">
+                      <Icon className="h-5 w-5 text-white/70" />
+                    </div>
+                    <h2 className="text-xl font-bold text-white">
+                      {section.title}
+                    </h2>
                   </div>
-                  <h2 className="text-xl font-bold text-white">
-                    {section.title}
-                  </h2>
-                </div>
-                <div className="space-y-3">
-                  {section.content.map((paragraph) => (
-                    <p
-                      key={paragraph.slice(0, 40)}
-                      className="text-sm leading-relaxed text-white/60"
-                    >
-                      {paragraph}
-                    </p>
-                  ))}
-                </div>
-              </GlassPanel>
+                  <div className="space-y-3">
+                    {section.content.map((paragraph) => (
+                      <p
+                        key={paragraph.slice(0, 40)}
+                        className="text-sm leading-relaxed text-white/60"
+                      >
+                        {paragraph}
+                      </p>
+                    ))}
+                  </div>
+                </GlassPanel>
+              </FadeIn>
             );
           })}
         </div>

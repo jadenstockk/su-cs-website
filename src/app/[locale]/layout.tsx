@@ -1,10 +1,11 @@
-import { Footer } from "@/components/footer";
-import { Navbar } from "@/components/navbar";
-import { routing } from "@/i18n/routing";
 import type { Metadata } from "next";
+import { notFound } from "next/navigation";
 import { NextIntlClientProvider } from "next-intl";
 import { setRequestLocale } from "next-intl/server";
-import { notFound } from "next/navigation";
+import { Footer } from "@/components/footer";
+import { Navbar } from "@/components/navbar";
+import { PageTransition } from "@/components/page-transition";
+import { routing } from "@/i18n/routing";
 import { suRaleway } from "../fonts";
 import "../globals.css";
 
@@ -99,7 +100,7 @@ export default async function LocaleLayout({ children, params }: Props) {
       >
         <NextIntlClientProvider>
           <Navbar />
-          {children}
+          <PageTransition>{children}</PageTransition>
           <Footer />
         </NextIntlClientProvider>
       </body>
