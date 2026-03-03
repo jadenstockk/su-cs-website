@@ -1,8 +1,8 @@
 import { ContentContainer } from "@/components/content-container";
 import { FadeIn } from "@/components/fade-in";
 import { GlassPanel } from "@/components/glass-panel";
-import { ProgrammesWizardTrigger } from "@/components/programmes-wizard-trigger";
 import { BreadcrumbNav } from "@/components/programmes/breadcrumb-nav";
+import { ProgrammesWizardCard } from "./programmes-wizard-card";
 import { PageHero } from "@/components/programmes/page-hero";
 import { Link } from "@/i18n/navigation";
 import {
@@ -52,12 +52,6 @@ export async function DepartmentPage() {
       href: "/about/staff" as const,
     },
     {
-      icon: GraduationCap,
-      title: t("exploreProgrammes"),
-      description: t("exploreProgrammesDesc"),
-      href: "/programmes" as const,
-    },
-    {
       icon: FlaskConical,
       title: t("exploreResearch"),
       description: t("exploreResearchDesc"),
@@ -94,11 +88,6 @@ export async function DepartmentPage() {
               priority
             />
             <div className="absolute inset-0 bg-linear-to-t from-background via-background/20 to-transparent" />
-            <div className="absolute bottom-0 left-0 right-0 p-6 sm:p-8">
-              <p className="text-xs font-semibold uppercase tracking-widest text-su-gold">
-                {t("imageCaption")}
-              </p>
-            </div>
           </div>
         </FadeIn>
       </ContentContainer>
@@ -185,13 +174,10 @@ export async function DepartmentPage() {
               </FadeIn>
             );
           })}
+          <FadeIn delay={0.15 + exploreLinks.length * 0.08}>
+            <ProgrammesWizardCard />
+          </FadeIn>
         </div>
-
-        <FadeIn delay={0.4}>
-          <div className="mt-8 flex justify-center">
-            <ProgrammesWizardTrigger className="cursor-pointer" />
-          </div>
-        </FadeIn>
       </ContentContainer>
     </>
   );

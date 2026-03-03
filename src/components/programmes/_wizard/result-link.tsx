@@ -54,7 +54,7 @@ export function ResultLink({ card, visitLabel }: ResultLinkProps) {
               {card.description}
             </p>
           </div>
-          <span className="mt-1 flex items-center gap-1 whitespace-nowrap text-xs font-medium text-white/40 transition-colors group-hover:text-white/70">
+          <span className="mt-1 hidden sm:flex items-center gap-1 whitespace-nowrap text-xs font-medium text-white/40 transition-colors group-hover:text-white/70">
             {visitLabel}
             <ArrowRight className="h-3.5 w-3.5 transition-transform group-hover:translate-x-0.5" />
           </span>

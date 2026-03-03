@@ -136,7 +136,7 @@ export function ProgrammesWizardDialog({
     <Dialog open={open} onOpenChange={handleOpenChange}>
       <DialogContent
         showCloseButton
-        className="max-w-3xl max-h-[calc(100dvh-2rem)] overflow-y-auto no-scrollbar border-white/10 bg-black/80 p-0 backdrop-blur-xl sm:rounded-xl [&>button[data-slot=dialog-close]]:text-white"
+        className="sm:max-w-3xl max-h-[calc(100dvh-2rem)] overflow-y-auto no-scrollbar border-white/10 bg-black/80 p-0 backdrop-blur-xl sm:rounded-xl [&>button[data-slot=dialog-close]]:text-white"
       >
         <DialogTitle className="sr-only">{t("heroTitle")}</DialogTitle>
 
