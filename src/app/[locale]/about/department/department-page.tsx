@@ -1,6 +1,7 @@
 import { ContentContainer } from "@/components/content-container";
 import { FadeIn } from "@/components/fade-in";
 import { GlassPanel } from "@/components/glass-panel";
+import { ProgrammesWizardTrigger } from "@/components/programmes-wizard-trigger";
 import { BreadcrumbNav } from "@/components/programmes/breadcrumb-nav";
 import { PageHero } from "@/components/programmes/page-hero";
 import { Link } from "@/i18n/navigation";
@@ -185,6 +186,12 @@ export async function DepartmentPage() {
             );
           })}
         </div>
+
+        <FadeIn delay={0.4}>
+          <div className="mt-8 flex justify-center">
+            <ProgrammesWizardTrigger className="cursor-pointer" />
+          </div>
+        </FadeIn>
       </ContentContainer>
     </>
   );

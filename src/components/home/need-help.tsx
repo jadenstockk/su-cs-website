@@ -27,7 +27,7 @@ export function NeedHelp({ className }: { className?: string }) {
             {t("subtitle")}
           </p>
 
-          <div className="mt-8 flex flex-col items-center gap-3 sm:flex-row sm:justify-center">
+          <div className="mt-8 flex flex-row items-center gap-3 sm:justify-center">
             <Button variant="white" size="lg" asChild>
               <Link href="/contact" className="group">
                 {t("cta")}
