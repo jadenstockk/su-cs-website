@@ -20,7 +20,7 @@ export function HeroVideo({
   overlayOpacity = 50,
   mobileOverlayOpacity,
   src = "/assets/videos/su-cs-hero.mp4",
-  poster,
+  poster = "/assets/images/cs-hero-poster.webp",
   posterAlt = "",
 }: HeroVideoProps) {
   const [videoUrl, setVideoUrl] = useState<string | null>(null);
