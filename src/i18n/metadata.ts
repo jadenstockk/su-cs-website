@@ -32,6 +32,7 @@ type PageMetadataKey =
   | "pgProspective"
   | "pgHonours"
   | "pgMasters"
+  | "pgGuide"
   | "pgPhd";
 
 const titleKeys: Record<PageMetadataKey, string> = {
@@ -46,6 +47,7 @@ const titleKeys: Record<PageMetadataKey, string> = {
   pgProspective: "pgProspectiveTitle",
   pgHonours: "pgHonoursTitle",
   pgMasters: "pgMastersTitle",
+  pgGuide: "pgGuideTitle",
   pgPhd: "pgPhdTitle",
 };
 
@@ -61,6 +63,7 @@ const descKeys: Record<PageMetadataKey, string> = {
   pgProspective: "pgProspectiveDescription",
   pgHonours: "pgHonoursDescription",
   pgMasters: "pgMastersDescription",
+  pgGuide: "pgGuideDescription",
   pgPhd: "pgPhdDescription",
 };
 

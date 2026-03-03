@@ -18,7 +18,7 @@ export function Footer({ className }: { className?: string }) {
 
   const quickLinks = [
     { label: t("home"), href: "/" },
-    { label: t("programmes"), href: "/programmes" },
+    { label: t("programmes"), href: "/programmes/undergraduate/guide" },
     { label: t("research"), href: "/research" },
     { label: t("contactUs"), href: "/contact" },
   ];

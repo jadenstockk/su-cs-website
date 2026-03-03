@@ -41,7 +41,7 @@ export async function PgModulesPage({
       <ContentContainer className="pb-24">
         <ImagePlaceholder className="mb-12" aspectRatio="wide">
           <Image
-            src={"/assets/images/scenes/students.jpg"}
+            src={"/assets/images/scenes/library.webp"}
             className="object-cover"
             fill
             alt={t("imageAlt")}

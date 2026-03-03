@@ -359,6 +359,7 @@ export function TerminalDialog({ open, onOpenChange }: TerminalDialogProps) {
   const [history, setHistory] = useState<string[]>([]);
   const [historyIdx, setHistoryIdx] = useState(-1);
   const [isTyping, setIsTyping] = useState(false);
+  const [inputFocused, setInputFocused] = useState(false);
 
   const scrollRef = useRef<HTMLDivElement>(null);
   const inputRef = useRef<HTMLInputElement>(null);
@@ -369,6 +370,13 @@ export function TerminalDialog({ open, onOpenChange }: TerminalDialogProps) {
       scrollRef.current.scrollTop = scrollRef.current.scrollHeight;
     }
   }, [lines]);
+
+  // Re-focus input whenever typing finishes
+  useEffect(() => {
+    if (!isTyping) {
+      inputRef.current?.focus();
+    }
+  }, [isTyping]);
 
   // Focus input when dialog opens
   useEffect(() => {
@@ -766,9 +774,13 @@ export function TerminalDialog({ open, onOpenChange }: TerminalDialogProps) {
               placeholder={isTyping ? "" : "type a command..."}
               autoComplete="off"
               spellCheck={false}
+              onFocus={() => setInputFocused(true)}
+              onBlur={() => setInputFocused(false)}
             />
-            {/* Blinking cursor when not focused */}
-            <span className="inline-block h-4 w-0.5 animate-pulse bg-green-400" />
+            {/* Blinking cursor shown only when input is not focused */}
+            {!inputFocused && (
+              <span className="inline-block h-4 w-0.5 animate-pulse bg-green-400" />
+            )}
           </div>
         </div>
       </DialogContent>

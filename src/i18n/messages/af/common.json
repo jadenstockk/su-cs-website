@@ -13,6 +13,8 @@
     "ugProspectiveDesc": "Toelating, vereistes en hoe om aansoek te doen.",
     "pgModules": "Modules",
     "pgModulesDesc": "Honneurs-, Meesters- en PhD-modulekatalogus.",
+    "pgGuide": "Programgids",
+    "pgGuideDesc": "Programoorsig, struktuur en loopbaanpaaie.",
     "pgProspective": "Voornemende Studente",
     "pgProspectiveDesc": "Toelatingsvereistes, aansoeke en VGV's.",
     "pgHonours": "Honneurs",
@@ -59,10 +61,10 @@
     "title2": "Dryf Innovasie",
     "title3": "Bewerk Impak",
     "title4": "Transformeer Idees",
-    "description": "Vir meer as 50 jaar is Stellenbosch se Departement Rekenaarwetenskap aan die voorpunt van innovasie — navorsing bevorder en leiers ontwikkel wat tegnologie en ontdekking wêreldwyd dryf.",
+    "description": "Vir meer as 50 jaar het Stellenbosch se Rekenaarwetenskap-departement die mense wat môre se tegnologie bou, bemagtig.",
     "exploreProgrammes": "Verken Programme",
     "learnMore": "Lees Meer",
-    "contactUs": "Kontak Ons"
+    "applyNow": "Aansoek Nou"
   },
   "Stats": {
     "yearsValue": "50+",
@@ -91,15 +93,15 @@
     "handsOnDescription": "Projekgebaseerde kurrikula wat jou voorberei vir regte sagteware-ingenieursuitdagings."
   },
   "Programmes": {
-    "title": "Our Programmes",
-    "subtitle": "From undergraduate foundations to postgraduate research, find the right path for your career.",
-    "bscTitle": "BSc Computer Science",
-    "bscDescription": "A three-year undergraduate degree offering a strong foundation in algorithms, systems, and software engineering.",
-    "honsTitle": "BScHons Computer Science",
-    "honsDescription": "An intensive honours year with advanced coursework and a research project in a specialist area.",
-    "mscTitle": "MSc / PhD Research",
-    "mscDescription": "Postgraduate research programmes supervised by leading academics across multiple focus areas.",
-    "learnMore": "Learn more"
+    "title": "Ons Programme",
+    "subtitle": "Van voorgraadse grondslae tot nagraadse navorsing, vind die regte pad vir jou loopbaan.",
+    "bscTitle": "BSc Rekenaarwetenskap",
+    "bscDescription": "'n Driejaar voorgraadse graad wat 'n sterk grondslag bied in algoritmes, stelsels en sagteware-ingenieurswese.",
+    "honsTitle": "BScHons Rekenaarwetenskap",
+    "honsDescription": "'n Intensiewe honneursjaar met gevorderde kursuswerk en 'n navorsingsprojek in 'n spesialiseringsgebied.",
+    "mscTitle": "MSc / PhD Navorsing",
+    "mscDescription": "Nagraadse navorsingsprogramme onder leiding van vooraanstaande akademici oor verskeie fokusareas.",
+    "learnMore": "Lees meer"
   },
   "Contact": {
     "title": "Kontak Ons",
@@ -303,7 +305,9 @@
     "pgMastersTitle": "Meestersprogram",
     "pgMastersDescription": "Tesisgebaseerde Meesters in Rekenaarwetenskap aan die Universiteit Stellenbosch — wêreldklas navorsingsbegeleiding en loopbaanuitkomste.",
     "pgPhdTitle": "PhD-program",
-    "pgPhdDescription": "Doktorale navorsing in Rekenaarwetenskap aan die Universiteit Stellenbosch — oorspronklike bydraes saam met internasionaal erkende navorsers."
+    "pgPhdDescription": "Doktorale navorsing in Rekenaarwetenskap aan die Universiteit Stellenbosch — oorspronklike bydraes saam met internasionaal erkende navorsers.",
+    "pgGuideTitle": "Nagraadse Programgids",
+    "pgGuideDescription": "'n Oorsig oor nagraadse studie in Rekenaarwetenskap aan die Universiteit Stellenbosch — programme, struktuur en loopbaanpaaie."
   },
   "HomeShowcase": {
     "title": "Waar Kode Ontdekking Ontmoet",
@@ -314,6 +318,70 @@
     "title": "Navorsing Wat Saak Maak",
     "subtitle": "Ons fakulteit en studente verken baanbrekende gebiede regoor die volle spektrum van rekenaarwetenskap.",
     "viewAll": "Bekyk Alle Navorsingsgroepe"
+  },
+  "Welcome": {
+    "badge": "Universiteit Stellenbosch",
+    "title": "Rekenaarwetenskap by Stellenbosch",
+    "description": "Ons bied sterk grondslae in rekenaarwetenskap — van algoritmes, sagteware-ingenieurswese en stelsels tot die wiskundige teorie van berekening — wat studente voorberei om betroubare sagteware te bou en gevorderde studie of bedryfsloopbane na te streef.",
+    "cta": "Oor die departement"
+  },
+  "Undergraduate": {
+    "badge": "Voorgraadse Studies",
+    "title": "Bou jou Rekenaarwetenskap-graad",
+    "description": "Kies tussen die BSc Rekenaarwetenskap-fokusareas (Algemeen, Rekenaarstelsels of Datawetenskap) of die vierjaar-BDatWet Rekenaarwetenskap-stroom. Jy sal programmering, algoritmes, stelsels en sagteware-ingenieurswese dek met praktiese laboratoria en projekwerk.",
+    "cta": "Verken voorgraadse programme"
+  },
+  "Postgraduate": {
+    "badge": "Nagraadse Studies",
+    "title": "Vorder met Honneurs, Meesters en PhD",
+    "description": "Verdiep jou kundigheid deur ons honneurs-kursuswerk, navorsingsgedrewe MSc, of doktorale program. Werk nou saam met studieleiers in aktiewe navorsingsgroepe, verwerf gevorderde tegniese vaardighede, en berei voor vir leierskapsrolle in die bedryf of akademie.",
+    "cta": "Verken nagraadse programme"
+  },
+  "AcademicStaff": {
+    "title": "Akademiese Personeel",
+    "subtitle": "Navorsers en opvoeders wat innovasie in rekenaarwetenskap dryf.",
+    "viewAll": "Bekyk alle personeel"
+  },
+  "StudentResources": {
+    "title": "Studenthulpbronne",
+    "subtitle": "Vinnige skakels na belangrike studentplatforms en -dienste.",
+    "applications": "Aansoeke",
+    "applicationsDesc": "Bestuur jou universiteitsaansoeke.",
+    "stemlearn": "STEMLearn",
+    "stemlearnDesc": "Kursusinhoud, opdragte en aankondigings.",
+    "gitlab": "Stellenbosch GitLab",
+    "gitlabDesc": "Weergawebeheer en samewerkende koderingsprojekte.",
+    "calendar": "Akademiese Kalender",
+    "calendarDesc": "Belangrike datums en skedules vir die jaar.",
+    "mysun": "MySUN-portaal",
+    "mysunDesc": "Toegang tot universiteitsdienste en hulpbronne.",
+    "contactUs": "Kontak Ons",
+    "contactUsDesc": "Fakulteit-kontakbesonderhede.",
+    "faqTitle": "Gereelde Vrae",
+    "faqSubtitle": "Vind antwoorde op algemene vrae oor ons program.",
+    "faq1q": "Wat is die toelatingsvereistes vir die BSc Rekenaarwetenskap-graad?",
+    "faq1a": "Aansoekers benodig 'n Nasionale Senior Sertifikaat (of gelykwaardig) met Wiskunde en Engels op die vereiste prestasievlak. 'n Minimum TPT-telling en spesifieke vakresultate is van toepassing — verwys na die Toelatingskantoor vir die nuutste drempels.",
+    "faq2q": "Kan ek vir die Honneursprogram aansoek doen direk na my BSc?",
+    "faq2a": "Ja. Studente wat die driejaar BSc Rekenaarwetenskap met 'n voldoende hoë gemiddeld (gewoonlik 60% of hoër in derdejaarmodules) voltooi het, kan vir die eenjaar BScHons-program aansoek doen.",
+    "faq3q": "Is daar 'n beurs of finansiële hulp beskikbaar?",
+    "faq3a": "Die Universiteit Stellenbosch bied meriete-beurse, die Nasionale Studentefinansiële Hulpskema (NSFAS), en verskeie departementele beurse wat deur bedryfsmaats befonds word. Besoek die Finansiële Hulpburo of die departement se nagraadse kantoor vir huidige geleenthede.",
+    "faq4q": "Hoe registreer ek vir modules op die studentportaal?",
+    "faq4a": "Moduleregistrasie word deur die MySUN-portaal gedoen tydens die amptelike registrasietydperk elke semester. Jou akademiese adviseur sal jou goedgekeurde kurrikulum bevestig voordat registrasie oopmaak.",
+    "faq5q": "Waar kan ek klasnotas en opdragindienings vind?",
+    "faq5a": "Alle kursusmateriaal, klasnotas, opdragte en aankondigings word op STEMLearn (stemlearn.sun.ac.za) gehuisves. Studente moet hierdie platform gereeld deur die semester nagaan.",
+    "faq6q": "Watter navorsingsgroepe kan ek as nagraadse student aansluit?",
+    "faq6a": "Die departement het vier aktiewe navorsingsgroepe: Kunsmatige Intelligensie, Sagteware-ingenieurswese, Formele Tale & Outomata, en Telekommunikasie & Seinverwerking. Voornemende nagraadse studente moet 'n potensiële studieleier in hul belangstellingsgebied kontak voordat hulle aansoek doen.",
+    "faq7q": "Is daar laboratorium- / rekenaarinfrastruktuur beskikbaar vir studente?",
+    "faq7a": "Ja. Die departement onderhou toegewyde Linux-rekenaarlaboratoria vir praktiese werk sowel as toegang tot die Universiteit Stellenbosch HPC-kluster vir navorsingsintensiewe projekte. Studente ontvang ook GitLab-rekeninge op die departementele bediener.",
+    "faq8q": "Hoe kontak ek my dosent of 'n tutor?",
+    "faq8a": "Dosente plaas hul konsultasie-ure op STEMLearn aan die begin van elke semester. Tutors is beskikbaar in die hulptoonbanksessies wat in die laboratoriumrooster geskeduleer is. Jy kan ook die departement se algemene navrae-e-pos bereik vir administratiewe sake."
+  },
+  "GetInTouch": {
+    "title": "Hulp Nodig?",
+    "subtitle": "Het jy vrae oor ons programme, navorsing of toelating? Ons is hier om te help.",
+    "cta": "Kontak Ons",
+    "email": "cs@sun.ac.za",
+    "emailLabel": "E-pos ons by"
   },
   "Journey": {
     "title": "Jou Akademiese Reis",

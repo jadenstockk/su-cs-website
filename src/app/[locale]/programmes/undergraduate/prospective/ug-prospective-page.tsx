@@ -44,7 +44,7 @@ export async function UgProspectivePage() {
           </div>
           <ImagePlaceholder aspectRatio="video">
             <Image
-              src={"/assets/images/scenes/students.jpg"}
+              src={"/assets/images/scenes/danie-craven2.webp"}
               className="object-cover"
               fill
               alt={t("imageAlt")}
@@ -115,8 +115,8 @@ export async function UgProspectivePage() {
         {/* Image break */}
         <ImagePlaceholder className="mb-16" aspectRatio="wide">
           <Image
-            src={"/assets/images/scenes/stadium.webp"}
-            className="object-cover"
+            src={"/assets/images/scenes/dream-walk.webp"}
+            className="object-cover object-bottom"
             fill
             alt={t("imageAlt")}
           />

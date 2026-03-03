@@ -13,6 +13,8 @@
     "ugProspectiveDesc": "Ukwamkelwa, iimfuno, kunye nendlela yokufaka isicelo.",
     "pgModules": "Iimodyuli",
     "pgModulesDesc": "Ikhathalogu yeemodyuli ze-Honours, Masters, kunye ne-PhD.",
+    "pgGuide": "Isikhokelo senkqubo",
+    "pgGuideDesc": "Ushwankathelo lwenkqubo, ulwakhiwo, neendlela zekhariyer.",
     "pgProspective": "Abafundi abaza kufunda",
     "pgProspectiveDesc": "Iimfuno zokungena, izicelo, kunye ne-FAQ.",
     "pgHonours": "I-Honours",
@@ -59,10 +61,10 @@
     "title2": "Siqhuba izinto ezintsha",
     "title3": "Senza impembelelo",
     "title4": "Siguqula iingcinga",
-    "description": "Ngaphezulu kweminyaka engama-50, iSebe leNzululwazi yeKhompyutha yaseStellenbosch ibikwindawo ephambili ezintsha — iphuhlisa uphando kwaye iphuhlisa iinkokeli eziqhuba itekhnoloji kunye nokufumanisa kwihlabathi liphela.",
+    "description": "Okwe-50 iminyaka iphakamisileyo, iSebe le-Computer Science laseStellenbosch liye laphakamisela abantu abasakhayo inzululwazi yemva.",
     "exploreProgrammes": "Jonga iinkqubo",
     "learnMore": "Funda ngakumbi",
-    "contactUs": "Qhagamshelana nathi"
+    "applyNow": "Qhagamshelana nathi"
   },
   "Stats": {
     "yearsValue": "50+",
@@ -303,7 +305,9 @@
     "pgMastersTitle": "Inkqubo ye-Masters",
     "pgMastersDescription": "I-Masters esekwe kwithisisi ye-Computer Science eYunivesithi yaseStellenbosch — ukhokelo lophando lokwenene lwehlabathi.",
     "pgPhdTitle": "Inkqubo ye-PhD",
-    "pgPhdDescription": "Uphando lwe-Doctoral kwi-Computer Science eYunivesithi yaseStellenbosch — igalelo lokuqala kunye nabaphandi abaziwa kwihlabathi."
+    "pgPhdDescription": "Uphando lwe-Doctoral kwi-Computer Science eYunivesithi yaseStellenbosch — igalelo lokuqala kunye nabaphandi abaziwa kwihlabathi.",
+    "pgGuideTitle": "Isikhokelo senkqubo ye-Postgraduate",
+    "pgGuideDescription": "Ushwankathelo lokufunda i-postgraduate kwi-Computer Science eYunivesithi yaseStellenbosch — iinkqubo, ulwakhiwo, neendlela zekhariyer."
   },
   "HomeShowcase": {
     "title": "Apho Ikhowudi Idibana Nokufumanisa",
@@ -314,6 +318,70 @@
     "title": "Uphando Olubalulekileyo",
     "subtitle": "Abafundisi nabafundi bethu baphonononga iindawo ezintsha kwinzululwazi yekhompyutha.",
     "viewAll": "Jonga Onke Amaqela Ophando"
+  },
+  "Welcome": {
+    "badge": "IYunivesithi yaseStellenbosch",
+    "title": "INzululwazi yeKhompyutha eStellenbosch",
+    "description": "Sinika iziseko ezomeleleyo kwinzululwazi yekhompyutha — ukusuka kwii-algorithms, ubunjineli besoftware, neesistim ukuya kwithiyori yezibalo yokubalwa — silungiselela abafundi ukwakha isoftware ethembekileyo kunye nokulandela izifundo eziphambili okanye ikhariyer yeshishini.",
+    "cta": "Malunga nesebe"
+  },
+  "Undergraduate": {
+    "badge": "Izifundo ze-Undergraduate",
+    "title": "Yakha idigri yakho yeNzululwazi yeKhompyutha",
+    "description": "Khetha phakathi kweendawo eziphambili ze-BSc Computer Science (Jikelele, Iisistim zeKhompyutha, okanye iNzululwazi yeDatha) okanye i-BDatSci yeminyaka emine. Uza kufunda ukuprogram, ii-algorithms, iisistim, kunye nobunjineli besoftware ngamava wesandla kunye nomsebenzi weprojekthi.",
+    "cta": "Jonga iinkqubo ze-undergraduate"
+  },
+  "Postgraduate": {
+    "badge": "Izifundo ze-Postgraduate",
+    "title": "Qhubela phambili ne-Honours, Masters, kunye ne-PhD",
+    "description": "Yenza ubungcali bakho bunzulu ngomsebenzi wekosi ye-honours, i-MSc eqhutyelwa luphand, okanye inkqubo ye-doctoral. Sebenza ngokusondeleyo nabongameli kumaqela ophando asebenzayo, fumana izakhono eziphambili zobugcisa, kwaye ulungiselele iindima zobunkokheli kwishishini okanye e-akademi.",
+    "cta": "Jonga iinkqubo ze-postgraduate"
+  },
+  "AcademicStaff": {
+    "title": "Abasebenzi Bezifundo",
+    "subtitle": "Abaphandi nabafundisi abaqhuba ukuvelisa izinto ezintsha kwinzululwazi yekhompyutha.",
+    "viewAll": "Jonga bonke abasebenzi"
+  },
+  "StudentResources": {
+    "title": "Imithombo Yabafundi",
+    "subtitle": "Amakhonkco akhawulezayo ukuya kumaqonga abalulekileyo nabafundi kunye neenkonzo.",
+    "applications": "Izicelo",
+    "applicationsDesc": "Lawula izicelo zakho zeyunivesithi.",
+    "stemlearn": "STEMLearn",
+    "stemlearnDesc": "Umxholo wekosi, imisebenzi, kunye nezaziso.",
+    "gitlab": "Stellenbosch GitLab",
+    "gitlabDesc": "Ulawulo lwenguqulo kunye neeprojekthi zokuprogram ngentsebenziswano.",
+    "calendar": "IKhalenda Yezifundo",
+    "calendarDesc": "Imihla ebalulekileyo kunye neshedyuli yonyaka.",
+    "mysun": "I-Portali ye-MySUN",
+    "mysunDesc": "Fikelela kwiinkonzo zeyunivesithi kunye nemithombo.",
+    "contactUs": "Qhagamshelana Nathi",
+    "contactUsDesc": "Iinkcukacha zoqhagamshelwano lwefakhalthi.",
+    "faqTitle": "Imibuzo Ebuzwa Rhoqo",
+    "faqSubtitle": "Fumana iimpendulo kwimibuzo eqhelekileyo malunga nenkqubo yethu.",
+    "faq1q": "Zithini iimfuno zokungena kwidigrsi ye-BSc Computer Science?",
+    "faq1a": "Abafaki-zicelo bafuna iSatifikethi seSizwe esiPhezulu (okanye esilinganiselayo) ene-Mathematics ne-English kumgangatho ofunekayo wokusebenza. Inqaku elincinci le-APS kunye neziphumo ezithile zezifundo ziyasebenza — bhekisa kwiOfisi yokuAmkelwa ukufumana imida yamva nje.",
+    "faq2q": "Ndingafaka isicelo senkqubo ye-Honours emva nje kwe-BSc yam?",
+    "faq2a": "Ewe. Abafundi abaye bayifeza i-BSc Computer Science yeminyaka emithathu ngemvelo ephezulu ngokwaneleyo (ngokuqhelekileyo i-60% okanye ngaphezulu kwiimodyuli zonyaka wesithathu) bafanelekile ukufaka isicelo senkqubo ye-BScHons yonyaka omnye.",
+    "faq3q": "Ikhona ibhasari okanye inkxaso-mali ekhoyo?",
+    "faq3a": "IYunivesithi yaseStellenbosch inikeza iibhasari zobuchule, iSikimu soluNcedo lwezeMali saBafundi sikaZwelonke (NSFAS), kunye neebhasari ezahlukeneyo ezixhaswa ngamaqabane oshishino. Tyelela iBhyuro yoLuncedo lwezeMali okanye iofisi ye-postgraduate yesebe ukufumana amathuba akhoyo.",
+    "faq4q": "Ndibhalisa njani kwiimodyuli kwi-portali yabafundi?",
+    "faq4a": "Ubhaliso lweemodyuli lwenziwa nge-portali ye-MySUN ngexesha lethuba lobhaliso olusemthethweni isemesta nganye. Umcebisi wakho wezifundo uya kuqinisekisa ikharityhulam yakho evunyiweyo phambi kokuba ubhaliso luvulwe.",
+    "faq5q": "Ndizifumana phi iinowuthi zeelekcia kunye nemisebenzi yokufakwa?",
+    "faq5a": "Zonke izixhobo zekosi, iisilayidi zeelekcia, imisebenzi, kunye nezaziso zihlala kwi-STEMLearn (stemlearn.sun.ac.za). Abafundi kufuneka bakhangele le platformu rhoqo esemestareni.",
+    "faq6q": "Ngawaphi amaqela ophando endinokuwadibana nawo njengomfundi we-postgraduate?",
+    "faq6a": "Isebe linamaqela ophando amane asebenzayo: ubuKreleyano bobuNtlalontle, ubuNjineli beSoftware, iiLwimi eziSemthethweni kunye ne-Automata, kunye nezoNxibelelwano kunye nokuLungiswa kweSignal. Abafundi baze-postgraduate kufuneka baqhagamshelane nomongameli onokuthi kwindawo yabo ekuthandayo phambi kokuba bafake isicelo.",
+    "faq7q": "Ikhona indawo yamalaborathori / isakhiwo sekhompyutha esikhoyo kubafundi?",
+    "faq7a": "Ewe. Isebe ligcina iilaborathori zekhompyutha ze-Linux ezibekelwe umsebenzi wokwenza kunye nokufikelela kwiklasta ye-HPC yaseYunivesithi yaseStellenbosch yeeprojekthi ezifuna uphando olunzulu. Abafundi bafumana nee-akhawunti ze-GitLab kwiseva yesebe.",
+    "faq8q": "Ndiqhagamshelana njani nomfundisi wam okanye umfundisi-ncedisa?",
+    "faq8a": "Abafundisi baposta iiyure zabo zokubonisana kwi-STEMLearn ekuqaleni kwesemesta nganye. Abafundisi-ncedisa bakho kwiseshoni zelabhorathori yoncedo. Ungafikelela nakwi-imeyile yemibuzo ejikelelyo yesebe ngezinto zolawulo."
+  },
+  "GetInTouch": {
+    "title": "Ufuna Uncedo?",
+    "subtitle": "Unemibuzo malunga neenkqubo zethu, uphando, okanye ukwamkelwa? Silapha ukukunceda.",
+    "cta": "Qhagamshelana Nathi",
+    "email": "cs@sun.ac.za",
+    "emailLabel": "Sithumele i-imeyile ku"
   },
   "Journey": {
     "title": "Uhambo Lwakho Lwezifundo",

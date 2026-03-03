@@ -1,8 +1,8 @@
-import { getTranslations } from "next-intl/server";
 import { ContentContainer } from "@/components/content-container";
 import { FadeIn } from "@/components/fade-in";
 import { BreadcrumbNav } from "@/components/programmes/breadcrumb-nav";
 import { PageHero } from "@/components/programmes/page-hero";
+import { getTranslations } from "next-intl/server";
 import { StaffCard } from "./staff-card";
 import { academicStaff, administrativeStaff } from "./staff-data";
 
@@ -41,7 +41,7 @@ export async function StaffPage() {
             <h2 className="text-2xl font-bold text-white mb-8">
               {t("academicStaff")}
             </h2>
-            <div className="grid gap-4 sm:grid-cols-2 xl:grid-cols-3">
+            <div className="grid gap-4 grid-cols-1 sm:grid-cols-2 xl:grid-cols-3">
               {academicStaff.map((member, i) => (
                 <FadeIn key={member.name} delay={staggerDelay(i)}>
                   <StaffCard member={member} labels={labels} />

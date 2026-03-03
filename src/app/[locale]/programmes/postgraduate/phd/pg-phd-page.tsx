@@ -43,7 +43,7 @@ export async function PgPhdPage() {
           </div>
           <ImagePlaceholder aspectRatio="video">
             <Image
-              src={"/assets/images/scenes/students.jpg"}
+              src={"/assets/images/scenes/graduation.jpeg"}
               className="object-cover"
               fill
               alt={t("imageAlt")}
@@ -76,7 +76,7 @@ export async function PgPhdPage() {
         {/* Image break */}
         <ImagePlaceholder className="mb-16" aspectRatio="wide">
           <Image
-            src={"/assets/images/scenes/students.jpg"}
+            src={"/assets/images/scenes/danie-craven.webp"}
             className="object-cover"
             fill
             alt={t("imageAlt")}

@@ -21,7 +21,17 @@
     "researchTitle": "Navorsingsuitnemendheid",
     "researchText": "Ons fakulteitslede is aktief in 'n wye reeks navorsingsareas, insluitend kunsmatige intelligensie, masjienleer, sagteware-ingenieurswese, formele metodes, rekenaarvisie, natuurlike taalverwerking en berekeningswetenskap.",
     "locationTitle": "Ligging",
-    "locationText": "Die departement is geleë op die vyfde verdieping van die Algemene Ingenieurswese-gebou op die Universiteit Stellenbosch se hoofkampus."
+    "locationText": "Die departement is geleë op die vyfde verdieping van die Algemene Ingenieurswese-gebou op die Universiteit Stellenbosch se hoofkampus.",
+    "imageCaption": "Universiteit Stellenbosch — Rekenaarwetenskap",
+    "exploreLabel": "Verken verder",
+    "exploreTitle": "Ontdek Meer Oor Ons",
+    "exploreMeetStaff": "Ontmoet Ons Personeel",
+    "exploreMeetStaffDesc": "Leer die wêreldklas-akademici en navorsers ken wat ons departement vorentoe dryf.",
+    "exploreProgrammes": "Ons Programme",
+    "exploreProgrammesDesc": "Verken voorgraadse en nagraadse grade in Rekenaarwetenskap.",
+    "exploreResearch": "Navorsing",
+    "exploreResearchDesc": "Ontdek ons voorpunt-navorsingsgroepe en hul bydraes tot die veld.",
+    "exploreReadMore": "Lees meer"
   },
   "StaffPage": {
     "title": "Personeel & Fakulteit",

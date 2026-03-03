@@ -107,6 +107,11 @@ export function Navbar({ className }: NavbarProps) {
               description: t("pgModulesDesc"),
             },
             {
+              label: t("pgGuide"),
+              href: "/programmes/postgraduate/guide",
+              description: t("pgGuideDesc"),
+            },
+            {
               label: t("pgProspective"),
               href: "/programmes/postgraduate/prospective",
               description: t("pgProspectiveDesc"),

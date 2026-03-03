@@ -13,6 +13,8 @@
     "ugProspectiveDesc": "Admissions, requirements, and how to apply.",
     "pgModules": "Modules",
     "pgModulesDesc": "Honours, Masters, and PhD module catalogue.",
+    "pgGuide": "Programme Guide",
+    "pgGuideDesc": "Programme overview, structure, and career pathways.",
     "pgProspective": "Prospective Students",
     "pgProspectiveDesc": "Entry requirements, applications, and FAQs.",
     "pgHonours": "Honours",
@@ -59,9 +61,9 @@
     "title2": "Drive Innovation",
     "title3": "Engineer Impact",
     "title4": "Transform Ideas",
-    "description": "For over 50 years, Stellenbosch's Computer Science Department has been at the forefront of innovation — advancing research and developing leaders who drive technology and discovery globally.",
+    "description": "For over 50 years, Stellenbosch's Computer Science Department has powered the people building tomorrow’s technology.",
     "exploreProgrammes": "Explore Programmes",
-    "contactUs": "Contact Us"
+    "applyNow": "Apply Now"
   },
   "Stats": {
     "yearsValue": "50+",
@@ -300,7 +302,9 @@
     "pgMastersTitle": "Masters Programme",
     "pgMastersDescription": "Thesis-based Masters in Computer Science at Stellenbosch University — world-class research supervision and career outcomes.",
     "pgPhdTitle": "PhD Programme",
-    "pgPhdDescription": "Doctoral research in Computer Science at Stellenbosch University — original contributions alongside internationally recognised researchers."
+    "pgPhdDescription": "Doctoral research in Computer Science at Stellenbosch University — original contributions alongside internationally recognised researchers.",
+    "pgGuideTitle": "Postgraduate Programme Guide",
+    "pgGuideDescription": "An overview of postgraduate study in Computer Science at Stellenbosch University — programmes, structure, and career pathways."
   },
   "HomeShowcase": {
     "title": "Where Code Meets Discovery",
@@ -311,6 +315,70 @@
     "title": "Research That Matters",
     "subtitle": "Our faculty and students explore pioneering areas across the full spectrum of computer science.",
     "viewAll": "View All Research Groups"
+  },
+  "Welcome": {
+    "badge": "Stellenbosch University",
+    "title": "Computer Science at Stellenbosch",
+    "description": "We offer strong foundations in computer science — from algorithms, software engineering, and systems to the mathematical theory of computation — preparing students to build reliable software and pursue advanced study or industry careers.",
+    "cta": "About the department"
+  },
+  "Undergraduate": {
+    "badge": "Undergraduate Studies",
+    "title": "Build your Computer Science degree",
+    "description": "Choose between the BSc Computer Science focal areas (General, Computer Systems, or Data Science) or the four-year BDatSci Computer Science stream. You will cover programming, algorithms, systems, and software engineering with hands-on labs and project work.",
+    "cta": "Explore undergraduate programmes"
+  },
+  "Postgraduate": {
+    "badge": "Postgraduate Studies",
+    "title": "Advance with Honours, Masters, and PhD",
+    "description": "Deepen your expertise through our honours coursework, research-driven MSc, or doctoral programme. Work closely with supervisors in active research groups, gain advanced technical skills, and prepare for leadership roles in industry or academia.",
+    "cta": "Explore postgraduate programmes"
+  },
+  "AcademicStaff": {
+    "title": "Academic Staff",
+    "subtitle": "Researchers and educators driving innovation in computer science.",
+    "viewAll": "View all staff"
+  },
+  "StudentResources": {
+    "title": "Student Resources",
+    "subtitle": "Quick links to important student platforms and services.",
+    "applications": "Applications",
+    "applicationsDesc": "Manage your university applications.",
+    "stemlearn": "STEMLearn",
+    "stemlearnDesc": "Course content, assignments, and announcements.",
+    "gitlab": "Stellenbosch GitLab",
+    "gitlabDesc": "Version control and collaborative coding projects.",
+    "calendar": "Academic Calendar",
+    "calendarDesc": "Important dates and schedules for the year.",
+    "mysun": "MySUN Portal",
+    "mysunDesc": "Access university services and resources.",
+    "contactUs": "Contact Us",
+    "contactUsDesc": "Faculty contact details.",
+    "faqTitle": "Frequently Asked Questions",
+    "faqSubtitle": "Find answers to common questions about our programme.",
+    "faq1q": "What are the entry requirements for the BSc Computer Science degree?",
+    "faq1a": "Applicants need a National Senior Certificate (or equivalent) with Mathematics and English at the required performance level. A minimum APS score and specific subject results apply — refer to the Admissions Office for the latest thresholds.",
+    "faq2q": "Can I apply for the Honours programme straight after my BSc?",
+    "faq2a": "Yes. Students who have completed the three-year BSc Computer Science with a sufficiently high average (typically 60% or above in third-year modules) are eligible to apply for the one-year BScHons programme.",
+    "faq3q": "Is there a bursary or financial aid available?",
+    "faq3a": "Stellenbosch University offers merit bursaries, the National Student Financial Aid Scheme (NSFAS), and various departmental bursaries funded by industry partners. Visit the Financial Aid bureau or the department's postgraduate office for current opportunities.",
+    "faq4q": "How do I register for modules on the student portal?",
+    "faq4a": "Module registration is done through the MySUN portal during the official registration period each semester. Your academic advisor will confirm your approved curriculum before registration opens.",
+    "faq5q": "Where can I find lecture notes and assignment submissions?",
+    "faq5a": "All course material, lecture slides, assignments, and announcements are hosted on STEMLearn (stemlearn.sun.ac.za). Students should check this platform regularly throughout the semester.",
+    "faq6q": "What research groups can I join as a postgraduate student?",
+    "faq6a": "The department has four active research groups: Artificial Intelligence, Software Engineering, Formal Languages & Automata, and Telecommunications & Signal Processing. Prospective postgraduate students should contact a potential supervisor in their area of interest before applying.",
+    "faq7q": "Is there lab / computing infrastructure available to students?",
+    "faq7a": "Yes. The department maintains dedicated Linux computer labs for practical work as well as access to the Stellenbosch University HPC cluster for research-intensive projects. Students also receive GitLab accounts on the departmental server.",
+    "faq8q": "How do I get in touch with my lecturer or a tutor?",
+    "faq8a": "Lecturers post their consultation hours on STEMLearn at the start of each semester. Tutors are available in the help-desk sessions scheduled in the lab timetable. You can also reach the department's general enquiries email for administrative matters."
+  },
+  "GetInTouch": {
+    "title": "Need Help?",
+    "subtitle": "Have questions about our programmes, research, or admissions? We're here to help.",
+    "cta": "Contact Us",
+    "email": "cs@sun.ac.za",
+    "emailLabel": "Email us at"
   },
   "Journey": {
     "title": "Your Academic Journey",

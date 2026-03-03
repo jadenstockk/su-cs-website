@@ -20,7 +20,7 @@ export function StaffCard({
       variant="default"
       rounded="xl"
       blur="lg"
-      className="p-5 transition-all duration-300 hover:bg-white/15 hover:shadow-lg hover:shadow-black/10"
+      className="p-5 transition-all duration-300 hover:bg-white/15 hover:shadow-lg hover:shadow-black/10 h-full w-full"
     >
       <div className="flex gap-4">
         {/* Avatar */}

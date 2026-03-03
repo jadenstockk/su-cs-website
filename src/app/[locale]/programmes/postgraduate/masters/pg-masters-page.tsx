@@ -44,7 +44,7 @@ export async function PgMastersPage() {
           </div>
           <ImagePlaceholder aspectRatio="video">
             <Image
-              src={"/assets/images/scenes/students.jpg"}
+              src={"/assets/images/scenes/library.webp"}
               className="object-cover"
               fill
               alt={t("imageAlt")}
@@ -98,7 +98,7 @@ export async function PgMastersPage() {
         {/* Image break */}
         <ImagePlaceholder className="mb-16" aspectRatio="wide">
           <Image
-            src={"/assets/images/scenes/stadium.webp"}
+            src={"/assets/images/scenes/danie-craven2.webp"}
             className="object-cover"
             fill
             alt={t("imageAlt")}

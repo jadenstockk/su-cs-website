@@ -70,7 +70,7 @@ export async function UgGuidePage() {
           </div>
           <ImagePlaceholder aspectRatio="video">
             <Image
-              src={"/assets/images/scenes/students.jpg"}
+              src={"/assets/images/scenes/math-lecture2.webp"}
               className="object-cover"
               fill
               alt={t("imageAlt")}

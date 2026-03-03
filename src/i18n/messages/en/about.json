@@ -21,7 +21,17 @@
     "researchTitle": "Research Excellence",
     "researchText": "Our faculty members are active in a wide range of research areas including artificial intelligence, machine learning, software engineering, formal methods, computer vision, natural language processing, and computational science. The department houses several internationally recognised research groups and regularly publishes in top-tier conferences and journals.",
     "locationTitle": "Location",
-    "locationText": "The department is located on the fifth floor of the General Engineering Building on Stellenbosch University's main campus, in the heart of the beautiful town of Stellenbosch, Western Cape, South Africa."
+    "locationText": "The department is located on the fifth floor of the General Engineering Building on Stellenbosch University's main campus, in the heart of the beautiful town of Stellenbosch, Western Cape, South Africa.",
+    "imageCaption": "Stellenbosch University — Computer Science",
+    "exploreLabel": "Keep exploring",
+    "exploreTitle": "Discover More About Us",
+    "exploreMeetStaff": "Meet Our Staff",
+    "exploreMeetStaffDesc": "Get to know the world-class academics and researchers who drive our department forward.",
+    "exploreProgrammes": "Our Programmes",
+    "exploreProgrammesDesc": "Explore undergraduate and postgraduate degrees in Computer Science.",
+    "exploreResearch": "Research",
+    "exploreResearchDesc": "Discover our cutting-edge research groups and their contributions to the field.",
+    "exploreReadMore": "Read more"
   },
   "StaffPage": {
     "title": "Staff & Faculty",

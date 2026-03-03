@@ -44,7 +44,7 @@ export async function UgModulesPage({
         {/* Image placeholder */}
         <ImagePlaceholder className="mb-12" aspectRatio="wide">
           <Image
-            src={"/assets/images/scenes/class.webp"}
+            src={"/assets/images/scenes/comp-sci-lecture3.jpg"}
             className="object-cover"
             fill
             alt={t("imageAlt")}

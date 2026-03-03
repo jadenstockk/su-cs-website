@@ -44,7 +44,7 @@ export async function PgHonoursPage() {
           </div>
           <ImagePlaceholder aspectRatio="video">
             <Image
-              src={"/assets/images/scenes/students.jpg"}
+              src={"/assets/images/scenes/comp-sci-lecture2.webp"}
               className="object-cover"
               fill
               alt={t("imageAlt")}
@@ -114,7 +114,7 @@ export async function PgHonoursPage() {
         {/* Image break */}
         <ImagePlaceholder className="mb-16" aspectRatio="wide">
           <Image
-            src={"/assets/images/scenes/students.jpg"}
+            src={"/assets/images/scenes/students-talking.webp"}
             className="object-cover"
             fill
             alt={t("imageAlt")}

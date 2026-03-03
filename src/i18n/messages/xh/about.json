@@ -21,7 +21,17 @@
     "researchTitle": "Ubugcisa bophando",
     "researchText": "Amalungu ethu afakalthi asebenza kwiindawo ezahlukeneyo zophando eziquka i-AI, ukufunda koomatshini, ubunjineli besoftware, kunye nokunye.",
     "locationTitle": "Indawo",
-    "locationText": "Isebe likumgangatho wesihlanu wesakhiwo se-General Engineering kwikhampasi enkulu yeYunivesithi yaseStellenbosch."
+    "locationText": "Isebe likumgangatho wesihlanu wesakhiwo se-General Engineering kwikhampasi enkulu yeYunivesithi yaseStellenbosch.",
+    "imageCaption": "IYunivesithi yaseStellenbosch — I-Computer Science",
+    "exploreLabel": "Qhubeka uhlola",
+    "exploreTitle": "Fumana Okungakumbi Ngathi",
+    "exploreMeetStaff": "Hlangana Nabasebenzi Bethu",
+    "exploreMeetStaffDesc": "Funda ngabafundi kunye nabaphandi abasezantsi behlabathi abaqhuba isebe lethu phambili.",
+    "exploreProgrammes": "Iinkqubo Zethu",
+    "exploreProgrammesDesc": "Hlola iidigri ze-undergraduate kunye ne-postgraduate kwiComputer Science.",
+    "exploreResearch": "Uphando",
+    "exploreResearchDesc": "Fumana amaqela ethu ophando olucwangcisiweyo kunye negalelo lawo kwinkalo.",
+    "exploreReadMore": "Funda okungakumbi"
   },
   "StaffPage": {
     "title": "Abasebenzi & IFakalthi",
