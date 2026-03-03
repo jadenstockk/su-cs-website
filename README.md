@@ -1,4 +1,4 @@
-# Stellenbosch University — Computer Science Department Website Redesign
+# SU Computer Science Department Website Redesign
 
 A project for a hackathon hosted by the Stellenbosch University Developer's Society. The task was to redesign the outdated website of the Computer Science Department.
 
@@ -8,9 +8,14 @@ A project for a hackathon hosted by the Stellenbosch University Developer's Soci
 
 I first planned out a basic idea of the UI in Figma and pieced together a video to play in the background of the hero section. For this I gathered some reference images from the Stellenbosch website and used Google Veo to create some videos which I chopped up and took the good parts to make a nice loop. I always tend to find starting with this design process makes the rest a whole lot easier.
 
+<img width="1584" height="866" alt="40654" src="https://github.com/user-attachments/assets/93dd7e71-4f1c-4bbe-8a48-156357667bd9" />
+
 I then built everything in Next.js and Tailwind, using ShadCN UI for my component library (just because it's always so easy to customise). I also implemented internationalisation with next-intl. The translation content is currently hardcoded in JSON files, but the Drupal integration is ready to go I just didn't have enough time to add all of the content to Drupal and get the translations working correctly (Durpal is a pain when it comes to performance).
 
 Anyway, once I had the hero design done, it was easier to get the rest of the pages done with the help of my sidekick Claude Opus 4.6 (what a beast). I also addde lots of cool extra details like the terminal easter egg (click the terminal button in the navbar), SEO optimisation for all pages, clean animations, and my favourite design trend at the moment - glassmorphism UI. Everything is also fully optimised for mobile devices.
+
+<img width="1393" height="758" alt="hero" src="https://github.com/user-attachments/assets/54fe45d7-dcf3-490a-a1df-9faa157ebe31" />
+
 
 ---
 
@@ -20,8 +25,6 @@ Anyway, once I had the hero design done, it was easier to get the rest of the pa
 - **Styling**: Tailwind
 
 ---
-
-## What the Redesign Consists Of
 
 ### Pages
 
@@ -41,7 +44,7 @@ Anyway, once I had the hero design done, it was easier to get the rest of the pa
 
 ---
 
-## Attention to Detail
+## Cool Details
 
 ### Glassmorphism UI
 
@@ -73,16 +76,17 @@ SEO is fully sorted:
 
 Every page and component is fully responsive. Layouts shift gracefully across mobile, tablet, and desktop breakpoints using Tailwind's responsive utilities.
 
-### Terminal Easter Egg
+### Fake Terminal
 
-Hidden behind the inconspicous terminal button on the navbar is a fully interactive fake terminal - a love letter to CS students. It faithfully simulates a Unix shell experience with:
+Hidden behind the inconspicous terminal button on the navbar is a fully interactive fake terminal (courtesy of Claude) to make it feel a bit more personal to CS students. It faithfully simulates a Unix shell experience with:
 
 - A simulated file system (`~/Documents`, `~/Projects`, `~/Downloads`, etc.) with realistic CS student content
 - Commands: `ls`, `cd`, `pwd`, `cat`, `echo`, `clear`, `whoami`, `date`, `uname -a`, `man`, `neofetch`, `history`
 - Department-specific commands: `modules`, `staff`, `research`, `links`, `contact`
 - Tab autocomplete and ↑ / ↓ command history navigation
 - A styled `neofetch`-style system info display
-- Fully themed to match the rest of the site's aesthetic
+
+<img width="696" height="469" alt="24801" src="https://github.com/user-attachments/assets/4e5dadfe-342b-4f37-b8cf-64e19d37fcda" />
 
 ---
 
